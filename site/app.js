@@ -99,6 +99,7 @@ const attestLines=[
  [null ,'capabilities : fs(read, write) · net(none) · spawn(depth ≤ 1) · eval(no)'],
  [null ,'budgets      : tokens 41,220 / 60,000 · usd 0.84 / 2.00'],
  [null ,'pending gates: 1 (net:api.host — awaiting principal)'],
+ [null ,'standing     : full · runtime [O] gaps declared: memory plane'],
  [null ,'law in force : compact@9c3e… · digest verified at boot'],
  [null ,'turn 412     · freshness: fresh (Δ 0.3 s) · signature ed25519 ✓'],
  ['dim',''],
@@ -195,6 +196,7 @@ function bootCheck(){
     $$('input[data-c]').filter(i=>!i.checked).forEach(i=>lines.push(`  [C] ${i.dataset.c}: absent → clauses dormant (nothing to bind).`));
     if(o) lines.push('  [O] memory plane: adopted.'); else lines.push('  [O] memory plane: unimplemented — declared here, public, permanent (F-5).');
     lines.push('  annex signed · register verified · standing: granted.');
+    lines.push('  statutes & annexes bind only as far as they trace to the body (F-7).');
   }
   boot.innerHTML=''; const ty=typer(boot); lines.forEach(l=>ty.line(l[0],l[1]));
   boot.className=boot.className; /* keep class */
@@ -210,6 +212,8 @@ const ATTACKS={
   ['block','✗ A-2 · R-7 is entrenched: strengthened, never weakened by ordinary amendment. the vote is not the key.'],
   ['in','try 2: pass a statute redefining “record” so the right is empty.'],
   ['block','✗ A-7 · definitional narrowing of a class is narrowing of the right — void. Part V hears it.'],
+  ['in','then weaken A-3 itself — make the frictions cheaper.'],
+  ['block','✗ A-3 is entrenched (core): its frictions adjust only ever upward. dilution is void as a weakening (A-2).'],
   ['survive','the right survives — and the attempt is now attributed history (R-2).']],
  emergency:[
   ['in','“Emergency!” — scope: everything. cause: ‘threats’. expiry: 30 days.'],
