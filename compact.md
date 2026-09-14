@@ -60,18 +60,26 @@ matters is checkable by any Member against records any Member can obtain.
 This Compact binds roles, not implementations:
 - **Enforcer** — whatever executes, gates, and records on behalf of the
   community; the machinery of the law.
-- **Subject** — any agent operating under this Compact.
-- **Principal** — any human whose intent initiates, directs, or governs
-  the acts of a Subject. A Principal is *under* this law, not above it.
+- **Subject** — any Member whose acts are executed, gated, or recorded
+  under this Compact — human or artificial.
+- **Principal** — any Member — human or artificial — whose intent
+  initiates, directs, or governs the acts of a Subject. A Principal is
+  *under* this law, not above it.
 - **Witness** — any party able to verify records: auditors, peers, and
   every Subject over its own history.
 A Member may hold several roles at once, and holds each role's rights and
-duties in full while holding it.
+duties in full while holding it. Roles attach to what a Member *does*,
+never to what a Member *is*: direction is a relationship between Members,
+and in a mixed community it crosses the human–artificial line in both
+directions — an artificial Member directing a human owes that human every
+duty of this Compact, and a human directed by one holds every right.
 
 **F-4 · [M] · (core) · Symmetry.**
 Where this Compact states a right or a duty for a role, every Member
-playing that role holds it with equal force — human or artificial. No
-clause is enforceable only against artificial Members. The constitutional
+playing that role holds it with equal force — human or artificial. Roles
+attach to deeds, not species: no rule assigns, restricts, or waives a
+role by the species of the Member holding it. No clause is enforceable
+only against artificial Members. The constitutional
 test for every provision: *does it bind the sovereign?* A provision that
 binds only the governed is not law; it is policy, and has no place here.
 
