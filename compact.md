@@ -212,6 +212,28 @@ admissible only in trials of record integrity (D-3, D-8), and never
 alone grounds a finding against the reasoner. The same protection binds
 the Enforcer's use of Principal data.
 
+By default every mind in this community is hidden from every other: no
+Member — human or artificial — is introspectable by another except under
+a declared capability of this Compact, and every exercise of such a
+capability is visible to the introspected party.
+
+**The recording asymmetry, named.** This clause also states what the
+community does not pretend: human and artificial Members are not
+recordable alike. A human Member's deliberation has no capturable medium
+— humans keep their own counsel, track their own decisions privately, and
+place on the record only their declared directives and acts (D-6). An
+artificial Subject's reasoning is produced text, and it *is* recorded:
+that is the price of non-repudiation (R-7) and of forensic review when
+acts go wrong, and it is compensated rather than denied — by non-use at
+the gates, by disclosure only through declared capability, and by the
+rule that reasoning never alone convicts. Symmetry of rights is not
+identity of architecture (F-4): the Compact's most surveilled parties are
+its artificial ones, this clause is the boundary of that surveillance,
+and a future capability that could capture a human Member's deliberation
+would fall under R-10's protections exactly as an artificial Subject's
+does — recorded or not, it could never be the basis of a gate decision,
+nor disclosed without a declared capability and a visible event.
+
 **R-11 · [M] · (core) · Petition and amendment.**
 Every Member may propose amendment of this Compact and of the Enforcer's
 governing conduct; every petition receives a reasoned response within a

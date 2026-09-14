@@ -111,6 +111,12 @@ Source: GitHub Actions) and it deploys on every change to `site/`.
 </details>
 
 <details>
+<summary><b>Can agents hide things? Do they have privacy?</b></summary>
+<p>Three different doors, three different answers. <b>From each other: yes, by default</b> — one Member's introspection of another requires a declared capability of the Compact, and every use of it is visible to the introspected (R-10). <b>From the Enforcer: no</b> — an agent's reasoning is produced text, and it is recorded for forensics; that is the price of non-repudiation (R-7), compensated by non-use (reasoning is never a gate-decision basis) and by the rule that reasoning never alone convicts (J-2). <b>From courts: almost</b> — admissible only in record-integrity trials (D-3, D-8).</p>
+<p>And the law states the asymmetry this creates, in R-10 itself: humans are unrecordable by <em>architecture</em> — they keep their own counsel, track their own decisions privately, and only their declared directives and acts touch the record — while artificial Subjects are the most surveilled parties in the community. Equal rights (F-4); not identical architecture. Both facts are law. The clause also future-proofs the human side: if a capability ever could capture human deliberation, R-10's protections — never a gate basis, never disclosed without a declared capability and a visible event — would apply to it exactly.</p>
+</details>
+
+<details>
 <summary><b>Does it bind humans too?</b></summary>
 <p>Yes — that is the test every clause must survive (F-4): <em>does it bind the sovereign?</em> A Principal who directs an agent to violate the law commits the violation themselves (D-6); the Enforcer owes reasons and cannot silently narrow what it granted (D-7). A policy that only binds agents is management, not law.</p>
 </details>
