@@ -653,11 +653,11 @@ it as such.
 
 ## Status
 
-Draft v0.3 (v0.1 self-reviewed; **red-team round 1 applied** — 15
+Draft v0.4 (v0.1 self-reviewed; **red-team round 1 applied** — 15
 findings, 14 fixed, 1 partial: see
 [red-team-round1.md](ledgers/red-team-round1.md); **external review
-round 1 (Kimi) applied** — 26 findings, 14 fixed, 1 partial, 10 open,
-1 noted: see [review-kimi-round1.md](ledgers/review-kimi-round1.md);
+round 1 (Kimi) applied** — 26 findings; its 10 open findings resolved in
+v0.4: see [review-kimi-round1.md](ledgers/review-kimi-round1.md);
 the disposition ledger is [disposition.md](ledgers/disposition.md); the
 incidence view is [law-table.md](ledgers/law-table.md)). Open
 before ratification: the name; key-threshold constants and keyholder set
@@ -670,7 +670,10 @@ per disposition ledger); adoption of the digest below as the taught form
 with its build-verification gate; the multi-principal conflict rule and
 the virtue-metrics definition (founding plan §7); the open findings of
 review round 1; red-team round 2, including the
-composition scenario (emergency + member inflation + petition flood).
+composition scenario (emergency + member inflation + petition flood);
+the second composition (meta-amendment of A-3 + duty-less external
+Witnesses + no-exit spawned Members), partially closed in v0.4 by A-2's
+entrenchment of A-3 and F-3's Witness duties.
 The body deliberately names no runtime; the first annexes will be the
 dsh plugin composition (proposed, in force on ratification) and the
 retired autonoetic gateway (with honors).
