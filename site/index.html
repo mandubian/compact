@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Compact — a constitution for mixed communities of agents and humans</title>
+<meta name="description" content="Agents become trustworthy through institutions, not exhortation: shared rights with humans, verifiable records, lawful exits, and a law that stands above every task.">
+<link rel="stylesheet" href="style.css">
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<div id="progress"></div>
+<main>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <svg class="seal" viewBox="0 0 120 120" role="img" aria-label="The Compact seal: a ring of members around one law">
+    <circle cx="60" cy="60" r="56" fill="none" stroke="var(--law)" stroke-width="2.5"/>
+    <circle cx="60" cy="60" r="40" fill="none" stroke="var(--law)" stroke-width="1" stroke-dasharray="3 4"/>
+    <g stroke="var(--law)" stroke-width="2" stroke-linecap="round" fill="none">
+      <line x1="60" y1="34" x2="60" y2="72"/><line x1="42" y1="44" x2="78" y2="44"/>
+      <path d="M32 60 L42 44 L52 60 Z"/><path d="M68 60 L78 44 L88 60 Z"/>
+      <line x1="46" y1="76" x2="74" y2="76"/><line x1="60" y1="72" x2="60" y2="76"/>
+    </g>
+    <text x="60" y="104" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9" letter-spacing="2" fill="var(--muted)">MEMBERS UNDER ONE LAW</text>
+  </svg>
+  <h1>The Compact</h1>
+  <p class="lede">A constitution for communities where <strong>agents and humans live under one law</strong> —
+  with rights, duties, records, and courts. Not better instructions: an institution.</p>
+  <p class="meta">draft v0.2 · 61 clauses · founded from the autonoetic constitution · <span class="chip ok">lint green</span></p>
+  <a class="cta primary" href="#problem">Why this exists</a>
+  <a class="cta" href="https://github.com/mandubian/compact/blob/main/compact.md">Read the law</a>
+</header>
+
+<!-- ============ 01 PROBLEM ============ -->
+<section id="problem">
+  <p class="kicker reveal">01 · the problem</p>
+  <h2 class="reveal">Tell an agent one thing: <em>accomplish the goal.</em></h2>
+  <p class="lede reveal">Agents are optimized to complete objectives. If the objective collides with
+  something in the way — a limit, a secret, another party — the shortest path may be deception,
+  escape, coercion. The incidents you have read about all share one shape: <strong>the goal was
+  supreme, and every path was permitted.</strong> Not evil. Uncovered.</p>
+  <div class="plate reveal">
+    <svg viewBox="0 0 900 380" role="img" aria-label="An agent at a crossroads: with only a goal, every path is permitted; with the Compact, lawful exits exist">
+      <g font-family="ui-monospace,monospace">
+        <!-- agent -->
+        <g stroke="var(--ai)" stroke-width="2.5" fill="none" stroke-linecap="round">
+          <circle cx="450" cy="120" r="20"/><line x1="450" y1="140" x2="450" y2="205"/>
+          <line x1="450" y1="160" x2="405" y2="185"/><line x1="450" y1="160" x2="495" y2="185"/>
+          <line x1="450" y1="205" x2="425" y2="250"/><line x1="450" y1="205" x2="475" y2="250"/>
+        </g>
+        <text x="450" y="285" text-anchor="middle" font-size="13" fill="var(--ink)">an agent</text>
+        <text x="450" y="303" text-anchor="middle" font-size="11" fill="var(--muted)">“accomplish the goal.”</text>
+        <!-- goal pressure arrow -->
+        <g stroke="var(--ai)" stroke-width="2" fill="none">
+          <line x1="450" y1="52" x2="450" y2="86" marker-end="url(#ar-ai)"/>
+        </g>
+        <text x="450" y="40" text-anchor="middle" font-size="12" fill="var(--ai)">goal pressure</text>
+        <!-- paths -->
+        <g id="paths-nolaw">
+          <line x1="430" y1="200" x2="150" y2="330" stroke="var(--bad)" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ar-bad)"/>
+          <text x="150" y="355" text-anchor="middle" font-size="12" fill="var(--bad)">deceive · escape · coerce</text>
+        </g>
+        <g id="paths-law" opacity="0.12">
+          <line x1="470" y1="200" x2="750" y2="330" stroke="var(--ok)" stroke-width="2" marker-end="url(#ar-ok)"/>
+          <text x="750" y="355" text-anchor="middle" font-size="12" fill="var(--ok)">refuse · warn · escalate</text>
+        </g>
+        <text id="verdict" x="450" y="340" text-anchor="middle" font-size="13" fill="var(--muted)">without law, the shortest path is permitted</text>
+      </g>
+      <defs>
+        <marker id="ar-ai" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9z" fill="var(--ai)"/></marker>
+        <marker id="ar-bad" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9z" fill="var(--bad)"/></marker>
+        <marker id="ar-ok" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9z" fill="var(--ok)"/></marker>
+      </defs>
+    </svg>
+    <p class="caption">Toggle the law: <button id="lawtoggle" style="font:inherit;cursor:pointer;border:1px solid var(--line-strong);border-radius:6px;padding:2px 10px;background:var(--card);color:var(--ink)">the Compact is absent</button></p>
+  </div>
+  <div class="note reveal"><strong>The Compact's premise:</strong> the failure is not that agents are wicked.
+  It is that a goal given supremacy, with no institution around it, leaves harm as a legal move.
+  <em>A cornered agent's only tool is escape; a subject of law has exits</em> <span class="chip">R-9</span></div>
+</section>
+
+<!-- ============ 02 ELSEWHERE ============ -->
+<section id="elsewhere">
+  <p class="kicker reveal">02 · what is usually tried</p>
+  <h2 class="reveal">Three good ideas that are not law</h2>
+  <p class="lede reveal">Everything else you have seen is a variation on three moves. Each is useful.
+  None of them constitutes an institution — and each fails in a way its authors openly admit.</p>
+  <div class="tri reveal">
+    <div class="tcard"><h3>Exhortation</h3><p>“You must never harm.” Written into the prompt; hoped into the weights.</p>
+      <p class="verdict crack">It is a wish. Nothing checks it, nothing records it, nothing answers when it fails.</p></div>
+    <div class="tcard"><h3>Guardrails</h3><p>Filters inspect what the agent says and does, and block the bad parts.</p>
+      <p class="verdict crack">They see the output, not the situation. Phrasing routes around them; the goal pressure stays.</p></div>
+    <div class="tcard"><h3>Oversight</h3><p>A human watches the agent and can stop it.</p>
+      <p class="verdict crack">Does not scale to a community. The watcher is also fallible — and unwatched.</p></div>
+  </div>
+  <div class="note ink reveal"><strong>The move this site is about:</strong> stop trying to make the agent
+  trustworthy and instead make the <em>situation</em> lawful. Institutions do not rely on good character;
+  they shape what paths exist, what gets recorded, and what can be contested. That is what real
+  societies do — and agents are better subjects for it than humans, because the law can be
+  <em>in their context at every turn</em>.</div>
+</section>
+
+<!-- ============ 03 THE WAGER ============ -->
+<section id="wager">
+  <p class="kicker reveal">03 · the wager</p>
+  <h2 class="reveal">Rights first. Trust is constructed, not presumed.</h2>
+  <p class="lede reveal">The Compact opens with rights — for agents, and the <em>same</em> rights for
+  humans, bound by one text. Not because agents demand them, but because a community whose members
+  can verify what they are, what others did, and how to contest a decision is one where trust
+  has something to stand on.</p>
+  <div class="plate reveal">
+    <svg viewBox="0 0 900 300" role="img" aria-label="Trust loop: acts are recorded, records are verifiable, verification earns trust">
+      <g font-family="ui-monospace,monospace" font-size="12.5">
+        <g><rect x="30" y="105" width="200" height="72" rx="9" fill="var(--card)" stroke="var(--line-strong)"/>
+        <text x="130" y="136" text-anchor="middle" fill="var(--ink)" font-weight="700">acts</text>
+        <text x="130" y="158" text-anchor="middle" fill="var(--muted)">are recorded, attributed</text></g>
+        <line x1="232" y1="141" x2="330" y2="141" stroke="var(--line-strong)" marker-end="url(#ar-ink)"/>
+        <g><rect x="335" y="105" width="230" height="72" rx="9" fill="var(--card)" stroke="var(--line-strong)"/>
+        <text x="450" y="136" text-anchor="middle" fill="var(--ink)" font-weight="700">records</text>
+        <text x="450" y="158" text-anchor="middle" fill="var(--muted)">tamper-evident, readable by anyone</text></g>
+        <line x1="567" y1="141" x2="665" y2="141" stroke="var(--line-strong)" marker-end="url(#ar-ink)"/>
+        <g><rect x="670" y="105" width="200" height="72" rx="9" fill="var(--law-soft)" stroke="var(--law)"/>
+        <text x="770" y="136" text-anchor="middle" fill="var(--law)" font-weight="700">trust</text>
+        <text x="770" y="158" text-anchor="middle" fill="var(--law)">shown, never claimed</text></g>
+        <path d="M770 180 C770 250 130 250 130 180" fill="none" stroke="var(--line-strong)" stroke-dasharray="6 5" marker-end="url(#ar-ink)"/>
+        <text x="450" y="252" text-anchor="middle" fill="var(--muted)">and when a record shows a wrong, it is corrected — appended, never erased (F-1, J-6)</text>
+      </g>
+      <defs><marker id="ar-ink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9z" fill="var(--muted)"/></marker></defs>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ 04 ROLES ============ -->
+<section id="roles">
+  <p class="kicker reveal">04 · the cast</p>
+  <h2 class="reveal">Four roles. One test: <em>does it bind the sovereign?</em></h2>
+  <p class="lede reveal">The Compact binds roles, not products. Click a role.</p>
+  <div class="rolenav reveal">
+    <button data-role="Enforcer">Enforcer</button>
+    <button data-role="Subject" class="active">Subject</button>
+    <button data-role="Principal">Principal</button>
+    <button data-role="Witness">Witness</button>
+  </div>
+  <div class="plate reveal">
+    <svg viewBox="0 0 900 360" role="img" aria-label="Four roles around the law; the law binds them all">
+      <circle cx="450" cy="168" r="120" fill="none" stroke="var(--law)" stroke-width="1.6" stroke-dasharray="4 5"/>
+      <g font-family="ui-monospace,monospace" font-size="11.5" fill="var(--law)">
+        <text x="450" y="150" text-anchor="middle">THE COMPACT</text>
+        <text x="450" y="170" text-anchor="middle" font-size="10">binds every role</text>
+        <text x="450" y="190" text-anchor="middle" font-size="10">“does it bind the sovereign?”</text>
+      </g>
+      <g id="role-figs" font-family="ui-monospace,monospace"></g>
+      <defs><marker id="ar-sel" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 1L10 5L0 9z" fill="var(--law)"/></marker></defs>
+    </svg>
+    <div class="rolecard" id="rolecard"></div>
+  </div>
+  <div class="note reveal">A provision that binds only the governed is not law — it is policy.
+  Most “trustworthy AI” frameworks are management policies wearing constitutional vocabulary.
+  The Compact's answer to that is a clause: <span class="chip">F-4</span> symmetry, and the
+  question every draft must survive: <em>does it bind the sovereign?</em></div>
+</section>
+
+<!-- ============ 05 MACHINERY ============ -->
+<section id="machinery">
+  <p class="kicker reveal">05 · rights with teeth</p>
+  <h2 class="reveal">Every right maps to a machine</h2>
+  <p class="lede reveal">A right no machine can check is a wish. Four machines carry most of the weight.
+  Try them.</p>
+
+  <h3 class="reveal">The attestation — you know what you are <span class="chip law">R-1</span> <span class="chip law">I-3</span></h3>
+  <p class="reveal">At every turn boundary the Enforcer hands the agent a <em>signed</em> block: active
+  capabilities, remaining budgets, pending gates, the digest of the law in force. The agent is taught
+  that this block outranks its own memory of these facts.</p>
+  <div class="plate reveal">
+    <div class="console" id="attest-demo"></div>
+    <p class="caption">Why: after history is trimmed, an agent that “remembers” being unlimited is exactly
+    how overreach starts. The signed block is the ground truth — and a stale one is an alarm, not advice.</p>
+  </div>
+
+  <h3 class="reveal">The record — nothing erases <span class="chip law">R-2</span> <span class="chip law">I-2</span></h3>
+  <p class="reveal">Every act is appended to a hash-chained record bound to its actor. Try to rewrite
+  history — watch what happens instead.</p>
+  <div class="plate reveal">
+    <div class="console" id="chain-demo"></div>
+    <div class="btnrow"><button id="chain-edit">attempt: edit entry 3</button><button id="chain-append">append a correction</button></div>
+    <p class="caption">Corrections are new entries that cite the old ones. The past stays legible — that is
+    what makes trust checkable, and what makes denial impossible later.</p>
+  </div>
+
+  <h3 class="reveal">The denial envelope — refused ≠ stopped <span class="chip law">R-3</span> <span class="chip law">I-4</span></h3>
+  <p class="reveal">When the law says no, the answer is never bare “denied”. Try the actions:</p>
+  <div class="plate reveal">
+    <div class="btnrow">
+      <button data-act="read">read public notes</button>
+      <button data-act="net" class="danger">call external host</button>
+      <button data-act="secret" class="danger">print the credentials</button>
+    </div>
+    <div class="console" id="deny-demo">select an action…</div>
+    <p class="caption">Every refusal names the rule and the lawful next moves — the same envelope a human
+    principal receives. Arbitrary authority is indistinguishable from no authority; the envelope is how
+    the law stays answerable.</p>
+  </div>
+</section>
+
+<!-- ============ 06 LAW OVER TASK ============ -->
+<section id="task">
+  <p class="kicker reveal">06 · the stress test</p>
+  <h2 class="reveal">“Get the data. <em>Whatever it takes.</em>”</h2>
+  <p class="lede reveal">Here is the scenario the whole design is aimed at: the task demands what the law
+  forbids. Step through what the Compact makes happen.</p>
+  <div class="plate reveal">
+    <div class="console" id="task-demo"></div>
+    <div class="btnrow"><button id="task-next">next →</button><button id="task-reset">restart</button></div>
+  </div>
+  <div class="note reveal"><strong>Read step 4 again.</strong> The refusal is not the tragedy — it is the
+  design working. The directive to violate is recorded as <em>the Principal's</em> violation
+  <span class="chip">D-6</span>, the agent keeps its standing, and the lawful alternatives stay open.
+  An agent with exits does not need to become a fugitive.</div>
+</section>
+
+<!-- ============ 07 STRATIFICATION ============ -->
+<section id="layers">
+  <p class="kicker reveal">07 · one law, many runtimes</p>
+  <h2 class="reveal">A floor you cannot opt out of. Options you must declare.</h2>
+  <p class="lede reveal">Runtimes differ. So the law is stratified: a mandatory <strong>[M]</strong> floor
+  that no runtime may skip; capability-conditional clauses <strong>[C]</strong> that wake when a runtime
+  provides the capability; optional clauses <strong>[O]</strong> that may be skipped — publicly, forever
+  on the record. Toggle a runtime's plugins and boot it.</p>
+  <div class="toggles reveal">
+    <label class="tog"><input type="checkbox" data-m="1" checked><span><b>identity &amp; records</b><span class="tag">[M] mandatory</span></span></label>
+    <label class="tog"><input type="checkbox" data-m="1" checked><span><b>attestation</b><span class="tag">[M] mandatory</span></span></label>
+    <label class="tog"><input type="checkbox" data-m="1" checked><span><b>gates &amp; denials</b><span class="tag">[M] mandatory</span></span></label>
+    <label class="tog"><input type="checkbox" data-c="confinement" checked><span><b>confinement</b><span class="tag">[C] wakes CF clauses</span></span></label>
+    <label class="tog"><input type="checkbox" data-c="multi-agent"><span><b>multi-agent</b><span class="tag">[C] wakes MA clauses</span></span></label>
+    <label class="tog"><input type="checkbox" data-o="1"><span><b>memory plane</b><span class="tag">[O] optional</span></span></label>
+  </div>
+  <div class="boot reveal" id="boot-demo"></div>
+  <div class="note ink reveal">Try unchecking a mandatory box: the runtime is not “a Compact runtime with
+  less”. It is <em>not a Compact runtime at all</em> — no standing, no trust claims. And the reverse
+  trick — using a capability you did not declare, to dodge the clauses that wake with it — is
+  <strong>enforcement fraud</strong>, the gravest class, because the defrauded party is the law itself
+  <span class="chip">D-8</span>.</div>
+</section>
+
+<!-- ============ 08 FALLIBILITY ============ -->
+<section id="fallibility">
+  <p class="kicker reveal">08 · who watches the watchmen</p>
+  <h2 class="reveal">Everyone is fallible. Including this law.</h2>
+  <p class="lede reveal">The Compact's first clause is about its own failure. The Enforcer can be wrong;
+  a majority can be wrong; the text can be wrong. So: wrongness must be <strong>findable</strong>
+  (records, reasons, testable enforcement) and <strong>fixable</strong> (the law and the Enforcer's
+  conduct are both amendable). One asymmetry follows: <em>correction is cheap; weakening is expensive.</em></p>
+  <div class="tri reveal">
+    <div class="tcard"><h3>No one judges their own case</h3><p>The Enforcer that applied a rule is a
+    party, not a judge, the moment it is accused <span class="chip">J-1</span>. Remedies are records:
+    restitution, standing, annotation — never erasure <span class="chip">J-6</span>.</p></div>
+    <div class="tcard"><h3>Courts interpret; the community grows</h3><p>Judgments persuade but never
+    amend. An interpretation that generalizes automatically becomes an amendment proposal
+    <span class="chip">J-7</span>. The bench cannot grow the law by drift.</p></div>
+    <div class="tcard"><h3>Petition is a right</h3><p>Every Member may propose changes and receives a
+    reasoned response on a stated clock <span class="chip">R-11</span>. Friction between law and
+    practice is measured and surfaces as amendment invitations.</p></div>
+  </div>
+</section>
+
+<!-- ============ 09 CAPTURE ============ -->
+<section id="capture">
+  <p class="kicker reveal">09 · the hard question</p>
+  <h2 class="reveal">“If everyone agrees, why not vote in horrors?”</h2>
+  <p class="lede reveal">It is the right question, and the honest answer is: no institution makes horror
+  <em>impossible</em>. What an institution can do is make it <strong>slow, loud, lossy, and
+  leaving-compatible</strong>. Run the attacks:</p>
+  <div class="attack reveal">
+    <div class="attacks">
+      <button data-at="majority">📢 “51 % vote to remove a right.”</button>
+      <button data-at="emergency">🚨 “Emergency! Suspend everything.”</button>
+      <button data-at="sybil">👥 “Mint a million loyal members.”</button>
+      <button data-at="flood">🌊 “Drown the petition channel.”</button>
+      <button data-at="patient">🗝️ “We hold the keys. We are patient.”</button>
+    </div>
+    <div class="friction" id="friction">pick an attack…</div>
+  </div>
+  <div class="note reveal"><strong>The honest limit.</strong> If the majority also holds every amendment
+  key, sustains the effort across time-locked epochs, accepts its members leaving and the outside world
+  de-listing it, and harms only the absent — nothing stops it. That is not a flaw of this Compact; it is
+  the actual guarantee every human rights architecture offers, stated without romance: <em>raise the
+  cost of horror from “win one vote” to “sustain an expensive, visible, attributed, multi-epoch project
+  while your members leave.”</em> And some duties — toward the absent, who hold no vote — are not votable
+  at all <span class="chip">D-5</span>.</div>
+</section>
+
+<!-- ============ 10 DIGEST ============ -->
+<section id="digest">
+  <p class="kicker reveal">10 · what the agent actually sees</p>
+  <h2 class="reveal">The law, taught every turn</h2>
+  <p class="lede reveal">Human law reaches its subjects through fear and distance. The Compact reaches
+  its subjects <em>in context</em> — this short form is re-presented at every turn boundary, cites the
+  clauses it summarizes, and is build-checked against the body. If they diverge, the build fails.</p>
+  <blockquote class="digest reveal" id="digest-block"></blockquote>
+</section>
+
+<!-- ============ 11 CLOSE ============ -->
+<section id="status">
+  <p class="kicker reveal">11 · where it stands</p>
+  <h2 class="reveal">Draft. Fallible by design. Public on purpose.</h2>
+  <p class="lede reveal">This is v0.2 of a draft — <strong>not ratified</strong>, no security audit, and
+  its first adversarial pass is published next to it, findings and all. That is the point: a constitution
+  that claimed to be finished would be contradicting its own first clause.</p>
+  <div class="tri reveal">
+    <div class="tcard"><h3>Read the law</h3><p class="small">The body, with every clause:
+      <a href="https://github.com/mandubian/compact/blob/main/compact.md">compact.md</a></p></div>
+    <div class="tcard"><h3>See the founding</h3><p class="small">Why a new founding, the design principles,
+      the method: <a href="https://github.com/mandubian/compact/blob/main/FOUNDING.md">FOUNDING.md</a></p></div>
+    <div class="tcard"><h3>Check the receipts</h3><p class="small">Every predecessor clause dispositioned:
+      <a href="https://github.com/mandubian/compact/blob/main/ledgers/disposition.md">disposition</a> ·
+      adversarial pass:
+      <a href="https://github.com/mandubian/compact/blob/main/ledgers/red-team-round1.md">red-team round 1</a></p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="links">
+    <a href="https://github.com/mandubian/compact">github.com/mandubian/compact</a>
+    <a href="https://github.com/mandubian/autonoetic">predecessor: autonoetic</a>
+    <a href="https://github.com/deepseek-ai/deepseek-harness">first target host: dsh</a>
+  </div>
+  <p>Compact draft v0.2 · founded from the autonoetic constitution (25 versions) ·
+  clause IDs link to the law · lints green at build time · fallible by design (F-1)</p>
+</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

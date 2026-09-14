@@ -47,6 +47,17 @@ and the community can always be left honestly (R-12).
   composition that enforces the Compact's floor on
   [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness).
 
+## The site
+
+`site/` is a self-contained, dependency-free scroll narrative that teaches
+the approach progressively: the failure mode → why exhortation, guardrails,
+and oversight are not law → the roles and symmetry → the machines behind
+the rights (attestation, append-only record, denial envelopes) → the
+law-over-task stress test → the stratified floor ([M]/[C]/[O] boot
+simulator) → fallibility and judicature → the capture attacks and their
+frictions → the taught digest. Enable GitHub Pages (Settings → Pages →
+Source: GitHub Actions) and it deploys on every change to `site/`.
+
 ## Decisions open before ratification
 
 The name; amendment key thresholds and keyholder set (A-1); adjudicator
