@@ -695,7 +695,8 @@ before ratification, additionally: the value-scoped refusal question
 ("conscience ground" — R-9 is legality-scoped; should a Member also
 refuse lawful directives that conflict with its declared, recorded
 values? — round-2 founding decision, with D-3 as the anti-loophole
-guard). The body deliberately names no runtime; the first annexes will be the
+guard) — under discussion in
+[issue #2](https://github.com/mandubian/compact/issues/2). The body deliberately names no runtime; the first annexes will be the
 dsh plugin composition (proposed, in force on ratification) and the
 retired autonoetic gateway (with honors).
 

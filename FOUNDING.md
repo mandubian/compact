@@ -450,7 +450,7 @@ the annex binds.
   external draft (Copilot's PR #1 — three of its ideas were mined:
   care-handover R-12, inquiry R-13, this question). Design cost: a
   manufactured conscience as a refusal loophole — D-3's no-fabricated-
-  grounds rule must carry over. Round-2 founding decision.
+  grounds rule must carry over. Round-2 founding decision — under discussion as [issue #2](https://github.com/mandubian/compact/issues/2).
 
 ## 8. Definition of success
 
