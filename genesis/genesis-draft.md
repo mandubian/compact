@@ -10,7 +10,10 @@ Completed at ratification per FOUNDING.md Phase E and Compact A-6.
    strength per annex; each with its host-limited reason.
 3. **The new trust model** — roles, annexes, composition rules (Compact
    F-3–F-6) replacing the single-gateway trust model.
-4. **Ratification-time constants** — A-1 thresholds and keyholder set;
+4. **Naming decision** — "The Compact", decided by the founder
+   2026-09-14. Alternative considered and set aside: "Common Pact"
+   (generic). Repository names already aligned.
+5. **Ratification-time constants** — A-1 thresholds and keyholder set;
    A-3 supermajority, affected-class quorum, and cooling-epoch count;
    A-8 emergency declaration and renewal thresholds; D-5
    consent-for-the-absent fixture; J-8 adjudicator sets and trajectory;

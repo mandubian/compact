@@ -265,7 +265,7 @@ trust, which is the kind this Compact exists to make unpurchasable.
 
 ## Decisions open before ratification
 
-The name; amendment key thresholds and keyholder set (A-1); the remaining
+~~The name~~ — decided: **The Compact** (2026-09-14). Amendment key thresholds and keyholder set (A-1); the remaining
 ratification-time constants (A-3 supermajority and affected-class quorum,
 A-8 emergency thresholds, D-5 consent for the absent); the SLA terms
 (R-11/I-6); adjudicator sets and decentralization trajectory (J-8); D-5's

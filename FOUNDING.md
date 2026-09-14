@@ -1,6 +1,6 @@
 # Founding Plan: the Portable Constitution
 
-Status: **proposal** · Working title for the document: **the Compact** ·
+Status: **proposal** · Name: **The Compact** (decided 2026-09-14) ·
 Predecessor: autonoetic constitution v2026.09.05 (and the 24 versions before
 it) · Owner: mandubian
 
@@ -428,8 +428,13 @@ the annex binds.
   the maintainer founds; the Compact's own amendment machinery is the
   answer to *legitimizing* the founding after the fact — record it as the
   first entry in its own amendment queue.
-- **Naming** — "the Compact" is a working title; the name is a founding
-  decision, and matters (it will be read by agents every turn).
+- **Naming — DECIDED (2026-09-14): "The Compact".** The alternative
+  "Common Pact" was considered and set aside: easy to use, but generic —
+  it names the category, not the institution. "The Compact" carries the
+  constitutional weight (a binding agreement among parties), is short
+  enough to be re-presented every turn, and was already in live use
+  across the corpus. Repository names (`compact`, `compact-dsh`) align
+  without renames.
 - **Standing across runtimes** — a right honored at 100% on one host and
   80% on another: is membership per-runtime (annex-scoped standing) or
   portable (identity + records cross borders)? The latter is the community

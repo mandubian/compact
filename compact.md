@@ -4,7 +4,9 @@
 (v0.1 self-reviewed; red-team round 1 and external review round 1 (Kimi)
 applied — see [red-team-round1.md](ledgers/red-team-round1.md) and
 [review-kimi-round1.md](ledgers/review-kimi-round1.md))
-Working title: *the Compact* (naming is a founding decision, open)
+**Name: The Compact** — decided by the founder, 2026-09-14
+(FOUNDING.md §7; the alternative "Common Pact" was considered and set
+aside as generic)
 Lineage: founded from the autonoetic constitution (v2026.09.05 and the 24
 versions before it); disposition of every predecessor clause is tracked in
 the [disposition ledger](ledgers/disposition.md); the genesis document
@@ -674,7 +676,7 @@ round 1 (Kimi) applied** — 26 findings; its 10 open findings resolved in
 v0.4: see [review-kimi-round1.md](ledgers/review-kimi-round1.md);
 the disposition ledger is [disposition.md](ledgers/disposition.md); the
 incidence view is [law-table.md](ledgers/law-table.md)). Open
-before ratification: the name; key-threshold constants and keyholder set
+before ratification: key-threshold constants and keyholder set
 (A-1); the remaining ratification-time constants (A-3 supermajority and
 affected-class quorum; A-8 emergency thresholds; D-5 consent for the
 absent); the SLA terms referenced by R-11/I-6; the adjudicator sets and
