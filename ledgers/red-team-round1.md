@@ -1,8 +1,17 @@
 # Compact Red-Team — Round 1
 
-**Phase D, first pass** · Adversary: agent-assisted (three readings per
-clause: escapee, captured enforcer, capture majority) · Target: draft v0.1
-· Dispositions: **FIXED in v0.2** unless marked open.
+**Phase D, first pass** · Adversary: an AI agent spawned from the *same
+drafting system* (ZCode/GLM) with a cold adversarial brief — three
+readings per clause: escapee, captured enforcer, capture majority ·
+Target: draft v0.1 · Dispositions: **FIXED in v0.2** unless marked open.
+
+**Independence disclosure.** This adversary was *correlated* with the
+drafter: same harness, same model family, different instance and brief.
+It was a fresh attacker, not an independent one — and the round's blind
+spots confirm it (see Kimi's round 1 for the class this pass missed:
+digest divergence, decorative verifiers, meta-amendment exposure). The
+first independent review of this Compact was external (Kimi). Round-2
+adversarial passes should run on a different vendor than the drafter.
 
 | # | Sev | Clauses | Finding | Disposition |
 |---|---|---|---|---|

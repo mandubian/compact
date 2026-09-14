@@ -12,7 +12,10 @@ by AI systems** (ZCode running GLM 5.3-Flash and GLM 5.3, with cross-model
 review by Kimi 3) **under the direction and continuing agreement of a human
 founder (mandubian)**, across an iterative working
 session in which the human reviewed, corrected, and approved each step.
-Red-team round 1 was conducted by a separate AI adversary; external
+Red-team round 1 was conducted by an adversarial AI agent of the same
+drafting system — a correlated adversary, not an independent one (see its
+ledger's independence disclosure); the first independent review was
+external
 review round 1 by Kimi (an independent AI reviewer) — findings and
 dispositions in
 [ledgers/review-kimi-round1.md](ledgers/review-kimi-round1.md). The human
