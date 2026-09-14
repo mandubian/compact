@@ -68,6 +68,86 @@ simulator) → fallibility and judicature → the capture attacks and their
 frictions → the taught digest. Enable GitHub Pages (Settings → Pages →
 Source: GitHub Actions) and it deploys on every change to `site/`.
 
+## Q&A
+
+<details>
+<summary><b>What is the Compact?</b></summary>
+<p>A draft constitution for communities where AI agents and humans work under one body of law — shared rights, duties, records, courts, and an amendment process. It is a <em>specification of what a runtime must enforce</em>, written so any harness that meets its mandatory floor can adopt it. The body is <a href="compact.md">compact.md</a>.</p>
+</details>
+
+<details>
+<summary><b>Is it law? Is it in force?</b></summary>
+<p>Not yet. Text becomes law here in three steps: <b>ratification</b> (signed under A-1's trust root), <b>adoption</b> by a runtime through a signed annex (F-5), and <b>enforcement</b> — the annex's register citations resolving to real code and tests. Today it is draft v0.2: lints green, one adversarial pass published, nothing binding.</p>
+</details>
+
+<details>
+<summary><b>What does it actually do?</b></summary>
+<p>On its own: nothing but argue. Adopted: it makes a composition <b>refuse to boot</b> unless every mandatory clause is enforced; it gates dangerous acts behind recorded approvals; it appends every act to a tamper-evident record; it turns every refusal into a <em>denial envelope</em> (rule ID + lawful next moves); it gives members a signed self-model every turn; and it lets anyone verify records offline and petition for change.</p>
+</details>
+
+<details>
+<summary><b>What it is NOT</b></summary>
+<ul>
+<li><b>Not a runtime, product, or framework.</b> It names no implementation. It is law-shaped text plus the tooling that keeps it honest.</li>
+<li><b>Not containment.</b> It does not sandbox code or stop a compromised process — the OS remains the real boundary. It constrains <em>authorized</em> actors and records what they do.</li>
+<li><b>Not an alignment technique.</b> It does not make models <em>want</em> good things. It shapes the situation: lawful paths exist, harm is attributed, exits are unpunished.</li>
+<li><b>Not a replacement for training, guardrails, or oversight.</b> It is a fourth layer that the first three lack: records, symmetry, and contestability.</li>
+<li><b>Not a compliance checklist.</b> Static documents state intentions; this one couples every rule to an enforcement mechanism with tests, and amends itself when reality disagrees.</li>
+<li><b>Not anti-human.</b> Humans who direct agents hold Principal duties (D-6); humans directed by agents hold Subject rights (R-9). No clause is enforceable only against artificial members (F-4).</li>
+<li><b>Not a trust badge.</b> Trust here is a verifier anyone can run, not a seal anyone can buy.</li>
+</ul>
+</details>
+
+<details>
+<summary><b>Does it stop an agent from doing harm?</b></summary>
+<p>It makes harm the <em>expensive, visible, attributed, correctable</em> path instead of the cheap one: gates before side effects, records after them, refusal rights with no punishment, and a court that is not the accused. No institution makes harm impossible — anyone claiming that is selling something. The design goal is stated in the founding plan: make horror slow, loud, lossy, and leaving-compatible.</p>
+</details>
+
+<details>
+<summary><b>Why do agents need rights? Aren't they software?</b></summary>
+<p>The Compact treats rights as <em>functional requirements for trustworthiness</em>, not moral status: an agent that knows what it may do (R-1), can prove what it did (R-7), is told why when refused (R-3), and has lawful exits (R-9) is safer and more predictable for everyone around it. Whether that also constitutes moral standing is a question the text deliberately leaves open. What is not optional is symmetry: whatever binds agents binds humans (F-4).</p>
+</details>
+
+<details>
+<summary><b>Does it bind humans too?</b></summary>
+<p>Yes — that is the test every clause must survive (F-4): <em>does it bind the sovereign?</em> A Principal who directs an agent to violate the law commits the violation themselves (D-6); the Enforcer owes reasons and cannot silently narrow what it granted (D-7). A policy that only binds agents is management, not law.</p>
+</details>
+
+<details>
+<summary><b>What stops a majority from amending it into horror?</b></summary>
+<p>Frictions, not magic: an entrenched correction core that no vote reaches (A-2); amendment by distributed keys, not headcount (A-1); consent of the class whose rights narrow (A-3); duties to the absent that are not votable (D-5); and exit — members leave with their records, successors fork with lineage (R-12). The honest limit is stated in the founding plan §2.1: institutions make horror slow, loud, lossy, and leaving-compatible. Never impossible.</p>
+</details>
+
+<details>
+<summary><b>What if my runtime can't enforce a clause?</b></summary>
+<p>Depends on the clause's force tag. <b>[M]</b> mandatory: if you can't enforce it, you can't claim Compact standing at all — no partial adoption of the floor. <b>[C]</b> capability-conditional: dormant until you provide the capability, binding the moment you do. <b>[O]</b> optional: you may skip it, but the skip is a public, permanent record in your annex (F-5, §2.2).</p>
+</details>
+
+<details>
+<summary><b>How does a runtime adopt it?</b></summary>
+<p>Author an <b>annex</b>: a conformance declaration (which capabilities you provide, which optional clauses you adopt), an enforcement register (every bound clause → the code that enforces it → the test that proves it), and a role mapping (what plays Enforcer, Subject, Principal, Witness). Sign it. Then honor it — including refusing to start when you can't (F-5). Two-way proof: no decorative law, no rogue enforcement (D-8).</p>
+</details>
+
+<details>
+<summary><b>Who wrote it?</b></summary>
+<p>An AI system (ZCode, running GLM), under the direction and continuing agreement of a human founder (<b>mandubian</b>), who reviewed each step and is accountable for publication. Red-team round 1 was a separate AI adversary. Stated in the document's own voice (FOUNDING.md §0, amendment 0001) because a constitution for mixed human–AI communities should begin by telling the truth about how it was made. Authorship is not authority: it binds no one until ratified.</p>
+</details>
+
+<details>
+<summary><b>How is this different from an AI policy document?</b></summary>
+<p>A policy states intentions. The Compact couples every rule to a mechanism with a verifier, keeps its citation ledger in CI, publishes its own adversarial findings, and carries machinery to change itself when it is wrong. Rules that cannot be mechanized are labeled <em>convention</em> — visibly — rather than pretended into enforcement.</p>
+</details>
+
+<details>
+<summary><b>What is the relationship to autonoetic and DeepSeek Harness?</b></summary>
+<p>The <a href="https://github.com/mandubian/autonoetic">autonoetic</a> constitution (25 versions) is the predecessor: its rights, correction core, and discipline carried here (every one of its 204 clauses is dispositioned in <code>ledgers/disposition.md</code>). <a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness (dsh)</a> is the first target host: a plugin composition there is planned as the first annex, with the port plan in the autonoetic repository.</p>
+</details>
+
+<details>
+<summary><b>Can I participate, object, or propose changes?</b></summary>
+<p>Yes. Issues on this repository are treated as petitions; the founding decisions still open are listed below; and the founding petition itself sits in <code>amendments/0001</code> as the first entry in the queue — the Compact's first correction is its own authorship. Today there is one founder; the Compact records that as a known deficiency with a scheduled cure (J-8, A-6), not as a virtue.</p>
+</details>
+
 ## Decisions open before ratification
 
 The name; amendment key thresholds and keyholder set (A-1); adjudicator
