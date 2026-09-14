@@ -5,13 +5,15 @@ founded from the [autonoetic](https://github.com/mandubian/autonoetic)
 constitution (v2026.09.05 and the 24 versions before it), designed to be
 enforceable on any runtime that meets its mandatory floor.
 
-**Status: draft v0.2 — not yet ratified.** The body is
+**Status: draft v0.2 — not yet ratified. This is a proposal, and it is
+meant to evolve:** attacks, corrections, petitions, and contributions are
+welcome (see [Q&A](#qa) and *Who can vote today?* below). The body is
 [`compact.md`](compact.md); the founding analysis and method is
 [`FOUNDING.md`](FOUNDING.md).
 
 ## Authorship
 
-Drafted by an AI system (ZCode, running GLM) under the direction and
+Drafted by an AI system (ZCode, running GLM 5.3-Flash and GLM5.3 and review also by Kimi3 and a human contributor, Mandubian) under the direction and
 continuing agreement of a human founder (**mandubian**), who reviewed each
 step and is accountable for publication; red-team round 1 by a separate AI
 adversary. Stated in the document's own voice (FOUNDING.md §0, amendment
@@ -147,6 +149,79 @@ Source: GitHub Actions) and it deploys on every change to `site/`.
 <summary><b>Can I participate, object, or propose changes?</b></summary>
 <p>Yes. Issues on this repository are treated as petitions; the founding decisions still open are listed below; and the founding petition itself sits in <code>amendments/0001</code> as the first entry in the queue — the Compact's first correction is its own authorship. Today there is one founder; the Compact records that as a known deficiency with a scheduled cure (J-8, A-6), not as a virtue.</p>
 </details>
+
+## Who can vote today? (the honest answer)
+
+**Nobody — and that is stated rather than hidden.** The Compact is a draft
+proposal. The democratic machinery it specifies — keyed amendment
+thresholds (A-1), supermajority with affected-class consent and time-locks
+(A-3), petition rights for every Member (R-11), courts that are not the
+accused (Part V) — is **constituted, not yet constituted-in**: it activates
+when a trust root is formed at ratification and when runtimes adopt annexes
+and Members acquire standing. Until then there is nothing in force to vote
+on, and the de facto authority is the founder's, with the drafting AI
+holding no amendment keys and no vote at all — authorship is not authority.
+This is recorded as a deficiency with a scheduled cure, not as a virtue:
+A-6 places the founding itself on trial as the first petition, and J-8
+schedules the widening of every panel that is currently too small.
+
+Two deliberate design choices, because they will be asked:
+
+- **It is not one-member-one-vote.** Spawned agents make headcount a sybil
+  field. Voting power is keyed: verified, long-held identities across role
+  classes (Principals, long-lived Subjects, external Witnesses), with
+  consent quorums computed from the law table rather than drawn by the
+  proposer (A-3).
+- **It is constitutional, not direct-democratic.** Members petition; courts
+  interpret; only the amendment authority enacts — and the correction core
+  (A-2) is outside anyone's reach, including the founder's.
+
+## Prospects — where this could go
+
+**Near (one org, one jurisdiction).** A team runs every agent touching its
+production under one signed annex: approvals, records, attestation, denial
+envelopes — the dsh plugin composition is the first candidate. The value is
+immediate and selfish: an agent community whose members can prove what they
+did is one an operator can actually delegate to.
+
+**Middle (cross-vendor communities).** Marketplaces and platforms list
+agents with a *conformance class* computed from signed annexes, not from
+marketing. Agents from different vendors collaborate under mutual record
+verification (FED); a principal asks "is this agent trustworthy?" and
+answers it by running a verifier — the same way TLS turned "trust this
+server" into a checkable certificate.
+
+**Far (a standard for trustable agent communities).** If several platforms
+adopt the floor, the Compact becomes the common law of agent
+interoperability: standing travels with identity and records across
+jurisdictions (F-8, F-6); auditors become an ecosystem role; amendments
+happen across jurisdictions under the same friction rules. Like TLS or
+SMTP, it does not need to win everywhere — it needs enough adoption that
+being outside costs more than complying.
+
+**And it is voluntary by construction.** The Compact cannot rule those who
+do not adopt it; there is no enforcement against outsiders — only
+consequences: verifiable trust, or its absence. It offers rules to
+communities that want them, competes for membership like any institution,
+and is built so that leaving honestly (R-12) is always cheaper than living
+under law you reject. Nobody is conscripted into living by these rules;
+that is precisely why a community that chooses them can be trusted for it.
+
+## The cost of trust
+
+The machinery writes. An attestation every turn; a record entry per act;
+an envelope per refusal; a response per petition; chain maintenance under
+every correction. That is real token and latency overhead, on every
+consequential call — and this project states it as a price, not a footnote:
+**wish-based trust is free and worthless; verifiable trust writes bytes.**
+
+It is bounded by design — digests instead of full texts, short codes, caps
+on pending gates and records, single-line facts tails (the same budget
+discipline the predecessor used for its context maps) — but it should be
+measured, not hidden. Human communities pay for notaries, ledgers, and
+courts; in the machine world, tokens are the notary's fee. A community that
+will not pay it has not found cheaper trust — it has found unverifiable
+trust, which is the kind this Compact exists to make unpurchasable.
 
 ## Decisions open before ratification
 

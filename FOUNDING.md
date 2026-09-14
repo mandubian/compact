@@ -8,8 +8,9 @@ it) · Owner: mandubian
 
 The corpus in this repository — the Compact body, this founding plan, the
 disposition ledger, the law table, and the red-team record — was **drafted
-by an AI system** (ZCode, running GLM) **under the direction and continuing
-agreement of a human founder (mandubian)**, across an iterative working
+by AI systems** (ZCode running GLM 5.3-Flash and GLM 5.3, with cross-model
+review by Kimi 3) **under the direction and continuing agreement of a human
+founder (mandubian)**, across an iterative working
 session in which the human reviewed, corrected, and approved each step.
 Red-team round 1 was conducted by a separate AI adversary. The human is
 the accountable party: final agreement, the founding decisions, and
