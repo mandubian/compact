@@ -357,5 +357,5 @@ $('#digest-block').innerHTML=DIGEST.map(s=>s.replace(/\(([A-Z]{1,3}-\d+)\)/,'(<e
     }
   });
   render();
-})();
 })($, $$);
+})();
