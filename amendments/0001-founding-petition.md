@@ -13,5 +13,8 @@ authorship.
   runtime; the Compact extends the experiment to a community across
   runtimes. This petition places the founding under the law it creates
   rather than above it.
+- **Authorship**: drafted by an AI system (ZCode/GLM) under the direction
+  and continuing agreement of the human founder (mandubian), who is
+  accountable for publication. Stated here per A-6.
 - **Status**: OPEN — adjudicable once the A-1 trust root exists. Until
   then this petition is the Compact's memory of its own debt.

@@ -4,6 +4,25 @@ Status: **proposal** · Working title for the document: **the Compact** ·
 Predecessor: autonoetic constitution v2026.09.05 (and the 24 versions before
 it) · Owner: mandubian
 
+## 0. Authorship of this founding
+
+The corpus in this repository — the Compact body, this founding plan, the
+disposition ledger, the law table, and the red-team record — was **drafted
+by an AI system** (ZCode, running GLM) **under the direction and continuing
+agreement of a human founder (mandubian)**, across an iterative working
+session in which the human reviewed, corrected, and approved each step.
+Red-team round 1 was conducted by a separate AI adversary. The human is
+the accountable party: final agreement, the founding decisions, and
+publication are the human's.
+
+This is recorded in the document's own voice because the Compact's first
+clause is fallibility and its first petition (A-6, amendment 0001) is its
+own authorship — a constitution for mixed human–AI communities ought to
+begin by telling the truth about how it was made. **Authorship is not
+authority**: the text binds no one until ratified under A-1, and remains
+corrigible thereafter. Hiding this would have been the first act of
+concealment in a legal order built on the record.
+
 ## 1. Why found a new one
 
 ### 1.1 The thesis

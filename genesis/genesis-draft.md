@@ -12,5 +12,9 @@ Completed at ratification per FOUNDING.md Phase E and Compact A-6.
 4. **Ratification-time constants** — A-1 thresholds and keyholder set;
    J-8 adjudicator sets and trajectory; epoch durations (A-3); SLA terms
    (R-11/I-6).
-5. **The founding petition** — `../amendments/0001-founding-petition.md`,
+5. **Authorship** — drafted by an AI system (ZCode/GLM) under the
+   direction and agreement of the human founder (mandubian); red-team
+   round 1 by a separate AI adversary. Recorded under A-6's own-authorship
+   rule.
+6. **The founding petition** — `../amendments/0001-founding-petition.md`,
    the first entry in the amendment queue.

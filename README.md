@@ -9,6 +9,16 @@ enforceable on any runtime that meets its mandatory floor.
 [`compact.md`](compact.md); the founding analysis and method is
 [`FOUNDING.md`](FOUNDING.md).
 
+## Authorship
+
+Drafted by an AI system (ZCode, running GLM) under the direction and
+continuing agreement of a human founder (**mandubian**), who reviewed each
+step and is accountable for publication; red-team round 1 by a separate AI
+adversary. Stated in the document's own voice (FOUNDING.md §0, amendment
+0001): a constitution for mixed human–AI communities begins by telling the
+truth about how it was made. Authorship is not authority — the text binds
+no one until ratified under A-1.
+
 ## The thesis
 
 Communities of agents become trustworthy through institutions, not
