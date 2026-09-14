@@ -1,11 +1,12 @@
-# The Compact — Law Table (generated)
+# The Compact — Law Table
 
-Generated from the Compact draft v0.2 clause set. **Incidence**: which
-roles each rule binds, who may invoke it, against whom. **Lints** run at
-generation: completeness (every clause names a bound party and an
-invoker) and symmetry (every right pairs with a duty or mechanism that
-owes it). Regenerate on every draft change; divergence is a build
-failure (founding plan §5.3).
+Maintained from the Compact draft v0.3 clause set. **Incidence**: which
+roles each rule binds, who may invoke it, against whom. **Lints**:
+completeness (every clause names a bound party and an invoker) and
+symmetry (every right pairs with a duty or mechanism that owes it) —
+currently run by hand at each draft change; the generator and the build
+gate that fails on divergence land before ratification (an open item in
+the draft's Status; founding plan §5.3).
 
 ## Part I
 

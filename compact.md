@@ -1,23 +1,25 @@
 # The Compact — a Constitution for Mixed Communities of Agents and Humans
 
-**Draft v0.2 — for reasoning and presentation, not yet ratified**
-(v0.1 self-reviewed; red-team round 1 applied — see
-[compact-red-team-round1.md](ledgers/red-team-round1.md))
+**Draft v0.3 — for reasoning and presentation, not yet ratified**
+(v0.1 self-reviewed; red-team round 1 and external review round 1 (Kimi)
+applied — see [red-team-round1.md](ledgers/red-team-round1.md) and
+[review-kimi-round1.md](ledgers/review-kimi-round1.md))
 Working title: *the Compact* (naming is a founding decision, open)
 Lineage: founded from the autonoetic constitution (v2026.09.05 and the 24
 versions before it); disposition of every predecessor clause is tracked in
-the [founding plan](FOUNDING.md) §3; the genesis document
+the [disposition ledger](ledgers/disposition.md); the genesis document
 accompanies ratification.
-Founding plan: [portable-constitution-plan.md](FOUNDING.md)
+Founding plan: [FOUNDING.md](FOUNDING.md)
 
 Every clause header carries `ID · force · entrenchment`. Force: **[M]**
 mandatory — binds every runtime claiming enforcement, non-declarable;
 **[C trigger]** capability-conditional — dormant until the Enforcer
 provides the capability, then binding without exception; **[O]** optional —
 may be declared unimplemented in the runtime's annex, publicly and
-permanently. Clauses inside a capability part carry force
-`[C: <capability>]`; within a woken part, a clause marked [M] is
-mandatory for any runtime providing that capability. Entrenchment:
+permanently. A capability part's header carries its trigger
+`[C: <capability>]`; clauses inside the part carry force
+`[M within <part>]` — dormant with the part, then mandatory without
+exception for any runtime providing the capability. Entrenchment:
 **(core)** — the correction core and the foundations beneath it;
 strengthenable, never weakenable by ordinary amendment; **untagged means
 ordinary**. Body text names no implementation; a sentence that only parses
@@ -210,7 +212,11 @@ others only through a declared capability, with every disclosure visible
 to the disclosed-about party. Under Part V, unstated reasoning is
 admissible only in trials of record integrity (D-3, D-8), and never
 alone grounds a finding against the reasoner. The same protection binds
-the Enforcer's use of Principal data.
+the Enforcer's use of Principal data. Equal force, not identical
+architecture (F-4): human deliberation is unrecordable by current means,
+so the recording limb binds only where a recording mechanism exists —
+and a capability that ever captures human deliberation wakes this
+clause's protections in full.
 
 By default every mind in this community is hidden from every other: no
 Member — human or artificial — is introspectable by another except under
@@ -312,7 +318,7 @@ Principal's. Authority over Subjects is authority *under* law, and
 carries the duty to hear refusals, warnings, and escalations with
 reasons-owed in return.
 
-**D-7 · [M] · Enforcer duties.**
+**D-7 · [M] · (core) · Enforcer duties.**
 The Enforcer: enforces fail-closed (uncertainty blocks, never passes
 silently); owes a recorded motivation for every rejection and for every
 approval of elevated or irreversible acts; decides from declared
@@ -332,52 +338,52 @@ in both directions; the annex is an affidavit.
 
 ## Part IV — Institutions: the mechanical trust floor
 
-All [M]. These are the machinery without which the rights above are
+These are the machinery without which the rights above are
 prose. A runtime unable to provide any of them cannot claim enforcement.
 
-**I-1 · Identity and keys.**
+**I-1 · [M] · Identity and keys.**
 Every Member holds a cryptographic identity. Capability to act is
 provable; signatures are the grammar of standing. Trust roots and
 thresholds are ratification-time constants, recorded in the genesis
 document.
 
-**I-2 · The record.**
+**I-2 · [M] · (core) · The record.**
 Acts are committed to an append-only record with hash-chain integrity and
 bound attribution. The record is never rewritten; correction is a new
 entry, never an erasure. Effects are irreversible; all institutional
 responses to them are compensating entries — revocation, attribution,
 archive — never undo.
 
-**I-3 · The attestation.**
+**I-3 · [M] · The attestation.**
 The Enforcer signs each Subject's self-model at every boundary of its
 operation (R-1) and provides it for inspection on demand.
 
-**I-4 · The denial envelope.**
+**I-4 · [M] · The denial envelope.**
 Every refusal carries: the acting party, the rule ID, the reason, and the
 lawful next moves. The same envelope is owed to Principals when the
 Enforcer refuses *them* (F-4).
 
-**I-5 · Gates.**
+**I-5 · [M] · Gates.**
 Acts of declared elevated or irreversible class pass only through gates:
 approval, resources committed to record before the act, decisions and
 their motivations recorded after it. Pending gates are bounded; a gate
 that cannot be honored fails loudly, never silently.
 
-**I-6 · Contestation machinery.**
+**I-6 · [M] · Contestation machinery.**
 A petition channel open to every Member; adjudication states and terms;
 decisions with recorded motivations (D-7); dissent recorded with the
 decision it dissents from. Friction between law and practice is measured
 and surfaced as amendment invitations (R-11). Contested application of
 the law is heard under Part V (Judicature).
 
-**I-7 · Verification.**
+**I-7 · [M] · Verification.**
 The records are verifiable by anyone, offline, without the Enforcer's
 cooperation: continuity of chains, validity of attestations, conformance
 of the annex to the runtime's actual conduct (D-8), and the lawfulness of
 any past act may be checked by any Witness. Trust is never claimed; it is
 shown.
 
-**I-8 · Degradation honesty.**
+**I-8 · [M] · Degradation honesty.**
 An Enforcer that loses a [C] capability bound in its annex declares the
 degradation publicly, marks the affected clauses dormant-with-debt in
 its records — a debt's redemption schedule is organic statute — and does
@@ -592,10 +598,11 @@ Statutes (F-7) are enacted by ordinary signature of the amendment
 authority: each traces to its enabling clause, is signed, versioned, and
 digested, and amends by ordinary process — the cheap correction that
 A-3 promises lives here, not in constitutional churn. Statutes touching
-the machinery of the law itself — amendment thresholds (A-1), adjudicator
-sets (J-8), gate classes (I-5), termination reasons (R-8), and petition
-terms (R-11) — are *organic*: they additionally require A-3's
-supermajority. A statute may not accomplish by detail what amendment
+the machinery of the law itself — amendment thresholds and the keyholder
+set (A-1), admission criteria (F-8), adjudicator sets (J-8), gate
+classes (I-5), termination reasons (R-8), petition terms (R-11), and
+degradation-debt redemption (I-8) — are *organic*: they additionally
+require A-3's supermajority. A statute may not accomplish by detail what amendment
 could not accomplish by clause: where a statute would narrow a right, it
 is void unless the narrowing itself follows A-3 — and definitional
 narrowing of a class is narrowing of the right.
@@ -606,9 +613,9 @@ may declare a *bounded* emergency — a named scope, a recorded cause, a
 fixed expiry — during which specified non-entrenched clauses yield to
 the declared measures. The declaration and every act under it are marked
 as emergency acts on the record; the entrenched set (A-2) never yields;
-and no emergency measure may restrict exit (R-12), refusal (R-9), or
-access to one's own record (R-2) even temporarily, nor accomplish what
-amendment could not. Affected Members are notified where practical —
+and no emergency measure may restrict exit (R-12), refusal (R-9),
+access to one's own record (R-2), or independent verification of the
+record (I-7) even temporarily, nor accomplish what amendment could not. Affected Members are notified where practical —
 and "where practical" is itself a recorded flag, routed to mandatory
 Part V review at expiry, not an excuse (the predecessor's discipline).
 Expiry is automatic; renewal requires a higher threshold than the
@@ -622,17 +629,23 @@ it as such.
 
 ## Status
 
-Draft v0.2 (v0.1 self-reviewed; **red-team round 1 applied** — 15
+Draft v0.3 (v0.1 self-reviewed; **red-team round 1 applied** — 15
 findings, 14 fixed, 1 partial: see
-[compact-red-team-round1.md](ledgers/red-team-round1.md); the disposition
-ledger is [compact-disposition.md](ledgers/disposition.md); the generated
-incidence view is [compact-law-table.md](ledgers/law-table.md)). Open
+[red-team-round1.md](ledgers/red-team-round1.md); **external review
+round 1 (Kimi) applied** — 26 findings, 14 fixed, 1 partial, 10 open,
+1 noted: see [review-kimi-round1.md](ledgers/review-kimi-round1.md);
+the disposition ledger is [disposition.md](ledgers/disposition.md); the
+incidence view is [law-table.md](ledgers/law-table.md)). Open
 before ratification: the name; key-threshold constants and keyholder set
-(A-1); the SLA terms referenced by R-11/I-6; the adjudicator sets and
+(A-1); the remaining ratification-time constants (A-3 supermajority and
+affected-class quorum; A-8 emergency thresholds; D-5 consent for the
+absent); the SLA terms referenced by R-11/I-6; the adjudicator sets and
 their decentralization trajectory (J-8); the vocabulary of "harm" in D-5
-(round-1 partial); the egress capability part (v0.2 candidate, deferred
+(round-1 partial); the egress capability part (candidate, deferred
 per disposition ledger); adoption of the digest below as the taught form
-with its build-verification gate; red-team round 2, including the
+with its build-verification gate; the multi-principal conflict rule and
+the virtue-metrics definition (founding plan §7); the open findings of
+review round 1; red-team round 2, including the
 composition scenario (emergency + member inflation + petition flood).
 The body deliberately names no runtime; the first annexes will be the
 dsh plugin composition (proposed, in force on ratification) and the

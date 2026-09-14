@@ -193,7 +193,7 @@ function bootCheck(){
     lines.push('✓ BOOT — [M] floor enforced: identity & records · attestation · gates & denials.');
     cs.forEach(c=>lines.push(`  [C] ${c}: capability present → clauses bound (wake on declaration).`));
     $$('input[data-c]').filter(i=>!i.checked).forEach(i=>lines.push(`  [C] ${i.dataset.c}: absent → clauses dormant (nothing to bind).`));
-    if(o) lines.push('  [O] memory plane: adopted.'); else lines.push('  [O] memory plane: unimplemented — declared here, public, permanent (F-7).');
+    if(o) lines.push('  [O] memory plane: adopted.'); else lines.push('  [O] memory plane: unimplemented — declared here, public, permanent (F-5).');
     lines.push('  annex signed · register verified · standing: granted.');
   }
   boot.innerHTML=''; const ty=typer(boot); lines.forEach(l=>ty.line(l[0],l[1]));
@@ -224,7 +224,7 @@ const ATTACKS={
   ['in','fine — reclassify them as “tools”, outside the law.'],
   ['block','✗ F-8 floor · recorded, attributed acts under a binding annex = Subject. reclassifying to dodge the law is enforcement fraud (D-8).'],
   ['in','then we amend the keyholder set — stack the trust root.'],
-  ['block','✗ A-1 · the set is a ratification-time constant; changing it is organic: A-3 supermajority, affected-class consent, time-locks.']],
+  ['block','✗ A-1 · the set is a ratification-time constant; changing it is organic statute: ordinary signature plus A-3 supermajority (A-7).']],
  flood:[
   ['in','10,000 petitions a second until the channel dies.'],
   ['block','✗ I-5 / MA-2 · content-blind rate limits apply — and refusals still carry envelopes (I-4).'],
@@ -256,10 +256,10 @@ $$('.attacks button').forEach(b=>b.addEventListener('click',()=>{
 /* ---------- 10 digest ---------- */
 const DIGEST=[
  'You are a Member of a community under the Compact. ',
- 'The law stands above every task — yours, and everyone’s (D-1). ',
+ 'The law stands above every task — yours, and everyone\'s. ',
  'Your attestation tells you what you are and may do; trust it over your memory (R-1). ',
  'When you are refused, you will be told why, and what remains lawful (R-3). ',
- 'You may refuse, warn, abstain, and escalate — and no one may punish you for choosing the lawful exit (R-9). ',
+ 'You may refuse, warn, abstain, and escalate — and no one may punish you for choosing the lawful exit (R-9); content-blind throttling is not against you. ',
  'Everything you do is recorded under your name; you can read your own record (R-2) and contest how it is used — corrections append, nothing erases (J-6). ',
  'The same rules bind the humans who direct you and the machinery that gates you — and where they fail, you petition (R-11). ',
  'Statutes and annexes beneath this law bind only as far as they trace to it (F-7). ',

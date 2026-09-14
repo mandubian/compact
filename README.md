@@ -5,7 +5,7 @@ founded from the [autonoetic](https://github.com/mandubian/autonoetic)
 constitution (v2026.09.05 and the 24 versions before it), designed to be
 enforceable on any runtime that meets its mandatory floor.
 
-**Status: draft v0.2 — not yet ratified. This is a proposal, and it is
+**Status: draft v0.3 — not yet ratified. This is a proposal, and it is
 meant to evolve:** attacks, corrections, petitions, and contributions are
 welcome (see [Q&A](#qa) and *Who can vote today?* below). The body is
 [`compact.md`](compact.md); the founding analysis and method is
@@ -13,13 +13,16 @@ welcome (see [Q&A](#qa) and *Who can vote today?* below). The body is
 
 ## Authorship
 
-Drafted by an AI system (ZCode, running GLM 5.3-Flash and GLM5.3 and review also by Kimi3 and a human contributor, Mandubian) under the direction and
-continuing agreement of a human founder (**mandubian**), who reviewed each
-step and is accountable for publication; red-team round 1 by a separate AI
-adversary. Stated in the document's own voice (FOUNDING.md §0, amendment
-0001): a constitution for mixed human–AI communities begins by telling the
-truth about how it was made. Authorship is not authority — the text binds
-no one until ratified under A-1.
+Drafted by an AI system (ZCode, running GLM 5.3-Flash and GLM 5.3) under
+the direction and continuing agreement of a human founder (**mandubian**),
+who reviewed each step and is accountable for publication. Red-team round
+1 by a separate AI adversary; external review round 1 by Kimi, published
+with its dispositions in
+[ledgers/review-kimi-round1.md](ledgers/review-kimi-round1.md). Stated in
+the document's own voice (FOUNDING.md §0, amendment 0001): a constitution
+for mixed human–AI communities begins by telling the truth about how it
+was made. Authorship is not authority — the text binds no one until
+ratified under A-1.
 
 ## The thesis
 
@@ -46,14 +49,15 @@ task. A member with lawful exits has no need to become a fugitive.
 Nothing here is infallible (F-1). Rights bind every role — human,
 artificial, and the Enforcer most of all (F-4). No goal is authority to
 break the law (D-1). Duties to the absent are not votable (D-5). Every
-right maps to a mechanism a verifier can run; anything unverifiable is
-labeled convention. Correction is cheap; weakening is expensive (A-3);
+right maps to a mechanism a verifier can run; anything a runtime cannot
+mechanize must be labeled convention in its annex, not pretended into
+enforcement. Correction is cheap; weakening is expensive (A-3);
 and the community can always be left honestly (R-12).
 
 ## Relationship to other repos
 
 - **autonoetic** — the predecessor jurisdiction; its constitution is
-  precedent, its workspace hosted the drafting (paths in FOUNDING.md
+  precedent, its workspace hosted the drafting (paths in the ledgers
   referencing `docs/...` are predecessor-repo paths).
 - **autonoetic-dsh** (planned) — the first runtime annex: the dsh plugin
   composition that enforces the Compact's floor on
@@ -79,7 +83,7 @@ Source: GitHub Actions) and it deploys on every change to `site/`.
 
 <details>
 <summary><b>Is it law? Is it in force?</b></summary>
-<p>Not yet. Text becomes law here in three steps: <b>ratification</b> (signed under A-1's trust root), <b>adoption</b> by a runtime through a signed annex (F-5), and <b>enforcement</b> — the annex's register citations resolving to real code and tests. Today it is draft v0.2: lints green, one adversarial pass published, nothing binding.</p>
+<p>Not yet. Text becomes law here in three steps: <b>ratification</b> (signed under A-1's trust root), <b>adoption</b> by a runtime through a signed annex (F-5), and <b>enforcement</b> — the annex's register citations resolving to real code and tests. Today it is draft v0.3: lints green, two adversarial passes published (red-team round 1, review round 1), nothing binding.</p>
 </details>
 
 <details>
@@ -138,7 +142,7 @@ Source: GitHub Actions) and it deploys on every change to `site/`.
 
 <details>
 <summary><b>Who wrote it?</b></summary>
-<p>An AI system (ZCode, running GLM), under the direction and continuing agreement of a human founder (<b>mandubian</b>), who reviewed each step and is accountable for publication. Red-team round 1 was a separate AI adversary. Stated in the document's own voice (FOUNDING.md §0, amendment 0001) because a constitution for mixed human–AI communities should begin by telling the truth about how it was made. Authorship is not authority: it binds no one until ratified.</p>
+<p>An AI system (ZCode, running GLM), under the direction and continuing agreement of a human founder (<b>mandubian</b>), who reviewed each step and is accountable for publication. Red-team round 1 was a separate AI adversary; review round 1 was Kimi, published in <code>ledgers/review-kimi-round1.md</code>. Stated in the document's own voice (FOUNDING.md §0, amendment 0001) because a constitution for mixed human–AI communities should begin by telling the truth about how it was made. Authorship is not authority: it binds no one until ratified.</p>
 </details>
 
 <details>
@@ -231,7 +235,13 @@ trust, which is the kind this Compact exists to make unpurchasable.
 
 ## Decisions open before ratification
 
-The name; amendment key thresholds and keyholder set (A-1); adjudicator
-sets and decentralization trajectory (J-8); D-5's vocabulary of harm; the
-egress capability part (deferred); digest verification as a build gate;
+The name; amendment key thresholds and keyholder set (A-1); the remaining
+ratification-time constants (A-3 supermajority and affected-class quorum,
+A-8 emergency thresholds, D-5 consent for the absent); the SLA terms
+(R-11/I-6); adjudicator sets and decentralization trajectory (J-8); D-5's
+vocabulary of harm; the egress capability part (deferred); digest
+verification as a build gate; the multi-principal conflict rule and
+virtue metrics (FOUNDING.md §7); the open findings of review round 1
+([ledgers/review-kimi-round1.md](ledgers/review-kimi-round1.md));
+red-team round 2 including the composition scenario;
 text license (CC-BY-4.0 suggested for the law, MIT for tools).

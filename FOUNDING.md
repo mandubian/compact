@@ -12,8 +12,11 @@ by AI systems** (ZCode running GLM 5.3-Flash and GLM 5.3, with cross-model
 review by Kimi 3) **under the direction and continuing agreement of a human
 founder (mandubian)**, across an iterative working
 session in which the human reviewed, corrected, and approved each step.
-Red-team round 1 was conducted by a separate AI adversary. The human is
-the accountable party: final agreement, the founding decisions, and
+Red-team round 1 was conducted by a separate AI adversary; external
+review round 1 by Kimi (an independent AI reviewer) — findings and
+dispositions in
+[ledgers/review-kimi-round1.md](ledgers/review-kimi-round1.md). The human
+is the accountable party: final agreement, the founding decisions, and
 publication are the human's.
 
 This is recorded in the document's own voice because the Compact's first
@@ -322,12 +325,12 @@ Clause-by-clause adjudication of all 204, but the shape:
 | Category | Disposition |
 |---|---|
 | Entrenched correction core (Ri-0.2, Ri-0.3, Ri-0.8, Ri-0.11, P-8.1, O-1) | **Carried wholesale** into the entrenched layer, restated in role language |
-| ~127 runtime-neutral clauses | Carried after role-language redraft (rights first, then provisions) |
+| ~120 runtime-neutral clauses | Carried after role-language redraft (rights first, then provisions) |
 | Promotion / install / revision provisions (P-2.x family) | Essence carried (fail-closed, mechanically determined, orchestrator cannot shop gates); mechanism details to annexes |
 | Attestation, records, denial, budgets, gates | Carried — these are the §4 mechanism families' clause bindings |
 | Termination / yield clauses naming `YieldReason` | Rewritten to role semantics (declared terminal/resumable causes); no host types in body text |
 | Sandbox / SKILL.md / workflow-shaped clauses | Rewritten to role language (confinement, doctrine, coordination); host specifics to annexes |
-| OFP / federation clauses | Dropped (no target plane); recorded in the genesis delta |
+| OFP / federation clauses | Federation mechanics to annexes (P-10.x); portable essence carried as FED-1 [O] |
 | Technical provisions (gate bounds, SLA terms, label formats, metering defaults — e.g. the predecessor's P-15.x egress-label family) | **Statute material**: enacted into the §2.2 statute layer with enabling-clause trace; ordinary amendment; not constitutional text |
 | Missing today, **added new**: primacy-of-law structure; Principal-side rights *and duties*; inter-agent reciprocity (consent-scoped messaging); membership & identity across runtimes; multi-party gates (who adjudicates when the Enforcer is a party) | New clauses, flagged as such in the genesis document |
 
@@ -369,7 +372,8 @@ a verifier, run by anyone, over records anyone can obtain.
    already-superseded). Nothing silently vanishes; the genesis delta is
    complete.
 2. **Redraft** — role language, symmetry frame, the ten principles as
-   editorial rules. New clauses flagged `new-found`.
+   editorial rules. New clauses flagged in the genesis document's
+   new-clauses section.
 3. **Mechanical mapping** — every clause → mechanism family → per-host
    binding (annex). A clause with no mechanism candidate on *any* known host
    must be marked convention-dependent in the body itself. Each clause is
@@ -403,9 +407,9 @@ a verifier, run by anyone, over records anyone can obtain.
 | Phase | Weeks | Output |
 |---|---|---|
 | A — Founding analysis | 1–2 | Jurisdiction & role definitions; genesis skeleton; disposition taxonomy; naming decision |
-| B — Redraft | 3–4 | Compact body draft (all 204 dispositions resolved; new clauses flagged) — **working draft v0.2 at [compact.md](compact.md)**, to be reconciled against the full disposition |
+| B — Redraft | 3–4 | Compact body draft (all 204 dispositions resolved; new clauses flagged) — **working draft v0.3 at [compact.md](compact.md)**, to be reconciled against the full disposition |
 | C — Mechanical trust mapping | 2 | Clause → mechanism → annex bindings (dsh, autonoetic-as-predecessor) |
-| D — Adversarial red-team | 1–2 | **Round 1 complete** (15 findings, 14 fixed, 1 partial — [compact-red-team-round1.md](ledgers/red-team-round1.md)); round 2 = composition scenarios (emergency + member inflation + petition flood) + full stress suite |
+| D — Adversarial red-team | 1–2 | **Round 1 complete** (15 findings, 14 fixed, 1 partial — [red-team-round1.md](ledgers/red-team-round1.md)); **external review round 1 (Kimi) applied** (26 findings — [review-kimi-round1.md](ledgers/review-kimi-round1.md)); round 2 = composition scenarios (emergency + member inflation + petition flood) + full stress suite |
 | E — Ratification | 1 | Signed v1.0.0, genesis doc, digest, first register annex |
 | **Total** | **8–11** | |
 

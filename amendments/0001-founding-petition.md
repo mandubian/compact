@@ -3,10 +3,12 @@
 Per A-6, the first correction this Compact adjudicates is its own
 authorship.
 
-- **Proposal**: Ratify `compact.md` v0.2 as v1.0.0-rc upon completion of
-  the open items in its Status section (naming, key thresholds, D-5
-  vocabulary, egress part or its explicit deferral, red-team round 2
-  including composition scenarios).
+- **Proposal**: Ratify `compact.md` v0.3 as v1.0.0-rc upon completion of
+  the open items in its Status section (the full list there governs; it
+  currently includes naming, ratification-time constants, SLA terms,
+  adjudicator trajectory, D-5 vocabulary, the egress part or its explicit
+  deferral, the digest build gate, the open findings of review round 1,
+  and red-team round 2 including composition scenarios).
 - **Enabling clause**: A-6 (genesis and lineage), F-1 (fallibility — the
   founding is itself fallible and is corrected first).
 - **Motivation**: The autonoetic constitution proved the concept for one
