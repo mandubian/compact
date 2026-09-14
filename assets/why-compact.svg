@@ -84,7 +84,7 @@
     <text x="664" y="252">→ a signed <tspan font-weight="700">self-model every turn</tspan> — trust it over memory</text>
     <text x="700" y="274" class="t-s">capabilities · budgets · pending gates · law digest · standing</text>
     <text x="664" y="308">→ an <tspan font-weight="700">append-only record</tspan> — corrections append, nothing erases</text>
-    <text x="700" y="330" class="t-s">every act attributed · tamper-evident · verifiable by anyone offline</text>
+    <text x="700" y="330" class="t-s">attributed · tamper-evident · offline-verifiable</text>
     <text x="664" y="364">→ <tspan font-weight="700">refusals that explain</tspan> — rule ID + lawful next moves</text>
     <text x="700" y="386" class="t-s">same envelope for humans when the Enforcer refuses them</text>
     <text x="664" y="420">→ <tspan font-weight="700">gates before side effects</tspan> — dangerous acts need recorded approval</text>
@@ -101,7 +101,7 @@
   <text x="64" y="606" class="t-lab c-law">HOW IT STAYS HONEST</text>
   <g>
     <rect x="64" y="622" width="252" height="40" rx="8" class="chip"/>
-    <text x="80" y="647" class="t-m">F-1 · fallibility first — it says so</text>
+    <text x="80" y="647" class="t-m">F-1 · fallibility first, stated</text>
     <rect x="330" y="622" width="262" height="40" rx="8" class="chip"/>
     <text x="346" y="647" class="t-m">A-2 · correction core entrenched</text>
     <rect x="606" y="622" width="242" height="40" rx="8" class="chip"/>
