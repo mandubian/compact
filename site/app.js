@@ -273,3 +273,89 @@ const DIGEST=[
  'A Member with lawful exits has no need to become a fugitive.'];
 $('#digest-block').innerHTML=DIGEST.map(s=>s.replace(/\(([A-Z]{1,3}-\d+)\)/,'(<em>$1</em>)')).join('');
 })();
+
+/* ---------- 11 clause explorer ---------- */
+(function(){
+  const D = window.COMPACT_DATA; if(!D) return;
+  const list=$('#lawlist'), count=$('#lawcount'), search=$('#lawsearch');
+  let q='', filter='all', strata=false;
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const clean = s => esc(s);
+  const gh = id => 'https://github.com/mandubian/compact/blob/main/compact.md';
+  function matches(c){
+    if(filter==='M' && !(c.force==='M' && !c.within)) return false;
+    if(filter==='C' && !c.within) return false;
+    if(filter==='O' && c.force!=='O') return false;
+    if(filter==='core' && !c.core) return false;
+    if(q){
+      const hay = (c.id+' '+c.title+' '+c.text+' '+(c.inc?c.inc.mechanism+' '+c.inc.bound+' '+c.inc.invoker:'')).toLowerCase();
+      if(!hay.includes(q)) return false;
+    }
+    return true;
+  }
+  function card(c){
+    const forceBadge = c.within ? `[M within ${c.within}]` : (c.force==='M'?'[M]':(c.force==='C'?'[C]':'[O]'));
+    const fc = c.force==='M'?'m':(c.force==='C'?'c':'o');
+    const inc = c.inc;
+    return `<div class="lawcard" data-id="${c.id}">
+      <div class="head"><span class="cid">${c.id}</span><span class="ttl">${esc(c.title)}</span>
+        <span class="bdg ${fc}">${esc(forceBadge)}</span>
+        ${c.core?'<span class="bdg core">(core) entrenched</span>':''}</div>
+      <div class="hint">click to read the full clause</div>
+      <div class="txt">${clean(c.text)}</div>
+      <div class="inc">${inc?`binds: ${esc(inc.bound)} · invoked by: ${esc(inc.invoker)} · against: ${esc(inc.against)}<br>mechanism: ${esc(inc.mechanism)} · dsh binding: ${esc(inc.dsh)}`:'incidence: —'}</div>
+      <div class="gh"><a href="${gh(c.id)}" target="_blank" rel="noopener">read ${c.id} in the body →</a></div>
+    </div>`;
+  }
+  function render(){
+    const hit = D.clauses.filter(matches);
+    const qlabel = q?` matching “${q}”`:'';
+    if(!strata){
+      count.textContent = `${hit.length} / ${D.clauses.length} clauses${qlabel} · list view`;
+      list.innerHTML = hit.map(card).join('') || '<p class="muted">nothing matches — try a shorter query.</p>';
+    } else {
+      const floor = hit.filter(c=>c.force==='M' && !c.within);
+      const caps = {};
+      hit.filter(c=>c.within).forEach(c=>{(caps[c.within]=caps[c.within]||[]).push(c)});
+      const opt = hit.filter(c=>c.force==='O' && !c.within);
+      let html = '';
+      html += `<div class="stratum s-floor"><h3>Stratum 1 — the mandatory floor</h3>
+        <div class="strat-note">[M] · non-declarable: a runtime enforces every clause here or is not a Compact runtime (F-5). ${floor.length} clauses.</div>
+        ${floor.map(card).join('')}</div>`;
+      const trig = Object.fromEntries(D.cap_parts.map(p=>[p.id,p.trigger]));
+      const capKeys = Object.keys(caps);
+      if(capKeys.length){
+        html += `<div class="stratum s-cap"><h3>Stratum 2 — capability strata</h3>
+          <div class="strat-note">[M within part] · dormant until the runtime provides the capability — then binding without exception (§2.2).</div>`;
+        capKeys.forEach(k=>{
+          const cp = D.cap_parts.find(p=>p.id===k);
+          html += `<div style="margin:10px 0 4px"><b class="small">${k}</b> <span class="muted small">— wakes on: ${cp?esc(cp.trigger):''}</span></div>` + caps[k].map(card).join('');
+        });
+        html += `</div>`;
+      } else {
+        html += `<div class="stratum s-cap"><h3>Stratum 2 — capability strata</h3><div class="strat-note">no capability clauses match this query.</div></div>`;
+      }
+      html += `<div class="stratum s-opt"><h3>Stratum 3 — optional</h3>
+        <div class="strat-note">[O] · may be skipped — but the skip is declared in the runtime's annex, publicly, permanently (F-5, §2.2). ${opt.length} clauses.</div>
+        ${opt.map(card).join('')}</div>`;
+      count.textContent = `${hit.length} / ${D.clauses.length} clauses${qlabel} · strata view`;
+      list.innerHTML = html;
+    }
+    $$('#lawlist .lawcard').forEach(el=>el.addEventListener('click',()=>el.classList.toggle('open')));
+  }
+  search.addEventListener('input',()=>{ q=search.value.trim().toLowerCase(); render(); });
+  $$('#lawchips button').forEach(b=>b.addEventListener('click',()=>{
+    $$('#lawchips button').forEach(x=>x.classList.toggle('active',x===b));
+    filter=b.dataset.f; render();
+  }));
+  $('#strata-toggle').addEventListener('click',e=>{
+    strata=!strata; e.target.textContent='strata view: '+(strata?'on':'off');
+    e.target.classList.toggle('on',strata); render();
+  });
+  addEventListener('keydown',e=>{
+    if(e.key==='/' && document.activeElement!==search && !/INPUT|TEXTAREA/.test(document.activeElement.tagName)){
+      e.preventDefault(); search.focus(); search.scrollIntoView({block:'center'});
+    }
+  });
+  render();
+})();

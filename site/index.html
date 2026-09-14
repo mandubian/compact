@@ -314,9 +314,33 @@
   <blockquote class="digest reveal" id="digest-block"></blockquote>
 </section>
 
-<!-- ============ 11 CLOSE ============ -->
+<!-- ============ 11 EXPLORE ============ -->
+<section id="explore">
+  <p class="kicker reveal">11 · explore the law</p>
+  <h2 class="reveal">A dictionary of the law — searchable, stratified</h2>
+  <p class="lede reveal">61 clauses across seven parts and three strata. Search it, filter it, and read
+  each rule's incidence: who it binds, who may invoke it, against whom. Generated from the body and the
+  law table — never hand-copied.</p>
+  <div class="explore reveal">
+    <div class="explore-bar">
+      <input id="lawsearch" type="search" placeholder="search: exit, record, deception, MA, entrench…  ( / to focus)" autocomplete="off">
+      <div class="chipsrow" id="lawchips">
+        <button data-f="all" class="active">all</button>
+        <button data-f="M">[M] floor</button>
+        <button data-f="C">[C] capability</button>
+        <button data-f="O">[O] optional</button>
+        <button data-f="core">(core)</button>
+      </div>
+      <button id="strata-toggle" class="strata-btn">strata view: off</button>
+    </div>
+    <p class="lawcount" id="lawcount"></p>
+    <div id="lawlist"></div>
+  </div>
+</section>
+
+<!-- ============ 12 CLOSE ============ -->
 <section id="status">
-  <p class="kicker reveal">11 · where it stands</p>
+  <p class="kicker reveal">12 · where it stands</p>
   <h2 class="reveal">Draft. Fallible by design. Public on purpose.</h2>
   <p class="lede reveal">This is v0.4 of a draft — <strong>not ratified</strong>, no security audit, and
   its adversarial passes — a red-team round and an external review — are published next to it, findings
@@ -352,6 +376,7 @@
   clause IDs link to the law · lints green at build time · fallible by design (F-1)</p>
 </footer>
 </main>
+<script src="clauses.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

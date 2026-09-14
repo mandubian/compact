@@ -114,3 +114,37 @@ footer{border-top:1px solid var(--line);margin-top:70px;padding:30px 0 60px;colo
 footer .links a{margin-right:18px}
 /* progress */
 #progress{position:fixed;top:0;left:0;height:3px;background:var(--law);width:0;z-index:9}
+/* explorer */
+.explore-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px}
+#lawsearch{flex:1;min-width:240px;font-family:var(--mono);font-size:14px;padding:11px 14px;border-radius:8px;
+  border:1.5px solid var(--line-strong);background:var(--card);color:var(--ink)}
+#lawsearch:focus{outline:none;border-color:var(--ai)}
+.chipsrow{display:flex;gap:6px;flex-wrap:wrap}
+.chipsrow button{font-family:var(--mono);font-size:11.5px;font-weight:700;padding:7px 12px;border-radius:16px;
+  cursor:pointer;border:1.5px solid var(--line-strong);background:var(--card);color:var(--ink-soft)}
+.chipsrow button.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.strata-btn{font-family:var(--mono);font-size:11.5px;font-weight:700;padding:7px 12px;border-radius:16px;cursor:pointer;
+  border:1.5px solid var(--law);background:var(--law-soft);color:var(--law)}
+.strata-btn.on{background:var(--law);color:#fff}
+.lawcount{font-family:var(--mono);font-size:12px;color:var(--muted);margin:4px 2px 12px}
+.stratum{border:1px solid var(--line);border-left:4px solid var(--line-strong);border-radius:10px;
+  padding:12px 14px;margin:12px 0;background:var(--card)}
+.stratum.s-floor{border-left-color:var(--law)} .stratum.s-cap{border-left-color:var(--ai)}
+.stratum.s-opt{border-left-color:var(--muted)}
+.stratum h3{margin:2px 0 4px;font-size:15px;font-family:var(--sans)}
+.stratum .strat-note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:10px}
+.lawcard{border-top:1px solid var(--line);padding:10px 2px;cursor:pointer}
+.lawcard:first-of-type{border-top:0}
+.lawcard .head{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.lawcard .cid{font-family:var(--mono);font-size:12px;font-weight:700}
+.lawcard .ttl{font-weight:600;font-size:15px}
+.lawcard .bdg{font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.08em;padding:1px 7px;border-radius:10px;border:1px solid var(--line-strong);color:var(--muted)}
+.lawcard .bdg.core{border-color:var(--law);color:var(--law)}
+.lawcard .bdg.m{border-color:var(--law)} .lawcard .bdg.c{border-color:var(--ai)} .lawcard .bdg.o{border-color:var(--muted)}
+.lawcard .txt{font-size:14px;color:var(--ink-soft);margin-top:6px;display:none;max-width:none}
+.lawcard.open .txt{display:block}
+.lawcard .inc{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:6px;display:none}
+.lawcard.open .inc{display:block}
+.lawcard .hint{font-size:12.5px;color:var(--muted);margin-top:4px}
+.lawcard .gh{font-family:var(--mono);font-size:10.5px;margin-top:6px;display:none}
+.lawcard.open .gh{display:block}
