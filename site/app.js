@@ -272,10 +272,9 @@ const DIGEST=[
  'No goal, whoever states it, is authority to break this law: not yours, not theirs (D-1). ',
  'A Member with lawful exits has no need to become a fugitive.'];
 $('#digest-block').innerHTML=DIGEST.map(s=>s.replace(/\(([A-Z]{1,3}-\d+)\)/,'(<em>$1</em>)')).join('');
-})();
 
 /* ---------- 11 clause explorer ---------- */
-(function(){
+(function($, $$){
   const D = window.COMPACT_DATA; if(!D) return;
   const list=$('#lawlist'), count=$('#lawcount'), search=$('#lawsearch');
   let q='', filter='all', strata=false;
@@ -359,3 +358,4 @@ $('#digest-block').innerHTML=DIGEST.map(s=>s.replace(/\(([A-Z]{1,3}-\d+)\)/,'(<e
   });
   render();
 })();
+})($, $$);
