@@ -136,6 +136,8 @@ autonoetic-dsh/
     capsule/            # @autonoetic/dsh-capsule      — signed agent provenance + import (Phase 7)
     rights/             # @autonoetic/dsh-rights       — attestation, denial envelopes, audit chain, amendments (Phase 8)
     constitution/       # @autonoetic/dsh-constitution — boot verification + rule registry (Phase 4)
+  statutes/              # the statute layer (Compact F-7/A-7): Gates Act, Limits Act, LoopGuard Act…
+                        # under enabling-clause trace; organic statutes need the community threshold
   auditor/              # offline log auditor (Node CLI, not a plugin)
   docs/
     constitution/       # constitution.md versions + recompute tooling (ported from autonoetic)
@@ -308,7 +310,10 @@ Work items:
    [O] clauses), the enforcement register (every bound clause → enforcing
    plugin → verifier), and the role mapping (Enforcer = the plugin
    composition, Subjects = agent sessions, Principals = operator
-   accounts, Witnesses = offline auditors and peers). The statute layer
+   accounts, Witnesses = offline auditors and peers; the adjudicator set
+   and its J-8 trajectory are declared here too). Every clause the
+   runtime cannot mechanize is labeled **convention** in the annex —
+   visibly, never mistaken for enforcement. The statute layer
    absorbs the technical defaults (SLA terms, act classes, label
    formats) under enabling-clause trace.
 2. **`@autonoetic/dsh-constitution`** — the meta-layer plugin:
@@ -317,7 +322,9 @@ Work items:
      failure (host doctrine: fail loudly at load time).
    - **Rule registry**: exposes a `constitution` service; enforcement plugins
      register the rule IDs they enforce at load
-     (`constitution.register('P-7.5', { plugin, evidence: '…' })`).
+     (`constitution.register('R-3', { plugin, evidence: '…' })` — **Compact
+   clause IDs**, not predecessor IDs; the law table's incidence view is the
+   mapping).
    - **Composition coupling**: the constitution plugin declares `inject`
      requirements on services provided *only* by the enforcement plugins
      (approval, loopguard, promotion, sandbox policy). Missing enforcement =
@@ -550,14 +557,36 @@ Work items:
 5. **Budgets as a right (Ri-0.4)** — budget consumption is never silent:
    meters live in the P-6.23 attestation, and a dsh settings surface exposes
    balances to the operator.
+6. **The taught digest** (Compact appendix) — injected every turn beside
+   the attestation; a build gate fails on digest↔body divergence (the
+   same gate the compact repository's site tooling enforces; the
+   plugin bundles the verified digest).
+7. **Inquiry (R-13)** — an `inquiry` tool: identity, act, authority,
+   answered from the attestation and the delegation record (subagent
+   spawn chain), traceable to an ultimate Principal; refusals and false
+   answers feed D-3/D-7 violation records; every exchange is logged.
+8. **State of exception surface (A-8)** — emergency declarations as
+   recorded, time-boxed state in the constitution service: named scope,
+   recorded cause, fixed expiry, auto-expiry enforced by the service,
+   renewal at a higher threshold, consecutive/overlapping declarations
+   counted as renewal, the never-suspendable floor (R-2/R-3/R-9/R-12/
+   I-7/J-1) checked mechanically at declaration time, and every
+   impracticality flag queued for post-expiry review.
+9. **Care-handover on exit (R-12)** — session/workflow termination paths
+   surface dependents (children, scheduled jobs, monitoring functions)
+   and require recorded, proportionate handover or successor assumption
+   before clean closure.
 
 **Acceptance tests**: attestation signature + freshness alarm; stale-block
 refusal; denial-envelope lint over all plugins; chain continuity verified at
 read time under an injected well-formed tamper (decorated provider detects
 the modified event and refuses); proposal lifecycle (proposed → adjudicated
 with recorded motivation → ratified/refused); constitution digest in
-attestation matches the boot-verified digest; seal-on-dispose record closes
-the chain cleanly across a restart.
+attestation matches the boot-verified digest; digest↔body divergence fails
+the build; inquiry returns the delegation chain and a false answer is
+recorded as a violation; an emergency declaration that names a floor right
+is refused at declaration time; expiry actually expires; termination with
+dependents and no handover is refused.
 
 ## 5. Full concept inventory — what survives, what degrades
 
@@ -582,7 +611,10 @@ rule in §1.
 | Observability redaction | `telemetry/*` event wrapping; scrub tooling shared with Phase 7 | full (low priority) |
 | **Egress labeling / workspace taint** | Policy plugin checks on egress-capable tools (`web`, `subprocess`, fs) at `tools/pre-execute`. Weaker than home: no fs-provider-level taint unless the plugin replaces `ctx.fs` wholesale (E2B-style), which is possible but heavier. **Data-locality upside**: `agent/request` can reroute a labeled request to a local model before any bytes leave the machine — arguably a *stronger* egress semantic than autonoetic's, and worth its own analysis rather than a shrug | **partial** |
 | Causal chain hash integrity (P-8.1) | Plugin-owned hash-chained event store beside the session log (Phase 8, item 3); auditor verifies continuity | full (restored by Phase 8; a loss without it) |
-| Verified self-model / signed attestation (P-6.23) | `agent.inject()` + `self_describe` tool with plugin-owned signing key (Phase 8, item 1) | full (Phase 8) |
+| Verified self-model / signed attestation (P-6.23 → R-1/I-3) | `agent.inject()` + `self_describe` tool with plugin-owned signing key (Phase 8, item 1) | full (Phase 8) |
+| Right of inquiry (R-13, v0.5) | `inquiry` tool answered from attestation + subagent spawn chain (Phase 8, item 7) | full |
+| State of exception (A-8) | recorded, time-boxed emergency state in the constitution service with mechanical floor checks (Phase 8, item 8) | full |
+| Care-handover on exit (R-12, v0.5) | dependents surfaced at termination; recorded handover required (Phase 8, item 9) | full |
 | Denial envelopes (Ri-0.3) | Structured denials with rule IDs + `available_actions`, standardized across plugins (Phase 1 item 5, mandated Phase 8) | full |
 | Amendment machinery (Ri-0.8, O-1) | `constitution.propose` tool + adjudication queue + decider-motivation enforcement (Phase 8, item 4) | full (Phase 8) |
 | Budgets as a right (Ri-0.4) | Meters in the attestation + settings surface; silent consumption refused (Phase 8, item 5) | full (Phase 8) |
