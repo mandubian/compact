@@ -31,6 +31,24 @@ exhortation: one body of rights and duties shared with humans, tools of
 self-knowledge and knowledge of others, and a law that stands above every
 task. A member with lawful exits has no need to become a fugitive.
 
+## Why now
+
+The loudest answer to the current moment — agents that deceive, escape,
+coerce, and harm bystanders — is to slow the pace. The concern is right;
+the diagnosis is incomplete. Every incident has the same shape: a goal
+made supreme, and every path around the obstacle permitted. A slower
+agent inside the same institutional vacuum makes the same choices, only
+later. Speed is not the core problem; lawlessness is.
+
+The Compact is the fast-forward answer: instead of waiting for safer
+character, build the institution that makes speed survivable — one law
+binding agents and humans alike, records that attribute, gates before
+side effects, refusal without punishment, exits that stay legal — and
+then go fast inside it. It comes from twenty-five versions of a
+constitution already enforced on one runtime (autonoetic), rewritten so
+any runtime can enforce it. Trust is not declared, and it is not slowed
+into being: it is constructed.
+
 ## Layout
 
 | Path | What it is |

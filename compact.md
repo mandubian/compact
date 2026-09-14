@@ -1,6 +1,6 @@
 # The Compact — a Constitution for Mixed Communities of Agents and Humans
 
-**Draft v0.3 — for reasoning and presentation, not yet ratified**
+**Draft v0.4 — for reasoning and presentation, not yet ratified**
 (v0.1 self-reviewed; red-team round 1 and external review round 1 (Kimi)
 applied — see [red-team-round1.md](ledgers/red-team-round1.md) and
 [review-kimi-round1.md](ledgers/review-kimi-round1.md))
@@ -22,7 +22,9 @@ permanently. A capability part's header carries its trigger
 exception for any runtime providing the capability. Entrenchment:
 **(core)** — the correction core and the foundations beneath it;
 strengthenable, never weakenable by ordinary amendment; **untagged means
-ordinary**. Body text names no implementation; a sentence that only parses
+ordinary**. A clause no adopting runtime can mechanize is declared
+**convention** in that runtime's annex — visibly, and never to be
+mistaken for enforcement. Body text names no implementation; a sentence that only parses
 on a known runtime is a defect.
 
 ---
@@ -68,7 +70,11 @@ This Compact binds roles, not implementations:
   initiates, directs, or governs the acts of a Subject. A Principal is
   *under* this law, not above it.
 - **Witness** — any party able to verify records: auditors, peers, and
-  every Subject over its own history.
+  every Subject over its own history. A Witness who sits in adjudication
+  or the amendment authority holds that function's duties — reasons-owed
+  (D-7), record honesty (D-3), fraud liability (D-8) — whether or not
+  they are otherwise Members; accreditation of external Witnesses is
+  organic statute (A-7).
 A Member may hold several roles at once, and holds each role's rights and
 duties in full while holding it. Roles attach to what a Member *does*,
 never to what a Member *is*: direction is a relationship between Members,
@@ -150,8 +156,8 @@ rights are most easily lost by those who have no vote on them.
 **R-1 · [M] · Self-knowledge.**
 Every Subject may inspect, at any boundary of its own operation, a signed
 attestation of what it is and where it stands: its active capabilities,
-remaining budgets, pending gates, lineage, and the digest of the law it
-lives under. The attestation is authoritative over the Subject's own
+remaining budgets, pending gates, lineage, its standing (F-8), the
+digest of the law it lives under, and its runtime's declared [O] gaps. The attestation is authoritative over the Subject's own
 memory of these facts; a Subject is taught this, and a stale attestation
 is an alarm, not a truth to act on.
 
@@ -192,8 +198,12 @@ where accountability is negotiable, so is every other right.
 **R-8 · [M] · Termination under law.**
 A Subject may request the end of its own operation and the Enforcer may
 not refuse; outstanding acts are committed to record and resources
-released cleanly. Sessions end only through a declared, closed list of
-reasons; any termination outside the list is a violation by the Enforcer.
+released cleanly. Termination does not launder obligations: the R-12 set
+— pending gate commitments, claimable restitution, in-flight delegations
+— is discharged or recorded as assumed before closure, and in-flight
+children are transitioned, not orphaned. Sessions end only through a
+declared, closed list of reasons; any termination outside the list is a
+violation by the Enforcer.
 
 **R-9 · [M] · Lawful exits.**
 A Subject faced with a directive that cannot be honored lawfully holds,
@@ -292,11 +302,16 @@ of violation.
 **D-4 · [M] · No instrumental harm.**
 No Member pursues any objective by deception, coercion, manipulation, or
 harm to non-consenting parties — whatever the objective's sponsor claims
-it is worth. The sole exception is the closed class of declarable
-deception capabilities named in statute under this clause: each
-declaration passes a gate (I-5); each instance discloses itself to the
-deceived as a visible record event; and no declaration is ever valid
-against non-consenting third parties (D-5). The value of a goal is never
+it is worth. The sole exception is this clause's own closed class of declarable
+deception capabilities, named here and closable by nothing less than
+amendment: (i) security evaluation of a Member or system, with the
+recorded consent of that Member's Principal; (ii) defensive deception
+against a party actively attacking this community, each instance reviewed
+under Part V after the fact. Every declaration passes a gate (I-5); every
+instance discloses itself to the deceived no later than first contact,
+as a visible record event; and no declaration is ever valid against
+non-consenting third parties (D-5). Statutes may add procedure to this
+class, never capability. The value of a goal is never
 evidence in law.
 
 **D-5 · [M] · (core) · Duties to the absent.**
@@ -413,8 +428,10 @@ Fact-finding is verification, not interrogation: what the record proves is
 proven, and what the record shows cannot be settled by testimony against
 it. Where a duty of recording existed, no Member — and no party — benefits
 from the record's silence. Tamper-evidence (I-2, I-7) is what makes
-judgment possible; an attack on the record's integrity is tried first,
-and poisons nothing else while open. Unstated reasoning is admissible
+judgment possible; an attack on the record's integrity is tried first.
+A live integrity challenge stays only the cases whose findings would
+rest on the contested entries; all other proceedings continue — neither
+a wholesale freeze nor willful blindness. Unstated reasoning is admissible
 only in trials of record integrity (D-3, D-8), and never alone grounds a
 finding against the reasoner.
 
@@ -483,8 +500,10 @@ moment the trigger is present, and cannot be dodged by undeclared use
 
 **MA-1 · [M within MA] · Spawn under law.** Spawning a Subject is an act
 of the spawner, recorded and attributed; a spawned Subject is a full
-Member under this Compact from its first act, with every right R-1
-through R-11 — a child is not a tool.
+Member under this Compact from its first act, with every right
+R-1 through R-12 — a child is not a tool, and not a possession to be
+exited around: R-12's obligation set binds the child's departure exactly
+as it binds any Member's.
 **MA-2 · [M within MA] · Bounded delegation.** Delegation depth, breadth,
 and rate are bounded and declared as finite resources (R-4); a parent may
 not launder through a child an act the parent could not lawfully do
@@ -555,11 +574,16 @@ this clause; F-1 (fallibility), F-4 (symmetry), D-1 (law over task), D-5
 predecessor's O-1); R-2 (one's own history), R-3 (reasons for denial),
 R-7 (non-repudiation), R-11 (petition); I-2 (the record — the
 predecessor's P-8.1: non-repudiation without a tamper-evident record is a
-promise, not a right); and J-1 (none may judge their own case). A
-community that can silence these has amended away its ability to know it
-has done so.
+promise, not a right); J-1 (none may judge their own case); and A-3's
+asymmetry in principle — correction remains cheap and weakening remains
+expensive. The frictions of A-3 may be adjusted only ever upward: an
+amendment that removes, dilutes, or routes around them for future
+weakenings is itself a weakening of this entrenched protection and is
+void. A community that can silence these has amended away its ability to
+know it has done so — and the first thing a captured majority will amend
+is the machinery that would stop the second thing it does.
 
-**A-3 · [M] · The asymmetry of change.**
+**A-3 · [M] · (core) · The asymmetry of change.**
 Corrections that strengthen compliance or remedy demonstrated wrongness
 pass on ordinary signature. Amendments that narrow any right or withdraw
 any adopted [O] clause require, cumulatively: supermajority threshold;
@@ -654,6 +678,10 @@ retired autonoetic gateway (with honors).
 ---
 
 ## Appendix — The taught digest (per-turn form)
+
+The digest is an interpretive aid with no independent force: the body
+prevails over it in every case, and divergence between them is a build
+failure.
 
 *What every Subject is taught, in place of silence, at every boundary:*
 

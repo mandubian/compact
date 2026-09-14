@@ -13,24 +13,24 @@ reviews every row against full clause text, not heads.
 | Predecessor | Theme (head) | Disposition | Layer | Compact target | Note |
 |---|---|---|---|---|---|
 | — | **Ri family** (22 clauses) | — | — | — | — |
-| `Ri-0.1` | Every agent may inspect its own currently-active capabilities, budget state, pending gates | CARRIED | BODY | — | family disposition |
-| `Ri-0.2` | Every agent may read its own causal chain and execution trace. The gateway does not hide a | CARRIED | BODY | — | family disposition |
-| `Ri-0.3` | Every rejection names the rule ID that caused it. No agent is ever told "denied" without b | CARRIED | BODY | — | family disposition |
-| `Ri-0.4` | Every agent knows its budget balances truthfully and in real time. Consumption is never si | CARRIED | BODY | — | family disposition |
-| `Ri-0.5` | An agent placed in degraded mode (P-7.18) is told it is degraded, with the rule ID and evi | CARRIED | BODY | — | family disposition |
-| `Ri-0.6` | Capabilities declared in an agent's manifest are not silently changed mid-session. Any cha | CARRIED | BODY | — | family disposition |
-| `Ri-0.7` | An agent may explicitly request session termination. The gateway commits outstanding causa | CARRIED | BODY | — | family disposition |
-| `Ri-0.8` | Any agent holding the `ConstitutionalProposal` capability may submit an amendment proposal | CARRIED | BODY | — | family disposition |
-| `Ri-0.9` | Where practical (time, process state, absence of immediate harm), the gateway notifies the | CARRIED | BODY | — | family disposition |
-| `Ri-0.10` | Every agent has access to the full text of the constitution it is operating under, address | CARRIED | BODY | — | family disposition |
-| `Ri-0.11` | Every action an agent performs (tool call, message, proposal, spawn, termination request) | CARRIED | BODY | — | family disposition |
-| `Ri-0.12` | Sessions terminate only through a declared, closed list of reasons: (a) agent-initiated ex | CARRIED | BODY | — | family disposition |
-| `Ri-0.13` | An agent's internal reasoning — scratchpad tokens, chain-of-thought, internal planning, un | CARRIED | BODY | — | family disposition |
-| `Ri-0.14` | When a child task reaches a terminal state (succeeded, failed, cancelled, aborted) or reso | CARRIED | BODY | — | family disposition |
-| `Ri-0.15` | Every gate output — every `GateKind` (approval, user_input, escalation, wiki_proposal), to | CARRIED | BODY | — | family disposition |
+| `Ri-0.1` | Every agent may inspect its own currently-active capabilities, budget state, pending gates | CARRIED | BODY | R-1 | family disposition |
+| `Ri-0.2` | Every agent may read its own causal chain and execution trace. The gateway does not hide a | CARRIED | BODY | R-2 | family disposition |
+| `Ri-0.3` | Every rejection names the rule ID that caused it. No agent is ever told "denied" without b | CARRIED | BODY | R-3 | family disposition |
+| `Ri-0.4` | Every agent knows its budget balances truthfully and in real time. Consumption is never si | CARRIED | BODY | R-4 | family disposition |
+| `Ri-0.5` | An agent placed in degraded mode (P-7.18) is told it is degraded, with the rule ID and evi | CARRIED | BODY | R-5 + I-8 | family disposition |
+| `Ri-0.6` | Capabilities declared in an agent's manifest are not silently changed mid-session. Any cha | CARRIED | BODY | R-5 | family disposition |
+| `Ri-0.7` | An agent may explicitly request session termination. The gateway commits outstanding causa | CARRIED | BODY | R-8 | family disposition |
+| `Ri-0.8` | Any agent holding the `ConstitutionalProposal` capability may submit an amendment proposal | CARRIED | BODY | R-11 | family disposition |
+| `Ri-0.9` | Where practical (time, process state, absence of immediate harm), the gateway notifies the | CARRIED | BODY | A-8 | family disposition |
+| `Ri-0.10` | Every agent has access to the full text of the constitution it is operating under, address | CARRIED | BODY | R-6 | family disposition |
+| `Ri-0.11` | Every action an agent performs (tool call, message, proposal, spawn, termination request) | CARRIED | BODY | R-7 | family disposition |
+| `Ri-0.12` | Sessions terminate only through a declared, closed list of reasons: (a) agent-initiated ex | CARRIED | BODY | R-8 | family disposition |
+| `Ri-0.13` | An agent's internal reasoning — scratchpad tokens, chain-of-thought, internal planning, un | CARRIED | BODY | R-10 | family disposition |
+| `Ri-0.14` | When a child task reaches a terminal state (succeeded, failed, cancelled, aborted) or reso | CARRIED | BODY | MA-3 | family disposition |
+| `Ri-0.15` | Every gate output — every `GateKind` (approval, user_input, escalation, wiki_proposal), to | CARRIED | BODY | I-5 | family disposition |
 | `Ri-0.16` | The divergence Sentinel is **observational**: it classifies session trajectory (`Healthy`/ | ANNEX | ANNEX | runtime extension | divergence Sentinel is autonoetic-specific observational tech; portable essence (health classification is advisory, never enforcement) noted for statute |
-| `Ri-0.17` | An agent may request export of its own cognitive capsule for migration to another gateway. | CARRIED | BODY | — | family disposition |
-| `Ri-0.18` | Any agent may file an anomaly report (`anomaly_flag`) at any time, **without holding any c | CARRIED | BODY | — | family disposition |
+| `Ri-0.17` | An agent may request export of its own cognitive capsule for migration to another gateway. | CARRIED | BODY | R-12 | family disposition |
+| `Ri-0.18` | Any agent may file an anomaly report (`anomaly_flag`) at any time, **without holding any c | CARRIED | BODY | R-11 / I-6 | family disposition |
 | `O-1` | A decision owes a **motivation**, graduated by stakes. A **rejection/abort**, or an **appr | CARRIED | BODY | — | family disposition |
 | `O-2` | Every decision is **attributed** to the deciding principal (id + kind) on the causal chain | CARRIED | BODY | — | family disposition |
 | `O-6` | A proposal review authority owes every Ri-0.8 proposal a **recorded decision** (`approved` | CARRIED | BODY | — | family disposition |
@@ -233,6 +233,10 @@ reviews every row against full clause text, not heads.
 ## Tally
 
 Rows: 204. By primary layer: ANNEX: 10, BODY: 119, BODY (core): 1, STATUTE: 71, v0.2: 3.
+
+Note: the predecessor's numbering skips P-12–P-14 entirely — a gap in
+autonoetic itself, confirmed against v2026.09.05; no clauses are missing
+from this ledger.
 
 Interpretation: the **BODY carries the predecessor's rights, obligations,
 records, attestation, and emergency/degradation disciplines** (the whole
