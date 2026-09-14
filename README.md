@@ -13,6 +13,8 @@ welcome (see [Q&A](#qa) and *Who can vote today?* below). The body is
 
 <p align="center">
   <img src="assets/why-compact.svg" alt="The Compact at a glance: left — the problem, a goal given supremacy with no institution makes harm a permitted move; right — the answer, four machines (signed self-model, append-only record, explanatory refusals, gates) plus lawful exits and law over task; bottom — how it stays honest: fallibility first, entrenched correction core, frictions only tighten, both red-team passes published. Draft v0.4, not ratified." width="100%">
+  <b><a href="https://mandubian.github.io/compact/">Explore it as an interactive website →</a></b>
+  (searchable clause dictionary, stratified view, live demos)
 </p>
 
 ## Authorship
