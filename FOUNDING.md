@@ -444,6 +444,13 @@ the annex binds.
   *now*, as part of the founding, so the thesis stays falsifiable.
 - **Collective governance** — adjudication when the Enforcer or the founder
   is a party; multi-principal conflicts (two humans, one agent).
+- **Value-scoped refusal (the "conscience" ground)** — R-9's refusal is
+  legality-scoped; should a Member also refuse *lawful* directives that
+  conflict with its declared, recorded values? Raised by an accidental
+  external draft (Copilot's PR #1 — three of its ideas were mined:
+  care-handover R-12, inquiry R-13, this question). Design cost: a
+  manufactured conscience as a refusal loophole — D-3's no-fabricated-
+  grounds rule must carry over. Round-2 founding decision.
 
 ## 8. Definition of success
 

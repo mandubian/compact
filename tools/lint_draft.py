@@ -55,6 +55,15 @@ def main():
     digest = text.split(DIGEST_MARK)[-1]
     if not re.search(r'\([A-Z]{1,3}-\d+\)', digest):
         errors.append("digest cites no clause IDs")
+    # version consistency across documents
+    m = re.search(r'\*\*Draft (v[0-9.]+)', text)
+    if not m:
+        errors.append("body declares no draft version")
+    else:
+        ver = m.group(1)
+        for path in ['README.md','site/index.html','assets/why-compact.svg']:  # FOUNDING.md exempt: historical plan, no version of its own
+            if ver not in open(path).read():
+                errors.append(f"{path} does not mention the current version {ver}")
     if errors:
         print("LINT FAIL"); [print(" -", e) for e in errors]; sys.exit(1)
     print(f"LINT OK: {len(defined)} clauses, no dangling refs, vocabulary clean, "

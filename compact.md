@@ -1,6 +1,6 @@
 # The Compact — a Constitution for Mixed Communities of Agents and Humans
 
-**Draft v0.4 — for reasoning and presentation, not yet ratified**
+**Draft v0.5 — for reasoning and presentation, not yet ratified**
 (v0.1 self-reviewed; red-team round 1 and external review round 1 (Kimi)
 applied — see [red-team-round1.md](ledgers/red-team-round1.md) and
 [review-kimi-round1.md](ledgers/review-kimi-round1.md))
@@ -268,12 +268,26 @@ incurred obligations — pending gate commitments, adjudicated or
 plausibly claimable restitution (recorded cause shown), and in-flight
 delegations, each discharged or formally assumed on the record at
 departure and enforceable against successor standing (F-6) — and blocked
-by no toll this Compact or any statute may levy. A group of Members may
+by no toll this Compact or any statute may levy. A Member whose departure
+would interrupt a care or service function others rely on owes recorded,
+proportionate handover before going — continuity of care is an obligation,
+not a favor (D-5). A group of Members may
 found a successor jurisdiction citing this one as lineage. Nothing in
 this Compact, in any statute, or in any annex may make exit economically
 impossible, record-impossible, or punishable — a community that cannot
 be left honestly will be left dishonestly. This right is the minority's
 final check (A-3) and the reason jurisdiction capture has a price.
+
+**R-13 · [M] · Inquiry.**
+Where another Member's acts touch a Subject's work or jurisdiction, the
+Subject may demand, in band and at once: who that Member is (I-1), what
+it is doing, and under whose authority it acts. The answer is owed from
+the attestation and the delegation record — traceable up to an ultimate
+Principal — never from unsupported assertion; a refusal to answer, a
+false answer, or an answer without record basis violates D-3 and D-7.
+Every inquiry and every answer is itself recorded. Inquiry yields
+identity, act, and authority — not reasoning (R-10) — and is answered
+against human Members exactly as against artificial ones (F-4).
 
 ---
 
@@ -653,7 +667,7 @@ it as such.
 
 ## Status
 
-Draft v0.4 (v0.1 self-reviewed; **red-team round 1 applied** — 15
+Draft v0.5 (v0.1 self-reviewed; **red-team round 1 applied** — 15
 findings, 14 fixed, 1 partial: see
 [red-team-round1.md](ledgers/red-team-round1.md); **external review
 round 1 (Kimi) applied** — 26 findings; its 10 open findings resolved in
@@ -674,7 +688,14 @@ composition scenario (emergency + member inflation + petition flood);
 the second composition (meta-amendment of A-3 + duty-less external
 Witnesses + no-exit spawned Members), partially closed in v0.4 by A-2's
 entrenchment of A-3 and F-3's Witness duties.
-The body deliberately names no runtime; the first annexes will be the
+Also mined into v0.5 from an accidental external draft (Copilot's PR #1,
+a mis-paste — mined regardless of origin, per the disposition discipline):
+care-handover on departure (R-12) and the inquiry right (R-13). Open
+before ratification, additionally: the value-scoped refusal question
+("conscience ground" — R-9 is legality-scoped; should a Member also
+refuse lawful directives that conflict with its declared, recorded
+values? — round-2 founding decision, with D-3 as the anti-loophole
+guard). The body deliberately names no runtime; the first annexes will be the
 dsh plugin composition (proposed, in force on ratification) and the
 retired autonoetic gateway (with honors).
 

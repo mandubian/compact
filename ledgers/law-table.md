@@ -37,6 +37,7 @@ the draft's Status; founding plan §5.3).
 | `R-10` | Enforcer; all Members | Subject | Enforcer; Members | three-part privacy discipline | reasoning_sha256 + audit capability |
 | `R-11` | Enforcer; adjudicators | every Member | Enforcer | petition queue + SLA (I-6) | amendment queue plugin |
 | `R-12` | Enforcer; all | Member | Enforcer; any | exit record + portable identity | capsule export |
+| `R-13` | addressed Member | any Member whose work or jurisdiction is touched | the addressed Member; the ultimate Principal | inquiry tool answered from attestation + delegation record (D-3/D-7 enforce truthfulness) | inquiry tool plugin |
 
 ## Part III
 
@@ -106,7 +107,7 @@ the draft's Status; founding plan §5.3).
 
 ## Lint results
 
-- **Completeness**: 60/61 clauses name both a bound party and an invoker.
+- **Completeness**: 61/62 clauses name both a bound party and an invoker.
   - Definitional exemption (reviewed, intentional): `F-3` (defines roles; binds via every other clause).
   - Note: `I-7` inverts the incidence by design — verification is a right of anyone, a duty of no one.
 - **Symmetry**: 18 duty→claim pairs checked; all resolve. R-10 pairs with D-7 (its limb (a) — reasoning never a decision basis — is D-7's assertion rule restated from the Subject's side).

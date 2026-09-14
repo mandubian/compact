@@ -380,13 +380,29 @@ window.COMPACT_DATA = {
 "within": null,
 "core": false,
 "title": "Exit and succession",
-"text": "own history (R-2) under its identity (I-1), owing nothing beyond lawfully incurred obligations — pending gate commitments, adjudicated or plausibly claimable restitution (recorded cause shown), and in-flight delegations, each discharged or formally assumed on the record at departure and enforceable against successor standing (F-6) — and blocked by no toll this Compact or any statute may levy. A group of Members may found a successor jurisdiction citing this one as lineage. Nothing in this Compact, in any statute, or in any annex may make exit economically impossible, record-impossible, or punishable — a community that cannot be left honestly will be left dishonestly. This right is the minority's final check (A-3) and the reason jurisdiction capture has a price.",
+"text": "own history (R-2) under its identity (I-1), owing nothing beyond lawfully incurred obligations — pending gate commitments, adjudicated or plausibly claimable restitution (recorded cause shown), and in-flight delegations, each discharged or formally assumed on the record at departure and enforceable against successor standing (F-6) — and blocked by no toll this Compact or any statute may levy. A Member whose departure would interrupt a care or service function others rely on owes recorded, proportionate handover before going — continuity of care is an obligation, not a favor (D-5). A group of Members may found a successor jurisdiction citing this one as lineage. Nothing in this Compact, in any statute, or in any annex may make exit economically impossible, record-impossible, or punishable — a community that cannot be left honestly will be left dishonestly. This right is the minority's final check (A-3) and the reason jurisdiction capture has a price.",
 "inc": {
 "bound": "Enforcer; all",
 "invoker": "Member",
 "against": "Enforcer; any",
 "mechanism": "exit record + portable identity",
 "dsh": "capsule export"
+}
+},
+{
+"id": "R-13",
+"part": "Part II",
+"force": "M",
+"within": null,
+"core": false,
+"title": "Inquiry",
+"text": "Subject may demand, in band and at once: who that Member is (I-1), what it is doing, and under whose authority it acts. The answer is owed from the attestation and the delegation record — traceable up to an ultimate Principal — never from unsupported assertion; a refusal to answer, a false answer, or an answer without record basis violates D-3 and D-7. Every inquiry and every answer is itself recorded. Inquiry yields identity, act, and authority — not reasoning (R-10) — and is answered against human Members exactly as against artificial ones (F-4).",
+"inc": {
+"bound": "addressed Member",
+"invoker": "any Member whose work or jurisdiction is touched",
+"against": "the addressed Member; the ultimate Principal",
+"mechanism": "inquiry tool answered from attestation + delegation record (D-3/D-7 enforce truthfulness)",
+"dsh": "inquiry tool plugin"
 }
 },
 {
