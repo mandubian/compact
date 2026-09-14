@@ -5,5 +5,5 @@ themselves live in the runtime repos; this directory is the registry:
 
 | Runtime | Annex | Standing | Status |
 |---|---|---|---|
-| dsh plugin composition — [autonoetic-dsh](https://github.com/mandubian/autonoetic-dsh) | annex draft at [annex/annex-draft.md](https://github.com/mandubian/autonoetic-dsh/blob/main/annex/annex-draft.md); [work plan](dsh/plan.md) | proposed (full) · floor **not yet enforced** — no standing | Phase 0 in progress |
+| dsh plugin composition — [autonoetic-dsh](https://github.com/mandubian/compact-dsh) | annex draft at [annex/annex-draft.md](https://github.com/mandubian/compact-dsh/blob/main/annex/annex-draft.md); [work plan](dsh/plan.md) | proposed (full) · floor **not yet enforced** — no standing | Phase 0 in progress |
 | autonoetic gateway | lives in that repo | retired with honors | — |

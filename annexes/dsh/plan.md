@@ -1,7 +1,8 @@
 # Porting autonoetic's Concepts to DeepSeek Harness (dsh)
 
+Home: `annexes/dsh/` in the compact repository — this plan governs the first annex; the annex and plugin set live in the [`compact-dsh`](https://github.com/mandubian/compact-dsh) repository.
 Status: **proposal** · Target host: [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) (dsh) · Owner: mandubian
-Home: `annexes/dsh/` in the compact repository — this plan governs the first annex; the annex file itself will live in the future `autonoetic-dsh` plugin repository
+Home: `annexes/dsh/` in the compact repository — this plan governs the first annex; the annex file itself will live in the future `compact-dsh` plugin repository
 
 > Founding context: the [FOUNDING.md](../../FOUNDING.md)
 > supersedes this plan's Phase 4 editorial work — the dsh composition ratifies
