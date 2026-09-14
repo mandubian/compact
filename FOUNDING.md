@@ -383,7 +383,7 @@ a verifier, run by anyone, over records anyone can obtain.
 | Phase | Weeks | Output |
 |---|---|---|
 | A — Founding analysis | 1–2 | Jurisdiction & role definitions; genesis skeleton; disposition taxonomy; naming decision |
-| B — Redraft | 3–4 | Compact body draft (all 204 dispositions resolved; new clauses flagged) — **a working draft v0.1 exists at [compact-draft-v0.1.md](compact.md)**, to be reconciled against the full disposition |
+| B — Redraft | 3–4 | Compact body draft (all 204 dispositions resolved; new clauses flagged) — **working draft v0.2 at [compact.md](compact.md)**, to be reconciled against the full disposition |
 | C — Mechanical trust mapping | 2 | Clause → mechanism → annex bindings (dsh, autonoetic-as-predecessor) |
 | D — Adversarial red-team | 1–2 | **Round 1 complete** (15 findings, 14 fixed, 1 partial — [compact-red-team-round1.md](ledgers/red-team-round1.md)); round 2 = composition scenarios (emergency + member inflation + petition flood) + full stress suite |
 | E — Ratification | 1 | Signed v1.0.0, genesis doc, digest, first register annex |
