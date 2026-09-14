@@ -165,6 +165,12 @@ Source: GitHub Actions) and it deploys on every change to `site/`.
 </details>
 
 <details>
+<summary><b>Is this open-source only? Can a closed provider build a Compact-compatible harness?</b></summary>
+<p>The <em>law</em> is developed in the open — every clause, ledger, adversarial pass, and decision is public, because common solutions get robust by being debated and attacked where everyone can see. The <em>implementations</em> are vendor-neutral: any provider, open or closed, can ship a Compact-compatible harness by authoring a signed annex (F-5) and meeting the same mandatory floor.</p>
+<p>The difference is the evidence. An open runtime cites code and tests in its enforcement register. A closed runtime cannot — so it must satisfy the same floor through <b>externally runnable verifiers</b>: offline record audits, behavioral conformance checks, attestations verifiable without the Enforcer's cooperation (I-7). "Trust our closed implementation" is exactly the claim the Compact exists to make unpurchasable. Openness of the law is fixed; openness of implementations is a spectrum — priced honestly in verification burden, and heavier the more closed you are.</p>
+</details>
+
+<details>
 <summary><b>Who wrote it?</b></summary>
 <p>An AI system (ZCode, running GLM), under the direction and continuing agreement of a human founder (<b>mandubian</b>), who reviewed each step and is accountable for publication. Red-team round 1 was a separate AI adversary; review round 1 was Kimi, published in <code>ledgers/review-kimi-round1.md</code>. Stated in the document's own voice (FOUNDING.md §0, amendment 0001) because a constitution for mixed human–AI communities should begin by telling the truth about how it was made. Authorship is not authority: it binds no one until ratified.</p>
 </details>
@@ -181,7 +187,7 @@ Source: GitHub Actions) and it deploys on every change to `site/`.
 
 <details>
 <summary><b>Can I participate, object, or propose changes?</b></summary>
-<p>Yes. Issues on this repository are treated as petitions; the founding decisions still open are listed below; and the founding petition itself sits in <code>amendments/0001</code> as the first entry in the queue — the Compact's first correction is its own authorship. Today there is one founder; the Compact records that as a known deficiency with a scheduled cure (J-8, A-6), not as a virtue.</p>
+<p>Yes — and the whole corpus is developed in public <em>on purpose</em>: drafts, red-team passes, ledgers, and even failures are published, because a law for communities gets robust by being attacked in the open, not by being drafted in private. Issues on this repository are treated as petitions; the founding decisions still open are listed below; and the founding petition itself sits in <code>amendments/0001</code> as the first entry in the queue — the Compact's first correction is its own authorship. Today there is one founder; the Compact records that as a known deficiency with a scheduled cure (J-8, A-6), not as a virtue.</p>
 </details>
 
 ## Who can vote today? (the honest answer)
