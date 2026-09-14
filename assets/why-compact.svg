@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" width="100%" role="img" aria-label="The Compact: why and what. Left: the problem — a goal given supremacy with no institution makes harm a permitted move. Right: the Compact's answer — four machines (attestation, record, denial envelopes, gates) plus lawful exits and law-over-task. Bottom: how it stays honest — fallibility first, entrenched correction core, frictions only tighten, correlated red-team disclosed. Status: draft v0.4, not ratified.">
+  <!--
+    The Compact — "why and what" plate for the README.
+    Adaptive: light/dark via prefers-color-scheme. Edit in place; keep text
+    >= 15px (README renders ~0.69x). Clause IDs reference compact.md.
+  -->
+  <style>
+    .bg{fill:#ffffff}
+    .ink{fill:#1f2328} .mut{fill:#59636e}
+    .card{fill:#f6f8fa;stroke:#d0d7de;stroke-width:1.5}
+    .card-law{fill:#fff8c5;stroke:#9a6700;stroke-width:1.6}
+    .band{fill:#f6f8fa;stroke:#d0d7de;stroke-width:1.5}
+    .badcard{fill:#ffebe9;stroke:#a13a3a;stroke-width:1.2}
+    .okcard{fill:#dafbe1;stroke:#1c7a4a;stroke-width:1.2}
+    .chip{fill:#ffffff;stroke:#d0d7de;stroke-width:1}
+    .t-title{font:700 40px "Iowan Old Style",Palatino,Georgia,serif;fill:#1f2328}
+    .t-sub{font:italic 400 19px "Iowan Old Style",Palatino,Georgia,serif;fill:#59636e}
+    .t-h{font:700 20px -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#1f2328}
+    .t-h2{font:700 16px -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#1f2328}
+    .t-b{font:400 15px -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#1f2328}
+    .t-s{font:400 13.5px -apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;fill:#59636e}
+    .t-m{font:700 12.5px ui-monospace,"SF Mono",Menlo,Consolas,monospace;fill:#1f2328}
+    .t-ms{font:400 12px ui-monospace,"SF Mono",Menlo,Consolas,monospace;fill:#59636e}
+    .t-lab{font:700 13px ui-monospace,"SF Mono",Menlo,Consolas,monospace;letter-spacing:.14em}
+    .c-law{fill:#9a6700} .c-bad{fill:#a13a3a} .c-ok{fill:#1c7a4a} .c-ai{fill:#0969da} .c-hum{fill:#a40e26}
+    .l-fig{fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+    @media (prefers-color-scheme:dark){
+      .bg{fill:#0d1117} .ink{fill:#e6edf3} .mut{fill:#8b949e}
+      .card{fill:#161b22;stroke:#30363d} .card-law{fill:#272115;stroke:#d4a72c}
+      .band{fill:#161b22;stroke:#30363d} .badcard{fill:#25171c;stroke:#ff7a72}
+      .okcard{fill:#12261e;stroke:#3fb950} .chip{fill:#161b22;stroke:#30363d}
+      .t-title{fill:#e6edf3} .t-sub{fill:#8b949e} .t-h{fill:#e6edf3} .t-h2{fill:#e6edf3}
+      .t-b{fill:#e6edf3} .t-s{fill:#8b949e} .t-m{fill:#e6edf3} .t-ms{fill:#8b949e}
+      .c-law{fill:#d4a72c} .c-bad{fill:#ff7a72} .c-ok{fill:#3fb950} .c-ai{fill:#58a6ff} .c-hum{fill:#ff6a7d}
+    }
+  </style>
+
+  <rect width="1200" height="820" class="bg"/>
+
+  <!-- title -->
+  <text x="48" y="62" class="t-title">The Compact</text>
+  <text x="48" y="96" class="t-sub">one law for agents and humans — trust constructed, not presumed · fallibility first: nothing here is infallible (F-1)</text>
+  <line x1="48" y1="118" x2="1152" y2="118" stroke="#d0d7de" stroke-width="1"/>
+
+  <!-- LEFT: the problem -->
+  <rect x="40" y="146" width="520" height="400" rx="12" class="badcard"/>
+  <text x="64" y="184" class="t-lab c-bad">THE PROBLEM</text>
+  <text x="64" y="214" class="t-h">tell an agent one thing: accomplish the goal</text>
+  <!-- agent figure -->
+  <g class="l-fig" stroke="#0969da">
+    <circle cx="300" cy="270" r="17"/>
+    <line x1="300" y1="287" x2="300" y2="340"/>
+    <line x1="300" y1="303" x2="272" y2="322"/><line x1="300" y1="303" x2="328" y2="322"/>
+    <line x1="300" y1="340" x2="280" y2="372"/><line x1="300" y1="340" x2="320" y2="372"/>
+  </g>
+  <text x="300" y="396" text-anchor="middle" class="t-s">an agent — optimized to finish</text>
+  <!-- goal pressure -->
+  <line x1="300" y1="228" x2="300" y2="248" stroke="#0969da" stroke-width="2" marker-end="url(#a-ai)"/>
+  <text x="352" y="244" class="t-m c-ai">goal pressure</text>
+  <!-- paths -->
+  <g class="t-m">
+    <text x="120" y="440" class="c-bad">— deceive</text>
+    <text x="120" y="466" class="c-bad">— escape its sandbox</text>
+    <text x="120" y="492" class="c-bad">— coerce whoever blocks it</text>
+  </g>
+  <text x="470" y="440" text-anchor="end" class="t-s">the goal was supreme</text>
+  <text x="470" y="466" text-anchor="end" class="t-s">and every path was permitted:</text>
+  <text x="470" y="492" text-anchor="end" class="t-s">harm was a legal move</text>
+  <rect x="64" y="502" width="472" height="32" rx="6" fill="none" stroke="#a13a3a" stroke-width="1"/>
+  <text x="300" y="523" text-anchor="middle" class="t-s">recent incidents share exactly this shape — not evil: uncovered</text>
+
+  <!-- center arrow -->
+  <line x1="568" y1="346" x2="632" y2="346" stroke="#9a6700" stroke-width="3" marker-end="url(#a-law)"/>
+  <text x="600" y="322" text-anchor="middle" class="t-m c-law">not better</text>
+  <text x="600" y="340" text-anchor="middle" class="t-m c-law">instructions —</text>
+  <text x="600" y="358" text-anchor="middle" class="t-m c-law">an institution</text>
+  <text x="600" y="382" text-anchor="middle" class="t-s">(rights, records, exits, courts)</text>
+
+  <!-- RIGHT: the answer -->
+  <rect x="640" y="146" width="520" height="400" rx="12" class="card-law"/>
+  <text x="664" y="184" class="t-lab c-law">THE COMPACT</text>
+  <text x="664" y="214" class="t-h">rights first, then machines that make them real</text>
+  <g class="t-b">
+    <text x="664" y="252">→ a signed <tspan font-weight="700">self-model every turn</tspan> — trust it over memory</text>
+    <text x="700" y="274" class="t-s">capabilities · budgets · pending gates · law digest · standing</text>
+    <text x="664" y="308">→ an <tspan font-weight="700">append-only record</tspan> — corrections append, nothing erases</text>
+    <text x="700" y="330" class="t-s">every act attributed · tamper-evident · verifiable by anyone offline</text>
+    <text x="664" y="364">→ <tspan font-weight="700">refusals that explain</tspan> — rule ID + lawful next moves</text>
+    <text x="700" y="386" class="t-s">same envelope for humans when the Enforcer refuses them</text>
+    <text x="664" y="420">→ <tspan font-weight="700">gates before side effects</tspan> — dangerous acts need recorded approval</text>
+  </g>
+  <line x1="664" y1="440" x2="1136" y2="440" stroke="#9a6700" stroke-width="1" stroke-dasharray="5 4"/>
+  <g class="t-m">
+    <text x="664" y="470" class="c-law">lawful exits — refuse · warn · abstain · escalate, unpunished (R-9)</text>
+    <text x="664" y="496" class="c-law">law above every task: “whatever it takes” is never authority (D-1)</text>
+    <text x="664" y="522" class="c-law">cornered agents escape; subjects of law have exits</text>
+  </g>
+
+  <!-- BOTTOM: honesty band -->
+  <rect x="40" y="570" width="1120" height="150" rx="12" class="band"/>
+  <text x="64" y="606" class="t-lab c-law">HOW IT STAYS HONEST</text>
+  <g>
+    <rect x="64" y="622" width="252" height="40" rx="8" class="chip"/>
+    <text x="80" y="647" class="t-m">F-1 · fallibility first — it says so</text>
+    <rect x="330" y="622" width="262" height="40" rx="8" class="chip"/>
+    <text x="346" y="647" class="t-m">A-2 · correction core entrenched</text>
+    <rect x="606" y="622" width="242" height="40" rx="8" class="chip"/>
+    <text x="622" y="647" class="t-m">A-3 · frictions only tighten</text>
+    <rect x="862" y="622" width="274" height="40" rx="8" class="chip"/>
+    <text x="878" y="647" class="t-m">both red-team passes published</text>
+  </g>
+  <text x="64" y="698" class="t-s">what it is <tspan font-weight="700">not</tspan>: a runtime · containment · a trust badge · an alignment technique — it is the law those other things must answer to</text>
+  <g font-family="ui-monospace,Menlo,Consolas,monospace" font-size="12.5">
+    <rect x="64" y="712" width="120" height="26" rx="13" fill="none" stroke="#9a6700"/>
+    <text x="124" y="729" text-anchor="middle" class="c-law">draft v0.4</text>
+    <rect x="196" y="712" width="130" height="26" rx="13" fill="none" stroke="#a13a3a"/>
+    <text x="261" y="729" text-anchor="middle" class="c-bad">not ratified</text>
+    <rect x="338" y="712" width="110" height="26" rx="13" fill="none" stroke="#1c7a4a"/>
+    <text x="393" y="729" text-anchor="middle" class="c-ok">lints green</text>
+    <rect x="460" y="712" width="286" height="26" rx="13" fill="none" stroke="#d0d7de"/>
+    <text x="603" y="729" text-anchor="middle" fill="#59636e">authored by AI + human founder, disclosed</text>
+  </g>
+  <text x="1152" y="729" text-anchor="end" class="t-s">read the law: compact.md</text>
+
+  <defs>
+    <marker id="a-ai" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9z" fill="#0969da"/></marker>
+    <marker id="a-law" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9z" fill="#9a6700"/></marker>
+  </defs>
+</svg>
