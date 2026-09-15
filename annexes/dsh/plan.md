@@ -357,6 +357,18 @@ Work items:
    `sentinel-baseline-guard` idea as a CI rule: PRs touching enforcement
    plugins and the register simultaneously require a `[baseline-update]`
    prefix.
+6. **Launchable profile & run recipe** (tracked 2026-09-16 from the
+   compact-dsh README's "runnable demo" gap): ship the composition as a
+   runnable artifact — `dsh.bundle` declarations per package (layout §3) +
+   the blessed `cordis.patch.yml` overlay + a documented launch recipe (the
+   dsh profile line, the model-provider key, the `dsh` boot command) — so a
+   user gets a real agent session under the enforcement floor with one
+   command. Today the composed suites wire the plugins into the real
+   ToolRuntime manually per test; this item closes the distance to §8's
+   "a user on a pinned dsh can `dsh plugin add` the bundle set and get…".
+   Small slice; evidence of done is the recipe's boot under the
+   constitution coupling (refuse-to-start on a missing enforcement
+   service) plus the blessed-composition attestation in the log.
 
 **Acceptance tests**: boot fails on signature mismatch, on missing enforcement
 plugin, on unregistered rule; bless/attestation roundtrip; register verify
