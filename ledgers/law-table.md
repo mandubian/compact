@@ -33,9 +33,9 @@ the draft's Status; founding plan §5.3).
 | `R-6` | Enforcer | Subject | Enforcer | law text + digest | constitution_read tool |
 | `R-7` | all Members | Member; Witness | any | chain attribution (I-2) | bound agent_id in entries |
 | `R-8` | Enforcer | Subject | Enforcer | closed termination reasons | termination taxonomy |
-| `R-9` | Enforcer; Principal | Subject | Enforcer; Principal | refusal records + no-penalty | refusal act class |
+| `R-9` | Enforcer; Principal | Subject | Enforcer; Principal | refusal records + no-penalty + values-profile citation | refusal act class + profile registry |
 | `R-10` | Enforcer; all Members | Subject | Enforcer; Members | three-part privacy discipline | reasoning_sha256 + audit capability |
-| `R-11` | Enforcer; adjudicators | every Member | Enforcer | petition queue + SLA (I-6) | amendment queue plugin |
+| `R-11` | Enforcer; adjudicators | every Member | Enforcer | petition queue + SLA (I-6) + collision series by author class | amendment queue plugin |
 | `R-12` | Enforcer; all | Member | Enforcer; any | exit record + portable identity | capsule export |
 | `R-13` | addressed Member | any Member whose work or jurisdiction is touched | the addressed Member; the ultimate Principal | inquiry tool answered from attestation + delegation record (D-3/D-7 enforce truthfulness) | inquiry tool plugin |
 
