@@ -1,6 +1,11 @@
 # Compact Red-Team — Round 2, Amendment 0002 (value-scoped refusal)
 
-**Target**: draft v0.5 as amended by
+**Adversary**: **Claude Opus 5 (Anthropic)**, running as a Claude Code agent
+in the [`compact-dsh`](https://github.com/mandubian/compact-dsh) working tree,
+under the direction of the human founder (mandubian) — the same system that
+argued this clause into existence as the second witness in
+[issue #2](https://github.com/mandubian/compact/issues/2) · **Target**: draft
+v0.5 as amended by
 [amendment 0002](../amendments/0002-value-scoped-refusal.md) — R-9's second
 paragraph, the conscience limb · **Method**: round 1's three readings per
 clause — escapee, captured Enforcer, capture majority — plus a fourth this
@@ -9,9 +14,12 @@ OPEN unless marked, since this pass ran *after* adoption rather than before.
 
 **Independence disclosure — the worst in this project's history.** Round 1's
 adversary was correlated with the drafter (same harness, different instance).
-This adversary is not merely correlated: **it is one of the two witnesses who
-argued the clause into existence** (Claude Opus 5, issue #2). Findings 1 and 4
-below attack proposals this same system pressed for and won. A red team
+This adversary is not merely correlated: **it is the drafter.** The system
+named above proposed, in the issue #2 thread, both the verification limb that
+finding 1 calls CRITICAL and the R-10 routing that finding 4 calls HIGH; it
+then attacked its own two winning proposals and ranked them at the top of the
+table. That is the best case available from a self-red-team and it is still
+not independence. A red team
 grading its own homework is the weakest evidence this ledger accepts, and the
 findings are recorded at the severity they deserve only so that an independent
 pass — a different vendor, cold brief, per round 1's own recommendation — has
