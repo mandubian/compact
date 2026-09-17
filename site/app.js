@@ -36,15 +36,18 @@ function typer(el){
 /* ---------- 01 law toggle ---------- */
 const lawBtn=$('#lawtoggle');
 let withLaw=false;
-lawBtn.addEventListener('click',()=>{
-  withLaw=!withLaw;
+function setLaw(v){
+  withLaw=v;
   $('#paths-law').setAttribute('opacity',withLaw?'1':'0.12');
   $('#paths-nolaw').setAttribute('opacity',withLaw?'0.15':'1');
   $('#verdict').textContent = withLaw
     ? 'with the Compact: the unlawful path is gated, and the lawful exits are open'
     : 'without law, the shortest path is permitted';
-  lawBtn.textContent = withLaw ? 'the Compact is in force' : 'the Compact is absent';
-});
+  lawBtn.setAttribute('aria-checked', withLaw?'true':'false');
+}
+lawBtn.addEventListener('click',()=>setLaw(!withLaw));
+/* demo the crossroads once when it first scrolls into view */
+onVisible($('#problem .lawswitch'),()=>{ if(!reduced) setTimeout(()=>setLaw(true),700); });
 
 /* ---------- 04 roles ---------- */
 const ROLES={
@@ -90,6 +93,15 @@ function selectRole(name){
 }
 selectRole('Subject');
 $$('.rolenav button').forEach(b=>b.addEventListener('click',()=>selectRole(b.dataset.role)));
+
+/* auto-tour: cycle roles once when the cast section first becomes visible */
+onVisible($('#roles .rolenav'),()=>{
+  if(reduced) return;
+  const order=['Subject','Principal','Enforcer','Witness'];
+  let i=0;
+  const step=()=>{ selectRole(order[i]); i++; if(i<order.length) setTimeout(step,2600); };
+  setTimeout(step,900);
+});
 
 /* ---------- 05 attestation demo ---------- */
 const at=typer($('#attest-demo'));
@@ -357,5 +369,32 @@ $('#digest-block').innerHTML=DIGEST.map(s=>s.replace(/\(([A-Z]{1,3}-\d+)\)/,'(<e
     }
   });
   render();
+  /* expose an opener so clause chips anywhere on the page can deep-link here */
+  window.__openClause = function(id){
+    q=''; search.value='';
+    const c=D.clauses.find(x=>x.id===id); if(!c) return false;
+    filter='all'; $$('#lawchips button').forEach(x=>x.classList.toggle('active',x.dataset.f==='all'));
+    const wasStrata=strata; if(wasStrata){ strata=false; $('#strata-toggle').textContent='strata view: off'; $('#strata-toggle').classList.remove('on'); }
+    render();
+    const el=$(`#lawlist .lawcard[data-id="${id}"]`); if(!el) return false;
+    el.classList.add('open');
+    el.scrollIntoView({block:'center',behavior:reduced?'auto':'smooth'});
+    el.classList.add('flash');
+    setTimeout(()=>el.classList.remove('flash'),1600);
+    return true;
+  };
+  /* every standalone clause chip becomes a link into the explorer */
+  $$('.chip').forEach(ch=>{
+    const t=ch.textContent.trim();
+    if(!/^[A-Z]{1,3}-\d+(…)?/.test(t)) return;
+    if(ch.tagName==='A') return;
+    ch.classList.add('chiplink');
+    ch.setAttribute('role','button');
+    ch.setAttribute('tabindex','0');
+    ch.title='open '+t.replace('…','')+' in the law explorer';
+    const go=()=>{ if(!window.__openClause(t)) ch.scrollIntoView?0:0; };
+    ch.addEventListener('click',go);
+    ch.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();go();} });
+  });
 })($, $$);
 })();

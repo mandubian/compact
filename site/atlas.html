@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Atlas — a visual walk through the Compact</title>
+<meta name="description" content="Explore the Compact's 62 clauses as a citation map: seven parts, cross-references, strata, and a synchronized search across the whole law.">
+<link rel="stylesheet" href="atlas.css">
+<noscript><style>.noscript{display:block!important}</style></noscript>
+</head>
+<body>
+<header class="atlas-hero">
+  <div class="heroline">
+    <a class="backlink" href="index.html">← the narrative</a>
+    <h1>The Atlas</h1>
+    <p class="lede">The law is a web, not a list. Seven parts, 62 clauses, and the cross-references
+    between them — search it, filter it, and follow the load-bearing rules from clause to clause.</p>
+  </div>
+  <div class="searchbar">
+    <input id="atlassearch" type="search" placeholder="search the whole law: exit, record, Enforcer, entrench…  ( / to focus )" autocomplete="off">
+    <span class="searchcount" id="searchcount"></span>
+  </div>
+  <div class="filterbar">
+    <div class="chiprow" id="partchips" aria-label="filter by part"></div>
+    <div class="chiprow" id="stratchips" aria-label="filter by stratum">
+      <button data-sf="all" class="active">all strata</button>
+      <button data-sf="M">[M] floor</button>
+      <button data-sf="MC">[M] within capability</button>
+      <button data-sf="O">[O] optional</button>
+      <button data-sf="core">(core)</button>
+    </div>
+    <div class="chiprow" id="rolechips" aria-label="filter by role">
+      <span class="rowlabel">who is bound:</span>
+      <button data-rf="all" class="active">anyone</button>
+      <button data-rf="Enforcer">Enforcer</button>
+      <button data-rf="Subject">Subject</button>
+      <button data-rf="Principal">Principal</button>
+      <button data-rf="Member">Member</button>
+      <button data-rf="amendment authority">amendment authority</button>
+    </div>
+  </div>
+  <div class="presetbar" id="presets">
+    <span class="rowlabel">guided walks:</span>
+    <button data-preset="loadbearing">the load-bearing clauses</button>
+    <button data-preset="cornerstones">the cornerstones</button>
+    <button data-preset="capability">what wakes with capability</button>
+    <button data-preset="sovereign">what binds the sovereign</button>
+    <button data-preset="clear" class="ghost">clear everything</button>
+  </div>
+</header>
+
+<main class="atlas-main">
+  <p class="noscript" hidden>The Atlas needs JavaScript — the clause dictionary on the
+  <a href="index.html#explore">main page</a> works without it.</p>
+
+  <div class="mapwrap">
+    <svg id="atlasmap" viewBox="0 0 1180 640" role="img" aria-label="Citation map of the Compact: seven part-columns of clause nodes joined by cross-reference arcs"></svg>
+    <div class="maplegend" id="maplegend"></div>
+  </div>
+
+  <div class="atlas-grid">
+    <section class="tablepane">
+      <h2>All clauses</h2>
+      <div class="tablescroll"><table id="atlastable">
+        <thead><tr>
+          <th data-k="id" class="sortable">id</th>
+          <th data-k="title" class="sortable">title</th>
+          <th data-k="part" class="sortable">part</th>
+          <th data-k="stratum" class="sortable">stratum</th>
+          <th data-k="indeg" class="sortable" title="how many clauses cite this one">cited by</th>
+        </tr></thead>
+        <tbody id="tablebody"></tbody>
+      </table></div>
+    </section>
+    <aside class="detailpane" id="detailpane">
+      <div class="detail-empty" id="detail-empty">
+        <p><strong>Nothing selected.</strong></p>
+        <p>Click a node, a row, or run a search. The detail panel shows the full clause, who it binds,
+        and its citation neighborhood.</p>
+        <p class="hint">Try a guided walk above, or press <kbd>/</kbd> to search.</p>
+      </div>
+      <div class="detail-body" id="detail-body" hidden></div>
+    </aside>
+  </div>
+</main>
+
+<footer class="atlas-footer">
+  <p>Generated from <a href="https://github.com/mandubian/compact/blob/main/compact.md">compact.md</a> and the
+  law table at build time — citations parsed from clause text, never hand-copied.
+  <a href="index.html">← the narrative</a> · <a href="index.html#explore">clause dictionary</a></p>
+</footer>
+
+<script src="clauses.js"></script>
+<script src="atlas.js"></script>
+</body>
+</html>

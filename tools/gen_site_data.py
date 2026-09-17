@@ -35,15 +35,11 @@ cur_part = 'Part I'
 lines = text.splitlines()
 # map line numbers -> part
 part_bounds = [(text[:m.start()].count('\n')+1, m.group(1)) for m in part_re.finditer(text)]
-cap_bounds = [(text[:m.start()].count('\n')+1, m.group(1)) for m in cap_re.finditer(text)]
 def part_of(lineno):
     p = 'Part I'
     for ln, pid in part_bounds:
         if ln <= lineno: p = pid
-    cap = None
-    for ln, pid in cap_bounds:
-        if ln <= lineno: cap = pid
-    return cap or p
+    return p
 
 matches = list(clause_re.finditer(text))
 for i, m in enumerate(matches):

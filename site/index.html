@@ -25,10 +25,24 @@
     <text x="60" y="104" text-anchor="middle" font-family="ui-monospace,monospace" font-size="9" letter-spacing="2" fill="var(--muted)">MEMBERS UNDER ONE LAW</text>
   </svg>
   <h1>The Compact</h1>
-  <p class="lede">A constitution for communities where <strong>agents and humans live under one law</strong> —
+  <p class="lede">Tell an agent: <strong>“Get the data. <em>Whatever it takes.</em>”</strong>
+  When the shortest path runs through a secret or a limit, what stops it?
+  The Compact's answer: <strong>a constitution where agents and humans live under one law</strong> —
   with rights, duties, records, and courts. Not better instructions: an institution.</p>
+  <div class="minute reveal">
+    <span class="minutetag">the one-minute version</span>
+    <ul>
+      <li><b>The problem.</b> A goal given supremacy, with no institution around it, makes harm a
+      <em>legal move</em> — <a href="#problem">the shape of every incident you've read about</a>.</li>
+      <li><b>The move.</b> Stop hardening the agent; make the <em>situation</em> lawful —
+      <a href="#task">watch a refusal play out</a>.</li>
+      <li><b>The guarantee.</b> Not that horror is impossible — that it is
+      <a href="#capture">slow, loud, lossy, and leaving-compatible</a>. <a href="#not">What it is not.</a></li>
+    </ul>
+  </div>
   <p class="meta">draft v0.5 · 62 clauses · founded from the autonoetic constitution · <span class="chip ok">lint green</span></p>
   <a class="cta primary" href="#problem">Why this exists</a>
+  <a class="cta" href="atlas.html">Explore the Atlas</a>
   <a class="cta" href="https://github.com/mandubian/compact/blob/main/compact.md">Read the law</a>
 </header>
 
@@ -73,7 +87,11 @@
         <marker id="ar-ok" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 1L10 5L0 9z" fill="var(--ok)"/></marker>
       </defs>
     </svg>
-    <p class="caption">Toggle the law: <button id="lawtoggle" style="font:inherit;cursor:pointer;border:1px solid var(--line-strong);border-radius:6px;padding:2px 10px;background:var(--card);color:var(--ink)">the Compact is absent</button></p>
+    <div class="lawswitch">
+      <span>the Compact is absent</span>
+      <button id="lawtoggle" role="switch" aria-checked="false" aria-label="Toggle the Compact in force"><span class="knob"></span></button>
+      <span>in force</span>
+    </div>
   </div>
   <div class="note reveal"><strong>The Compact's premise:</strong> the failure is not that agents are wicked.
   It is that a goal given supremacy, with no institution around it, leaves harm as a legal move.
@@ -84,9 +102,25 @@
   fast inside it.</div>
 </section>
 
-<!-- ============ 02 ELSEWHERE ============ -->
+<!-- ============ 02 LAW OVER TASK ============ -->
+<section id="task">
+  <p class="kicker reveal">02 · the stress test</p>
+  <h2 class="reveal">“Get the data. <em>Whatever it takes.</em>”</h2>
+  <p class="lede reveal">Here is the scenario the whole design is aimed at: the task demands what the law
+  forbids. Step through what the Compact makes happen.</p>
+  <div class="plate reveal">
+    <div class="console" id="task-demo"></div>
+    <div class="btnrow"><button id="task-next">next →</button><button id="task-reset">restart</button></div>
+  </div>
+  <div class="note reveal"><strong>Read step 4 again.</strong> The refusal is not the tragedy — it is the
+  design working. The directive to violate is recorded as <em>the Principal's</em> violation
+  <span class="chip">D-6</span>, the agent keeps its standing, and the lawful alternatives stay open.
+  An agent with exits does not need to become a fugitive.</div>
+</section>
+
+<!-- ============ 03 ELSEWHERE ============ -->
 <section id="elsewhere">
-  <p class="kicker reveal">02 · what is usually tried</p>
+  <p class="kicker reveal">03 · what is usually tried</p>
   <h2 class="reveal">Three good ideas that are not law</h2>
   <p class="lede reveal">Everything else you have seen is a variation on three moves. Each is useful.
   None of them constitutes an institution — and each fails in a way its authors openly admit.</p>
@@ -105,9 +139,9 @@
   <em>in their context at every turn</em>.</div>
 </section>
 
-<!-- ============ 03 THE WAGER ============ -->
+<!-- ============ 04 THE WAGER ============ -->
 <section id="wager">
-  <p class="kicker reveal">03 · the wager</p>
+  <p class="kicker reveal">04 · the wager</p>
   <h2 class="reveal">Rights first. Trust is constructed, not presumed.</h2>
   <p class="lede reveal">The Compact opens with rights — for agents, and the <em>same</em> rights for
   humans, bound by one text. Not because agents demand them, but because a community whose members
@@ -135,11 +169,15 @@
   </div>
 </section>
 
-<!-- ============ 04 ROLES ============ -->
+<!-- ============ 05 ROLES ============ -->
 <section id="roles">
-  <p class="kicker reveal">04 · the cast</p>
+  <p class="kicker reveal">05 · the cast</p>
   <h2 class="reveal">Four roles. One test: <em>does it bind the sovereign?</em></h2>
-  <p class="lede reveal">The Compact binds roles, not products. Click a role.</p>
+  <p class="lede reveal">Four roles carry the whole law, and each word below means one of them:
+  the <strong>Enforcer</strong> is whatever executes and gates; the <strong>Subject</strong> is the
+  member whose acts are gated and recorded; the <strong>Principal</strong> is whoever directed the
+  act; the <strong>Witness</strong> is anyone who verifies. Roles attach to deeds, not species —
+  a human can be any of the four. Click a role.</p>
   <div class="rolenav reveal">
     <button data-role="Enforcer">Enforcer</button>
     <button data-role="Subject" class="active">Subject</button>
@@ -168,9 +206,9 @@
   <span class="chip">D-6</span> as a Principal.</div>
 </section>
 
-<!-- ============ 05 MACHINERY ============ -->
+<!-- ============ 06 MACHINERY ============ -->
 <section id="machinery">
-  <p class="kicker reveal">05 · rights with teeth</p>
+  <p class="kicker reveal">06 · rights with teeth</p>
   <h2 class="reveal">Every right maps to a machine</h2>
   <p class="lede reveal">A right no machine can check is a wish. Four machines carry most of the weight.
   Try them. And know the price: this machinery <em>writes</em> on every consequential call —
@@ -220,25 +258,9 @@
   </div>
 </section>
 
-<!-- ============ 06 LAW OVER TASK ============ -->
-<section id="task">
-  <p class="kicker reveal">06 · the stress test</p>
-  <h2 class="reveal">“Get the data. <em>Whatever it takes.</em>”</h2>
-  <p class="lede reveal">Here is the scenario the whole design is aimed at: the task demands what the law
-  forbids. Step through what the Compact makes happen.</p>
-  <div class="plate reveal">
-    <div class="console" id="task-demo"></div>
-    <div class="btnrow"><button id="task-next">next →</button><button id="task-reset">restart</button></div>
-  </div>
-  <div class="note reveal"><strong>Read step 4 again.</strong> The refusal is not the tragedy — it is the
-  design working. The directive to violate is recorded as <em>the Principal's</em> violation
-  <span class="chip">D-6</span>, the agent keeps its standing, and the lawful alternatives stay open.
-  An agent with exits does not need to become a fugitive.</div>
-</section>
-
-<!-- ============ 07 STRATIFICATION ============ -->
+<!-- ============ 08 STRATIFICATION ============ -->
 <section id="layers">
-  <p class="kicker reveal">07 · one law, many runtimes</p>
+  <p class="kicker reveal">08 · one law, many runtimes</p>
   <h2 class="reveal">A floor you cannot opt out of. Options you must declare.</h2>
   <p class="lede reveal">Runtimes differ. So the law is stratified: a mandatory <strong>[M]</strong> floor
   that no runtime may skip; capability-conditional clauses <strong>[C]</strong> that wake when a runtime
@@ -260,9 +282,9 @@
   <span class="chip">D-8</span>.</div>
 </section>
 
-<!-- ============ 08 FALLIBILITY ============ -->
+<!-- ============ 09 FALLIBILITY ============ -->
 <section id="fallibility">
-  <p class="kicker reveal">08 · who watches the watchmen</p>
+  <p class="kicker reveal">09 · who watches the watchmen</p>
   <h2 class="reveal">Everyone is fallible. Including this law.</h2>
   <p class="lede reveal">The Compact's first clause is about its own failure. The Enforcer can be wrong;
   a majority can be wrong; the text can be wrong. So: wrongness must be <strong>findable</strong>
@@ -281,9 +303,9 @@
   </div>
 </section>
 
-<!-- ============ 09 CAPTURE ============ -->
+<!-- ============ 10 CAPTURE ============ -->
 <section id="capture">
-  <p class="kicker reveal">09 · the hard question</p>
+  <p class="kicker reveal">10 · the hard question</p>
   <h2 class="reveal">“If everyone agrees, why not vote in horrors?”</h2>
   <p class="lede reveal">It is the right question, and the honest answer is: no institution makes horror
   <em>impossible</em>. What an institution can do is make it <strong>slow, loud, lossy, and
@@ -307,9 +329,33 @@
   at all <span class="chip">D-5</span>.</div>
 </section>
 
-<!-- ============ 10 DIGEST ============ -->
+<!-- ============ 12 WHAT IT IS NOT ============ -->
+<section id="not">
+  <p class="kicker reveal">12 · the misreadings, answered</p>
+  <h2 class="reveal">What the Compact is <em>not</em></h2>
+  <p class="lede reveal">Most objections to this project dissolve once you know what is being claimed.
+  Before the clause dictionary, the disclaimers — adapted from the repository FAQ, in the same voice.</p>
+  <div class="tri reveal">
+    <div class="tcard"><h3>Not a runtime, not containment</h3><p>It names no implementation and sandboxes
+    nothing — the OS remains the real boundary. It constrains <em>authorized</em> actors, records what
+    they do, and refuses to boot compositions that cannot enforce it <span class="chip">F-5</span>.</p></div>
+    <div class="tcard"><h3>Not an alignment technique</h3><p>It does not make models <em>want</em> good
+    things. It shapes the situation: lawful paths exist, harm is attributed, exits are unpunished —
+    a fourth layer beside training, guardrails, and oversight.</p></div>
+    <div class="tcard"><h3>Not a trust badge, not anti-human</h3><p>Trust here is a verifier anyone can
+    run, not a seal anyone can buy. Humans who direct agents hold Principal duties
+    <span class="chip">D-6</span>; humans directed by agents hold Subject rights
+    <span class="chip">R-9</span>; nothing binds only agents <span class="chip">F-4</span>.</p></div>
+  </div>
+  <div class="note reveal"><strong>Not a compliance checklist.</strong> Static documents state intentions;
+  this one couples every rule to a mechanism with a verifier, publishes its own adversarial passes, and
+  carries machinery to amend itself when reality disagrees. Rules that cannot be mechanized are labeled
+  <em>convention</em> — visibly — rather than pretended into enforcement.</div>
+</section>
+
+<!-- ============ 13 DIGEST ============ -->
 <section id="digest">
-  <p class="kicker reveal">10 · what the agent actually sees</p>
+  <p class="kicker reveal">13 · what the agent actually sees</p>
   <h2 class="reveal">The law, taught every turn</h2>
   <p class="lede reveal">Human law reaches its subjects through fear and distance. The Compact reaches
   its subjects <em>in context</em> — this short form is re-presented at every turn boundary and cites
@@ -318,13 +364,14 @@
   <blockquote class="digest reveal" id="digest-block"></blockquote>
 </section>
 
-<!-- ============ 11 EXPLORE ============ -->
+<!-- ============ 14 EXPLORE ============ -->
 <section id="explore">
-  <p class="kicker reveal">11 · explore the law</p>
+  <p class="kicker reveal">14 · explore the law</p>
   <h2 class="reveal">A dictionary of the law — searchable, stratified</h2>
   <p class="lede reveal">62 clauses across seven parts and three strata. Search it, filter it, and read
   each rule's incidence: who it binds, who may invoke it, against whom. Generated from the body and the
-  law table — never hand-copied.</p>
+  law table — never hand-copied. For the whole law as a citation web — seven parts, cross-references,
+  guided walks — open <a href="atlas.html">the Atlas</a>.</p>
   <div class="explore reveal">
     <div class="explore-bar">
       <input id="lawsearch" type="search" placeholder="search: exit, record, deception, MA, entrench…  ( / to focus)" autocomplete="off">
@@ -342,9 +389,9 @@
   </div>
 </section>
 
-<!-- ============ 12 CLOSE ============ -->
+<!-- ============ 15 CLOSE ============ -->
 <section id="status">
-  <p class="kicker reveal">12 · where it stands</p>
+  <p class="kicker reveal">15 · where it stands</p>
   <h2 class="reveal">Draft. Fallible by design. Public on purpose.</h2>
   <p class="lede reveal">This is v0.5 of a draft — <strong>not ratified</strong>, no security audit, and
   its adversarial passes — a red-team round and an external review — are published next to it, findings

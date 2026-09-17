@@ -791,7 +791,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "MA-1",
-"part": "MA",
+"part": "Part VI",
 "force": "M",
 "within": "MA",
 "core": false,
@@ -807,7 +807,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "MA-2",
-"part": "MA",
+"part": "Part VI",
 "force": "M",
 "within": "MA",
 "core": false,
@@ -823,7 +823,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "MA-3",
-"part": "MA",
+"part": "Part VI",
 "force": "M",
 "within": "MA",
 "core": false,
@@ -839,7 +839,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "MA-4",
-"part": "MA",
+"part": "Part VI",
 "force": "M",
 "within": "MA",
 "core": false,
@@ -855,7 +855,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "CF-1",
-"part": "CF",
+"part": "Part VI",
 "force": "M",
 "within": "CF",
 "core": false,
@@ -871,7 +871,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "CF-2",
-"part": "CF",
+"part": "Part VI",
 "force": "M",
 "within": "CF",
 "core": false,
@@ -887,7 +887,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "MEM-1",
-"part": "MEM",
+"part": "Part VI",
 "force": "O",
 "within": null,
 "core": false,
@@ -903,7 +903,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "FED-1",
-"part": "FED",
+"part": "Part VI",
 "force": "O",
 "within": null,
 "core": false,
@@ -919,7 +919,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "SCH-1",
-"part": "SCH",
+"part": "Part VI",
 "force": "M",
 "within": "SCH",
 "core": false,
@@ -935,7 +935,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-1",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": false,
@@ -951,7 +951,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-2",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": true,
@@ -967,7 +967,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-3",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": true,
@@ -983,7 +983,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-4",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": false,
@@ -999,7 +999,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-5",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": false,
@@ -1015,7 +1015,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-6",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": false,
@@ -1031,7 +1031,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-7",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": false,
@@ -1047,7 +1047,7 @@ window.COMPACT_DATA = {
 },
 {
 "id": "A-8",
-"part": "SCH",
+"part": "Part VII",
 "force": "M",
 "within": null,
 "core": false,

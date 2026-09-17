@@ -57,6 +57,24 @@ header.hero{padding:96px 0 40px;text-align:left}
 .cta:hover{border-color:var(--ai);color:var(--ai)}
 .cta.primary{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .cta.primary:hover{opacity:.88;color:var(--paper)}
+/* one-minute version */
+.minute{margin:26px 0 0;padding:14px 18px;border:1px solid var(--line);border-left:3px solid var(--law);
+  border-radius:0 10px 10px 0;background:var(--card);max-width:72ch}
+.minute .minutetag{display:block;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--law);margin-bottom:6px}
+.minute ul{margin:0;padding-left:18px;font-size:15px;line-height:1.6}
+.minute li{margin:4px 0}
+.minute b{color:var(--ink)}
+/* law switch */
+.lawswitch{display:flex;align-items:center;justify-content:center;gap:12px;margin:12px 0 4px;
+  font-family:var(--mono);font-size:13px;font-weight:700}
+.lawswitch button{width:56px;height:30px;border-radius:16px;border:2px solid var(--line-strong);
+  background:var(--wash);cursor:pointer;position:relative;padding:0;transition:background .2s,border-color .2s}
+.lawswitch button .knob{position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;
+  background:var(--line-strong);transition:left .2s,background .2s}
+.lawswitch button[aria-checked="true"]{background:color-mix(in srgb,var(--ok) 22%,var(--card));border-color:var(--ok)}
+.lawswitch button[aria-checked="true"] .knob{left:29px;background:var(--ok)}
+.lawswitch button:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
 /* elsewhere cards */
 .tri{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin:20px 0}
 .tcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
@@ -148,3 +166,9 @@ footer .links a{margin-right:18px}
 .lawcard .hint{font-size:12.5px;color:var(--muted);margin-top:4px}
 .lawcard .gh{font-family:var(--mono);font-size:10.5px;margin-top:6px;display:none}
 .lawcard.open .gh{display:block}
+/* clickable clause chips */
+.chip.chiplink{cursor:pointer;transition:border-color .15s,color .15s,transform .15s}
+.chip.chiplink:hover{border-color:var(--ai);color:var(--ai)}
+.chip.chiplink:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+@keyframes chipflash{0%{box-shadow:0 0 0 3px var(--law-line)}100%{box-shadow:0 0 0 3px transparent}}
+.lawcard.flash{animation:chipflash 1.5s ease-out}
