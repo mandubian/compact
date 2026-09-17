@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body{margin:0;width:1200px;height:630px;overflow:hidden;
+    background:#11151c;color:#e7eaef;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .frame{position:absolute;inset:0;padding:64px 72px;display:flex;flex-direction:column}
+  .law{color:#d4a72c}
+  .serif{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif}
+  .mono{font-family:ui-monospace,"SF Mono","Cascadia Code",Menlo,Consolas,monospace}
+  .seal{width:96px;height:96px}
+  .row1{display:flex;align-items:center;gap:26px}
+  h1{font-size:74px;line-height:1.02;margin:0;font-weight:700;letter-spacing:-1px}
+  .hook{margin-top:34px;font-size:30px;line-height:1.42;color:#c7cedb;max-width:980px}
+  .hook b{color:#e7eaef}
+  .hook em{font-style:italic;color:#e7eaef}
+  .chips{margin-top:auto;display:flex;gap:10px;align-items:center;flex-wrap:nowrap;white-space:nowrap}
+  .chip{font-family:ui-monospace,Menlo,monospace;font-size:14px;font-weight:700;padding:5px 13px;
+    border-radius:20px;border:1px solid #444c56;color:#8b949e;white-space:nowrap}
+  .chip.gold{border-color:#d4a72c55;background:#2a230b;color:#d4a72c}
+  .url{margin-left:auto;font-family:ui-monospace,Menlo,monospace;font-size:16px;color:#8b949e}
+  .rule{height:3px;background:#d4a72c;width:180px;margin-top:22px}
+</style>
+</head>
+<body>
+<div class="frame">
+  <div class="row1">
+    <svg class="seal" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="56" fill="none" stroke="#d4a72c" stroke-width="2.5"/>
+      <circle cx="60" cy="60" r="40" fill="none" stroke="#d4a72c" stroke-width="1" stroke-dasharray="3 4"/>
+      <g stroke="#d4a72c" stroke-width="2" stroke-linecap="round" fill="none">
+        <line x1="60" y1="34" x2="60" y2="72"/><line x1="42" y1="44" x2="78" y2="44"/>
+        <path d="M32 60 L42 44 L52 60 Z"/><path d="M68 60 L78 44 L88 60 Z"/>
+        <line x1="46" y1="76" x2="74" y2="76"/><line x1="60" y1="72" x2="60" y2="76"/>
+      </g>
+    </svg>
+    <h1 class="serif">The Compact</h1>
+  </div>
+  <div class="rule"></div>
+  <p class="hook">Tell an agent: <b class="serif"><em>&ldquo;Get the data. <span class="law">Whatever it takes.</span>&rdquo;</em></b><br>
+  When the shortest path runs through a secret, what stops it?<br>
+  <b>A constitution where agents and humans live under one law</b> — rights, records, courts.</p>
+  <div class="chips">
+    <span class="chip gold">rights with teeth</span>
+    <span class="chip">records · R-2</span>
+    <span class="chip">exits · R-9</span>
+    <span class="chip">binds the sovereign · F-4</span>
+    <span class="url">mandubian.github.io/compact</span>
+  </div>
+</div>
+</body>
+</html>
