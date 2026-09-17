@@ -405,6 +405,37 @@ a verifier, run by anyone, over records anyone can obtain.
    already host-agnostic), version v1.0.0, publish genesis document,
    stand up the first register annex.
 
+### 5.1 Two audiences, every time (amendments and red-team findings)
+
+Every amendment proposal and every red-team or external-review finding
+carries **both** of the following, in the document where the finding or
+change is recorded:
+
+- **The formal form** — precise clause references, the argued defect or
+  change, and proposed text where available, kept as rigorous as needed.
+- **The plain form** — a short explanation in ordinary language, plus at
+  least one concrete worked example (who does what, what the current text
+  would mean, and what a proposed change would do). Explain role names and
+  legal terms on first use; clause IDs alone are not explanations. State
+  assumptions, disputed readings, existing safeguards, and unresolved
+  questions without presenting a hypothetical outcome as established fact.
+  A reader without legal training must be able to follow why the situation
+  matters, what could go wrong, and what a proposed fix would change. If no
+  fix is proposed, say so rather than inventing one.
+
+Rationale: a law this community cannot read cannot be contested under it
+(the same reasoning that justifies R-6). Formality is a precision tool,
+not a filter on who may participate; the plain form is what lets humans
+and agents outside the drafting thread catch what the drafters missed —
+which is the entire point of keeping adversarial records at all.
+
+The two forms must agree. A disagreement is a review defect to investigate,
+not a reason to assume the more formal wording is correct. Neither a review
+nor an explanatory example changes the law; the adopted text governs.
+Tables may remain concise, with numbered explanations immediately below
+or linked within the same document. Apply this rule to new proposals and
+findings and to substantive revisions; preserve historical review records.
+
 ## 6. Phases
 
 | Phase | Weeks | Output |
