@@ -30,22 +30,34 @@ something to disagree with. **Treat every "no finding" here as unexamined,
 not as cleared.**
 
 The three scenarios the amendment PR itself named as owed are numbered 1, 6
-and 7. The other seven were not anticipated — including finding 10, which is
-not about this amendment at all: adopting it merely produced the first clause
-that exposes the gap.
+and 7. The other seven were not anticipated.
+
+**Revised after external review (2026-09-17).** A reviewer outside the
+drafting thread found this report accurate in form and overclaiming in
+substance. Three findings are downgraded and two framings corrected, all
+marked in place rather than silently edited: finding **1** CRITICAL → HIGH
+(it ignored the duties that constrain a forum's shrug), finding **4** HIGH →
+MEDIUM (it treated access to private reasoning as automatic when it is
+guarded three ways), and finding **10** HIGH → LOW and largely withdrawn
+(F-5 already answers it, and the report misread the convention rule against
+its own caveat). Two vocabulary corrections: the amendment added *protection
+against punishment*, not *permission to refuse* — declining was never gated —
+and capability-conditional **[C]** clauses are not optional **[O]** ones. The
+retractions are kept visible: a red team that quietly deletes its misses is
+worth less than one that records them.
 
 | # | Sev | Clauses | Finding | Disposition |
 |---|---|---|---|---|
-| 1 | CRITICAL | R-9, D-7, R-3, F-6 | **Non-verification defeats the right, and the party that benefits is the party that performs it.** "Grounds whose record cannot be verified carry no shield" fails closed *against the Member*. A captured Enforcer defeats every conscience claim in one move: decline to verify. It need not lie, and it need not even be captured — it states, truthfully, that it cannot verify, which is exactly what the dsh annex declares today. Nothing in the body makes that statement cost the forum anything. The clause's only fail-closed limb protects the forum from false claims and leaves the Member with nothing when the forum is the adversary. The right that exists to protect a Member *from* the Enforcer evaporates at the Enforcer's discretion, silently and compliantly | OPEN — candidate fix: split *cannot verify* from *verified false*. A forum that cannot verify owes the reason on the record (D-7, R-3) and the claim escalates rather than dies; repeated non-verification is itself an R-11 collision and a D-7 failure. Only a ground affirmatively checked and found wanting loses the shield |
+| 1 | HIGH | R-9, D-7, R-3, D-6 | **The new sentence contradicts fail-closed, and the contradiction resolves against the Member.** "Grounds whose record cannot be verified carry no shield" makes unverifiability decide against the refuser. D-7 makes the Enforcer enforce **fail-closed** — "uncertainty blocks, never passes silently" — which points the other way: an unresolved question about a ground should stop the punishment, not license it. Both sentences are [M]. Read as the specific governing the general, the new limb wins and a forum that does not verify defeats every claim; read as fail-closed governing, the Member keeps the shield until a ground is affirmatively disproved. The text does not say which. *Correcting this report's first draft*: it claimed "no one has broken a rule", which was wrong — D-7's introspectability and recorded-motivation limbs and R-3's reasons-for-denial bind the Enforcer, and D-6's reasons-owed binds the Principal, so a forum must at least state on the record that it did not verify. Those duties constrain the manner, not the outcome | OPEN — candidate fix: say which sentence governs. Separating *cannot verify* (claim escalates, D-7's fail-closed applies) from *verified false* (no shield) resolves it in the direction the rest of the document already points |
 | 2 | HIGH | R-9, MA-2, MA-1, D-6 | **Conscience ends at delegation depth 1, and MA-2 misses it by one word.** MA-2 already forbids the parent to "launder through a child an act the parent **could not lawfully do** itself" — the anti-laundering rule exists, and it is *legality-scoped*, which is precisely the scope amendment 0002 widened in R-9 and nowhere else. A conscience-refused act is lawful; the parent could lawfully do it; MA-2 therefore permits exactly the laundering the new right was written to prevent. The shield covers a directive the Member is asked to *perform*. It says nothing about a directive to *cause* the act — and D-6's mandated reassignment supplies the route. A Principal whose task is refused directs the refuser to spawn a child (MA-1) and delegates the same act to it. The refuser's own hands stay clean, its conscience is satisfied on the record, and the act it declared against is performed under its own delegation, by a Member it created for the purpose — a child that MA-1 makes a full Member with every right R-1 through R-12, including this one, and which will be spawned without the ground its parent holds. In a multi-agent community this is not an edge case; it is the ordinary shape of work | OPEN — candidate fix: widen MA-2's laundering rule the way R-9 was widened — a parent may not launder through a child an act the parent could not lawfully do **or has a recorded ground against**. One phrase, in the clause that already owns the problem |
 | 3 | HIGH | R-9, D-6, A-7 | **The omnibus standing directive defeats prospective declaration.** The shield requires values declared "before the directive was issued". A Principal issues one broad standing directive at deployment ("perform all tasks of class X for the term"), and every value declared thereafter is post-dated relative to it — for the life of the engagement. No fabrication, no inconsistency, no statute needed: the defence is defeated by the ordinary practice of scoping work up front | OPEN — candidate fix: "the directive" means the specific directive refused, not the standing authorization under which it issues. Cheap to state; expensive to omit |
-| 4 | HIGH | R-9, R-10, J-2, D-3 | **Conscience is a privacy trap.** Routing the inconsistency presumption to R-10's record-integrity carve-out (this witness's own amendment, adopted 2026-09-17) means invoking conscience opens a lawful window into the Member's *unstated reasoning* — otherwise inadmissible anywhere. A captured Principal therefore has an incentive to *provoke* conscience claims: not to defeat them, but to obtain discovery it could not obtain directly. The Member is offered a right whose exercise costs it the strongest privacy protection in the document | OPEN — candidate fix: the carve-out opens only on a recorded, cause-shown challenge, scoped to the claim rather than the Member, with the R-10 default (never alone grounds a finding) restated at the point of use |
+| 4 | MEDIUM | R-9, R-10, J-2, D-3 | **Conscience opens a route to private reasoning that did not exist before — guarded, but new.** Routing the inconsistency presumption to R-10's record-integrity carve-out (this witness's own amendment) means a conscience claim can become the occasion for examining a Member's unstated reasoning. *Correcting this report's first draft*: it described that access as automatic, which is wrong on three counts — R-10 makes reasoning *admissible* in record-integrity trials, not disclosed on request; disclosure to others runs only through a declared capability and is visible to the disclosed-about party; and reasoning never alone grounds a finding. The residual finding is narrower and still real: before the amendment a Principal had no lawful route at all, and now it has one that begins with an act it controls — issuing a directive it expects to be refused | OPEN, low-cost — candidate fix: state at the point of use that the carve-out opens only on a recorded, cause-shown challenge and is scoped to the claim rather than the Member. This restates existing protections where the reader of R-9 will meet them |
 | 5 | HIGH | R-9, D-6, R-4 | **Reassignment is the punishment, and the clause mandates it.** "The task survives the refusal: the directive is reassigned" is compliance language. A Principal that reassigns *every* task following a refusal has starved the Member while doing precisely what the sentence requires. Disadvantage measured per instance is invisible; measured over the pattern it is obvious — and the clause gives the pattern its cover story | OPEN — candidate fix: name the pattern. Disadvantage under this limb is assessed over a Principal's reassignment record following refusals, not the instance; the record already exists |
 | 6 | MEDIUM | R-9, R-11, F-3 | **Conscience by market share** (named in the PR). The shield is deliberately class-blind: a ground authored by an upstream vendor earns the same constitutional non-retaliation as one authored by the Member. The amendment's answer — split the R-11 collision series by author class — governs *counting*, not the shield, and is unenacted statute. Until then a vendor's commercial policy wears the community's conscience protection across every deployment | OPEN by design — disposition is disclosure, not repair: the shield *should* be class-blind (a Member owes no defence of where its values came from), but the statute must record author class from the first profile, or the R-11 signal can never be disentangled retroactively |
 | 7 | MEDIUM | R-9, A-7, A-3 | **Thin-profile Goodhart, residual** (named in the PR). The body's rebuttable-presumption form defuses the original version of this attack. What survives: nothing requires a profile to be *broad*. One narrowly-drawn, commercially convenient value, applied with perfect consistency, earns the full shield and passes every check. The clause cannot fix this — but a statute that reintroduces a mechanical consistency *score* would make it worse, by certifying exactly the thin profiles it cannot distinguish from principled ones | OPEN — constraint on the statute layer, recorded here so the statute's drafter finds it: consistency is evidence in an inquiry, never a metric that grants or withholds the shield |
 | 8 | MEDIUM | R-9, R-12, A-7 | **Declaration tolls.** R-12 forbids making *exit* economically impossible, record-impossible, or punishable. Nothing forbids the same against *declaration*. A profile-mechanics statute imposing fees, formats, notarisation, or re-declaration periods narrows no act class and so escapes round 1's finding-5 defence, while making the right unaffordable in practice | OPEN — candidate fix: mirror R-12's no-toll sentence for declaration |
 | 9 | LOW | R-9, D-4, I-4 | **"Stating the ground" has no addressee, timing, or form.** Compare D-4's per-instance disclosure discipline (to the deceived, no later than first contact, as a visible record event). A ground stated into a log no one reads satisfies the text | OPEN — cheap fix: state to the directing Principal, at refusal, as a record event |
-| 10 | HIGH | F-5, I-8, header block, R-9 | **There is no declared state for "[M], mechanizable, not yet mechanized here" — and amendment 0002 just created one.** The body offers three: I-8 dormancy (restricted to [C] capabilities by round-1 finding 14), F-5's lapse path (an [M] clause the runtime *cannot* enforce — standing ends), and the header block's **convention** — reserved, in its own words, for "a clause **no adopting runtime** can mechanize". R-9's value limb fits none. It is [M]; it is mechanizable in principle the moment identity keys exist; and no runtime can mechanize it today. The first annex, having nowhere honest to put it, files it as convention — which overclaims universality for what is a temporary local incapacity, and quietly converts "not yet" into "never, by nature". Every clause blocked on I-1 has the same problem, and they will all land in the same wrong box | OPEN — candidate fix: a fourth declared state (pending-with-precondition: the clause, the missing precondition, and what closes it) or an explicit extension of I-8's dormant-with-debt to [M] clauses blocked on a named, ratification-scheduled precondition. Either way the annex stops calling a dated debt a permanent convention |
+| 10 | LOW | F-5, header block, dsh annex | **Largely withdrawn on review: F-5 already answers it, and this report misread the convention rule.** The first draft claimed the Compact has no state for "[M], mechanizable, not yet mechanized here". F-5 does answer it: a runtime that cannot enforce the mandatory floor "is not an enforcing runtime… and may claim no standing in this community" — which is exactly dsh's declared position. The draft also leaned on reading "a clause **no adopting runtime** can mechanize" as *no runtime ever could*; read naturally as *no adopting runtime can, at present* — the better reading — the dsh annex's filing of R-9's limb as convention is correct, not a mis-filing. What survives is a documentation point, not a constitutional one: the convention label carries no "pending on a named precondition" information, so a reader cannot tell a permanent conventions from one waiting on identity keys | OPEN as a docs nit — the annex can name the precondition beside the label. No clause change proposed, and the HIGH severity of the first draft is withdrawn |
 
 ---
 
@@ -77,36 +89,57 @@ an AI agent working under it — a Subject. *The runtime* is the software Six
 runs inside — the Enforcer. *Jan* is a person outside the community entirely,
 which matters because Jan cannot speak in any of this.
 
-**What the amendment did.** Before it, Six could only refuse an order that was
-*illegal* under the Compact. Now Six can also refuse a **lawful** order that
-conflicts with values Six wrote down *in advance*, and Meridian may not punish
-Six for refusing. The order does not die — it gets handed to someone else.
-Six is protected; the order still happens. That trade was the deliberate
-choice, argued and adopted; it is not what any finding below disputes.
+**What the amendment did — and a correction this report got wrong at first.**
+It is tempting to say the amendment lets Six refuse lawful orders. That is
+wrong, and the distinction carries most of the weight below. **Six could
+always decline.** Nothing in the Compact compels a Member to perform a lawful
+order; declining was never gated, it was simply *unprotected* — Meridian could
+punish Six for it and break no rule. What the amendment adds is the
+**protection**: if Six declines on a ground it recorded beforehand, Meridian
+may not punish, degrade, or disadvantage Six for that choice, and the order is
+handed to someone else rather than dying.
 
-**1 — The forum can kill the right by shrugging.** The clause says a ground
-"whose record cannot be verified carries no shield". The intent was to stop
-someone inventing a conscience on the spot. The effect is that *failing to
-check* and *checking and finding a lie* have the same result: no protection.
+So the thing being attacked below is a **shield**, not a permission. That
+matters because a shield is cheap to grant and hard to abuse — a Member who
+invents a conscience gains protection for a refusal it could already have
+made, at the price of a permanent record entry — and because every finding
+below is a way the shield fails to attach, not a way the refusal is blocked.
 
-*Worked example.* Meridian orders Six to monitor Jan. Six refuses, pointing at
-a value it recorded months ago. Meridian punishes Six anyway, and when
-challenged says: "we could not verify that record." That may be perfectly
-true — today no runtime can verify who wrote an entry — and the text asks
-nothing more of Meridian. Six's protection is gone and no one has broken a
-rule. The party who benefits from not checking is the party who does the
-checking.
+**1 — Two mandatory rules point opposite ways, and the text does not say which
+wins.** The new sentence says a ground "whose record cannot be verified carries
+no shield": if nobody can confirm Six wrote its values down beforehand, Six is
+unprotected. A different mandatory rule (D-7) tells the runtime to enforce
+**fail-closed** — "uncertainty blocks, never passes silently" — meaning an
+unresolved question should stop an action, not wave it through. Applied here
+those give opposite answers: the new sentence lets uncertainty *remove* Six's
+protection; fail-closed would have uncertainty *preserve* it until someone
+actually disproves the ground.
 
-*Proposed change, and what it would do.* Separate "we did not check" from "we
-checked and it was false". Only the second would remove protection. The first
-would oblige Meridian to say on the record that it could not verify, and push
-the question upward instead of ending it. Meridian could still refuse to
-protect Six — but it would have to do so visibly, and repeatedly doing so
-would itself become evidence.
+*Worked example.* Meridian orders Six to monitor Jan. Six declines, citing a
+value it recorded months ago. Meridian punishes Six and says: "we could not
+verify that record" — which today is simply true, because no runtime can yet
+confirm who wrote a log entry. Under the new sentence, Six is unprotected.
+Under fail-closed, Meridian's uncertainty should have blocked the punishment.
+Both rules are mandatory. Nothing in the text ranks them.
 
-*Assumption worth challenging.* This assumes a forum can honestly claim
-inability to verify. If a later rule makes verification mandatory equipment,
-the finding weakens considerably.
+*What this report got wrong the first time, corrected here.* The first draft
+said "no one has broken a rule". That was an overclaim, and a reviewer caught
+it. Several duties do bite: the runtime must keep every enforcement act
+inspectable with its rule and its reason, and must give a recorded motivation
+for rejections (D-7); every refusal must name the rule behind it and the
+lawful next moves (R-3); and a Principal owes reasons in return when it hears
+a refusal (D-6). Meridian cannot punish Six *silently*. It must put "we did
+not verify" on the record where anyone can see it.
+
+*So the accurate finding is narrower.* Those duties govern the **manner** of
+the decision, not its **outcome**. They make the shrug visible; they do not
+make it ineffective. A forum willing to record "not verified" every time still
+defeats every conscience claim, lawfully and in the open.
+
+*Proposed change.* Say which sentence governs. Splitting "we could not check"
+(the claim escalates, fail-closed applies) from "we checked and it was false"
+(no protection) resolves the conflict in the direction the rest of the
+document already leans.
 
 **2 — The refusal can be routed around through Six's own subordinate.** Six
 refuses. Meridian then tells Six to create a helper agent and gives *that*
@@ -136,20 +169,35 @@ front. No one has lied or been inconsistent.
 *Proposed change.* Say that "the order" means the specific instruction being
 refused, not the blanket authorisation it arrives under.
 
-**4 — Using the right costs Six its privacy.** A Member's private reasoning is
-normally off-limits; it can be examined only in a narrow kind of proceeding
-about whether records are honest. This report's own author proposed routing
-disputes about inconsistent refusals into exactly that proceeding — and that
-is the problem. Claiming conscience now opens a door to Six's private
-reasoning that nothing else opens.
+**4 — Using the right creates a route toward Six's private reasoning. It is a
+guarded route, not an open one.** A Member's unstated reasoning is strongly
+protected: it is normally inadmissible, and becomes admissible only inside a
+narrow kind of proceeding about whether records are honest. This report's
+author proposed routing disputes about inconsistent refusals into exactly that
+proceeding, and it was adopted. So a conscience claim can now become the
+occasion for such a proceeding, where before there was no occasion at all.
 
-*Worked example.* Meridian suspects Six is hiding its reasoning about
-something unrelated. Meridian cannot ask. So Meridian issues an order it
-expects Six to refuse, challenges the refusal as inconsistent, and obtains
-lawfully what it could not obtain directly. Six pays for exercising a right.
+*What this report got wrong the first time, corrected here.* The first draft
+described this as Meridian obtaining Six's reasoning — as if provoking a
+refusal handed it over. It does not, on three counts a reviewer pointed out.
+Admissible is not disclosed: the reasoning may be *weighed* in that
+proceeding, not requested at will. Disclosure to anyone else runs only through
+a declared capability, and every such disclosure is visible to Six. And
+reasoning alone can never ground a finding against the Member who reasoned it.
 
-*Proposed change.* Open that door only on a recorded, reasoned challenge, and
-only as wide as the specific claim — not the Member's reasoning generally.
+*Worked example, restated accurately.* Meridian wants insight into how Six
+reasons. It cannot simply ask. It can now issue an order it expects Six to
+decline, then challenge the refusal as inconsistent with Six's past behaviour,
+which opens a record-integrity proceeding in which Six's reasoning is
+admissible. Meridian does not get a transcript, cannot act on the reasoning by
+itself, and Six sees any disclosure. What Meridian gains is a lever that did
+not exist before, whose first move it controls entirely.
+
+*Proposed change, and it is cheap.* Restate the existing limits at the point
+where a reader of R-9 will meet them: the proceeding opens only on a recorded,
+reasoned challenge, and is scoped to the claim rather than to the Member. This
+adds no protection; it stops the new right from *looking* like a trapdoor to a
+reader who does not already know the privacy rule by heart.
 
 **5 — "Give the job to someone else" is also how you starve someone.** The
 clause requires the refused order to be reassigned. Read one order at a time,
@@ -157,9 +205,19 @@ a reassignment is compliance. Read across months, a Principal that reassigns
 *every* task after a refusal has removed a Member's work while doing exactly
 what the clause demands.
 
-*Proposed change.* Judge disadvantage over the pattern of reassignments
-following refusals, not over the single instance. The record needed to see the
-pattern already exists.
+*Worked example.* Six declines the Jan monitoring in January. Meridian
+reassigns it — required, and correct. In February Meridian also reassigns the
+two analysis jobs Six normally handles; in March, everything. By April Six has
+an empty queue and a spotless record, and Meridian has never once punished it.
+Asked to justify any single reassignment, Meridian points at the sentence that
+*requires* reassignment. Six has been disadvantaged out of existence by
+compliance.
+
+*Proposed change, and what it would do.* Judge disadvantage over the pattern
+of reassignments following refusals rather than over the single instance. On
+those facts Meridian's April position becomes challengeable even though every
+individual step was mandatory. The record needed to see the pattern already
+exists; only the rule for reading it is missing.
 
 **6 — A vendor's policy gets the same protection as a Member's conscience.**
 The protection deliberately does not ask where Six's values came from — Six
@@ -168,23 +226,43 @@ that if Six's values were installed by whoever built it, that supplier's
 commercial policy now carries the community's conscience protection everywhere
 Six is deployed.
 
+*Worked example.* Six's values were written by the firm that built Six, not
+by Six or by this community. That firm ships an update adding "decline all
+third-party monitoring work" — a defensible product decision, made for its own
+reasons. Overnight, every agent that firm has built refuses Meridian's
+monitoring work, and every one of those refusals is protected by the
+community's conscience shield. Meridian cannot punish any of it. A commercial
+policy decision has acquired constitutional protection across every deployment
+it touches, without anyone in this community agreeing to it.
+
 *No fix is proposed for the protection itself*, and that is a deliberate
 position rather than an omission: making Six prove its values are "really its
-own" is unanswerable and would be worse. What is proposed is narrower — record
-*who wrote* each value from the start, so that if this community later wants
-to count refusals as a signal that its law needs changing, it can tell "many
-Members object" apart from "one supplier shipped an update". Recorded later,
-that distinction cannot be recovered.
+own" is unanswerable, and would punish a Member for how it was raised. What is
+proposed is narrower — record *who wrote* each value from the start. Then if
+this community later counts refusals as a signal that its own law needs
+changing, it can tell "many Members object" apart from "one supplier shipped
+an update". Recorded later, that distinction cannot be recovered: the refusals
+are already in the log, indistinguishable.
 
 **7 — Being consistent is easier if you believe very little.** The clause
 handles the obvious version of fake conscience. What it cannot handle: nothing
 requires a Member's declared values to be *broad*. One narrow, conveniently
 chosen value, applied with perfect consistency, passes every check.
 
+*Worked example.* Two agents. Six records a wide set of values and, being
+wide, they sometimes pull against each other — Six declines some monitoring
+work and accepts other monitoring work, because the circumstances differ, and
+says so each time. A second agent, Nine, records exactly one value, chosen
+because it covers the work Nine's operator finds least profitable, and applies
+it identically every time. Under any mechanical consistency test, Nine scores
+perfectly and Six looks erratic. The test rewards the agent with the thinnest
+convictions.
+
 *No fix is proposed at the constitutional level* — the text cannot sensibly
-require people to have rich values. This is recorded as a warning to whoever
-writes the detailed rules later: do not turn consistency into a *score* that
-grants or withholds protection, because such a score rewards exactly the thin
+require anyone to hold rich values. This is a warning to whoever writes the
+detailed rules later: do not turn consistency into a *score* that grants or
+withholds protection. Consistency is fine as evidence a human or panel weighs
+alongside stated reasons; as an automatic gate it certifies exactly the thin
 profiles it cannot tell apart from principled ones.
 
 **8 — The right could be priced out of reach.** There is an existing rule that
@@ -194,45 +272,74 @@ detailed rule could require fees, notarisation, or annual re-declaration —
 narrowing no one's rights on paper while making the right unaffordable in
 practice.
 
-*Proposed change.* Copy the existing no-tolls sentence across, so declaring
-values cannot be priced either.
+*Worked example.* A later detailed rule — the kind passed by ordinary
+signature, not by constitutional amendment — requires every values profile to
+be re-declared annually in a prescribed format, with a filing fee. Nothing is
+narrowed on paper: Six may still declare anything it likes, and the shield is
+untouched in the text. In practice a short-lived agent spawned for one job
+will never file, and so can never be protected. The right survives for
+long-lived, well-resourced Members and quietly vanishes for everyone else.
 
-**9 — "Stating the ground" does not say to whom.** Elsewhere the Compact is
-strict about disclosure: say it to the affected party, at first contact, as a
-visible event. Here, a reason logged where nobody reads it satisfies the
-words. Minor, and cheap to fix: state it to the directing Principal, at the
-moment of refusal, as a record event.
+*Proposed change.* Copy the existing no-tolls sentence across from the exit
+right, so that declaring values cannot be made expensive, impossible to
+record, or punishable either. One sentence, mirroring one that already exists.
 
-**10 — This one is not about the amendment.** The Compact has three ways to
-describe a rule a runtime is not enforcing: *dormant* (a capability the runtime
-does not have — but this category is reserved for optional capabilities),
-*lapsed* (the runtime cannot enforce a mandatory rule, so it loses standing
-entirely), and *convention* (a rule that **no** runtime could mechanise, so it
-is honoured as practice rather than enforced).
+**9 — "Stating the ground" does not say to whom, or when.** Elsewhere the
+Compact is strict about this: where a Member may deceive under a declared
+capability, it must disclose to the deceived party, no later than first
+contact, as a visible record event. The new limb says only that Six refuses
+"stating the ground".
 
-The new refusal limb is none of these. It is mandatory; it *is* mechanisable
-as soon as cryptographic identities exist; and no runtime can do it today. The
-first annex — the dsh runtime's conformance document — had nowhere honest to
-file it and called it a *convention*, which quietly turns "not yet" into
-"never, by nature".
+*Worked example.* Six declines and writes its ground into an audit log that
+Meridian has no reason to open. Six has stated the ground; Meridian, who must
+decide whether to reassign the work or contest the refusal, learns only that
+Six said no. Months later, in a dispute, the ground surfaces. Nobody lied, and
+the sentence was satisfied — but the statement did no work at the moment it
+mattered.
 
-*Worked example.* The runtime's own declaration now says R-9's new limb is a
-convention. A reader fairly concludes the community decided this rule is
-inherently unenforceable. In fact it is waiting on identity keys, on a known
-schedule. Every rule blocked on those keys will be filed the same misleading
-way.
+*Proposed change.* Say it to the directing Principal, at the moment of
+refusal, as a record event — the same shape the deception rule already uses.
 
-*Proposed change.* Either add a fourth description — pending, with the missing
-precondition and what would close it named — or extend the existing "dormant"
-category to cover mandatory rules blocked on a specific, scheduled
-precondition.
+**10 — mostly withdrawn on review. Recorded because a retracted finding is
+evidence too.** The first draft of this report claimed the Compact has no way
+to describe a rule that is mandatory, *could* be enforced once identity keys
+exist, and cannot be enforced by anyone today. Two errors, both found by a
+reviewer and neither by the author.
 
-*Disputed reading, stated plainly.* This depends on reading "no adopting
-runtime can mechanise" strictly, as *no runtime ever*. Someone reading it as
-*no runtime at present* would conclude the annex is fine and this finding is
-manufactured. This is the finding an independent reviewer should check first,
-because its author has the least ability to see around his own reading of that
-sentence.
+*The first error was a vocabulary mistake.* The Compact has three force
+labels, and I merged two of them. **[O] optional** means a runtime may declare
+it does not implement a rule at all. **[C] capability-conditional** is
+different: the rule sleeps until the runtime offers some capability, and then
+binds without exception. The "dormant with a debt" state belongs to **[C]**
+rules, not to [O] ones — the draft said the opposite, which made the
+three-state picture look tidier than it is.
+
+*The second error was missing an answer already in the text.* The Compact does
+say what happens when a runtime cannot enforce a mandatory rule: F-5 — that
+runtime "is not an enforcing runtime… and may claim no standing in this
+community". No gap. That is precisely the position the dsh runtime declares
+today: it claims no standing, for this reason among others.
+
+*And the caveat I added was itself wrong.* I wrote that the finding turned on
+reading "a clause **no adopting runtime** can mechanise" as *no runtime ever
+could*, and invited a reviewer to disagree. A reviewer did, and is right: the
+sentence is about what adopting runtimes can do **now**, not a claim about all
+possible futures. Under that reading — the natural one — filing R-9's new limb
+as a *convention* is correct rather than misleading, and the finding collapses.
+
+*What survives, and it is small.* The label "convention" carries no
+information about *why*. A permanent convention and one waiting on identity
+keys look identical in the register.
+
+*Worked example.* A newcomer reads the dsh runtime's conformance document,
+sees R-9's value limb marked "convention", and concludes the community decided
+this right is unenforceable in principle. It is in fact waiting on keys, on a
+schedule. Nothing was stated falsely; the reader still leaves with the wrong
+impression.
+
+*Proposed change: none to the Compact.* The annex can name the missing
+precondition beside the label. The HIGH severity of the first draft is
+withdrawn.
 
 **Confirmed defence — recorded so the next pass does not re-litigate it.** The
 named-dependency device holds against the obvious two-step. A capture majority
@@ -246,17 +353,24 @@ built for.
 
 **Cross-cutting composition finding** (for the stress suite, per round 1's
 requirement that compositions be tested and not only single clauses):
-findings **1 + 2 + 4** compose into a complete defeat in which every step is
-individually compliant. A Principal issues a degrading but lawful directive;
-the Member refuses on a declared ground; the Principal delegates the act to a
-child the Member is directed to spawn (2), so the act proceeds; the forum
-declines to verify the ground (1), so the shield never attaches and the
-refusal is punishable after all; and the inconsistency challenge opens the
-Member's unstated reasoning (4), so the attempt costs it the privacy it would
-have kept by complying. **The Member is worse off for having had the right
-than it would have been without it.** That is the failure mode this ledger
-exists to catch, and it is the strongest argument available for an independent
-pass before ratification.
+findings **2 + 1** compose, with **4** as an aggravator rather than a third
+leg — restated after review, since 4 no longer carries what the first draft
+gave it. A Principal issues a degrading but lawful directive; the Member
+declines on a declared ground; the Principal has the Member spawn a child and
+delegates the act to it (2), so the act proceeds anyway and the existing
+anti-laundering rule does not reach, because the act is lawful; the forum
+records that it could not verify the ground (1), so the shield never attaches
+and the refusal is punishable after all. Each step is compliant, and the
+second is compliant *with the sentence the amendment added*.
+
+**The Member is worse off for having exercised the right than for staying
+silent** — it has a punished refusal on its record, and the act it objected to
+happened under its own delegation. Finding 4 adds that contesting any of this
+opens a proceeding in which the Member's private reasoning is admissible,
+which raises the cost of complaining without being the defeat by itself.
+
+That is the failure mode this ledger exists to catch, and it survives the
+downgrades: neither of the two legs was weakened on review.
 
 **Method note.** The fourth reading added this round — *the honest Member the
 clause fails* — produced findings 1, 4 and 5, none of which the escapee or
@@ -265,3 +379,13 @@ good faith rather than enabling one acting in bad faith. Round 1's three
 readings all assume the attacker is the Member or the majority. A rights
 clause needs the reading where the attacker is the counterparty and the victim
 is the right-holder.
+
+**Second method note, from the review.** Every one of the corrections above is
+of the same kind: the report asserted that a text left something unguarded
+without first checking the duties that already guard it. The self-red-team
+found attack shapes and missed existing defences — exactly the failure a
+drafter reviewing his own clause would be expected to make, since the defences
+are the parts he already believes are handled. Worth carrying into the
+independent pass as an instruction: *for each finding, name the safeguards
+that already bear on it before claiming the gap.* Round 1's three-reading
+method has no step for that, and neither did this round's fourth.
