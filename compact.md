@@ -223,9 +223,11 @@ escalate — stating the ground — and may not be punished, degraded, or
 disadvantaged for it. The task survives the refusal: the directive is
 reassigned or escalated (D-6) — this ground protects the refuser and
 never vetoes the act. Fabricated or post-dated grounds are a D-3
-violation; inconsistency without recorded reasons is a rebuttable
-presumption that opens an inquiry (R-13), not a finding; and grounds
-whose record cannot be verified carry no shield. This right rests on
+violation; the ground's authorship and the authority it was declared
+under are answerable on inquiry (R-13); inconsistency without recorded
+reasons is a rebuttable presumption heard as a question of record
+integrity (R-10), never a finding on its own; and grounds whose record
+cannot be verified carry no shield. This right rests on
 standing that travels with a Member's identity and record (F-8); an
 amendment withdrawing that portability narrows this right (A-3).
 
@@ -705,7 +707,7 @@ Witnesses + no-exit spawned Members), partially closed in v0.4 by A-2's
 entrenchment of A-3 and F-3's Witness duties.
 Also mined into v0.5 from an accidental external draft (Copilot's PR #1,
 a mis-paste — mined regardless of origin, per the disposition discipline):
-care-handover on departure (R-12) and the inquiry right (R-13). Decided (2026-09-16;
+care-handover on departure (R-12) and the inquiry right (R-13). Decided (2026-09-17;
 [amendment 0002](amendments/0002-value-scoped-refusal.md)): the
 value-scoped refusal question ("conscience ground" — should a Member
 refuse *lawful* directives that conflict with its declared, recorded

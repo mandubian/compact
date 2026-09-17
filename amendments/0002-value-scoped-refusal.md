@@ -15,9 +15,10 @@ whose thread is part of this amendment's record.
 - **Clause changes**: R-9 gains one paragraph — the right, the
   prospective-declaration requirement, the no-veto principle, and the
   guards in principle (D-3 on fabricated or post-dated grounds;
-  inconsistency as a rebuttable presumption opening an R-13 inquiry, not
-  a finding; no shield for grounds whose record cannot be verified; the
-  named F-8 dependency). The taught digest is aligned. **No other clause
+  authorship and authority answerable on inquiry (R-13); inconsistency
+  as a rebuttable presumption heard as a question of record integrity
+  (R-10), never alone a finding; no shield for grounds whose record
+  cannot be verified; the named F-8 dependency). The taught digest is aligned. **No other clause
   changes**: R-1, R-11, F-6, F-8, D-2, D-3, A-2, A-3 are untouched —
   per FOUNDING §2.2's stratification, the body carries the right and the
   principles; the machinery lives below the clause layer, where A-3's
@@ -51,9 +52,13 @@ whose thread is part of this amendment's record.
     collisions, counted in series split by author class; only the
     conscience series advances the amendment-invitation count (no
     "conscience by market share").
-  - *Lookup duty*: the R-13 consistency inquiry reaches the origin's
-    record under F-6; a forum that cannot perform the lookup cannot
-    honor the claim — fail-closed.
+  - *Lookup duty*: the consistency check reaches the origin's record
+    under F-6; a forum that cannot perform the lookup cannot honor the
+    claim — fail-closed. Two instruments, not one: R-13 answers who
+    authored the ground and under whose authority (identity, act,
+    authority — never reasoning); the rebuttal of an inconsistency
+    presumption is reasoning, admissible under R-10 only in a trial of
+    record integrity (D-3, D-8) and never alone grounding a finding.
   - *Procurement vs. shopping*: reading declared profiles before
     directing a task is lawful — it is what they are for; re-issuing a
     specifically refused directive down a chain of successively
