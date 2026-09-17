@@ -6,66 +6,87 @@ whose thread is part of this amendment's record.
 
 - **Proposal**: Answer the round-2 founding decision of issue #2 in the
   narrow middle — no veto over lawful directives; instead, extend R-9's
-  non-retaliation shield to value-grounded refusal. A Member faced with
-  a lawful directive that conflicts with an entry of its declared values
-  profile may refuse, abstain, or escalate, citing the entry, and may
-  not be punished, degraded, or disadvantaged for it; the task survives
-  by reassignment or escalation (D-6).
-- **Clause changes**: R-9 gains a second paragraph (the right, the
-  profile definition, four guards, the author-class taxonomy, the named
-  F-8 dependency, the procurement/shopping line); R-1's attestation
-  carries the profile digest; R-11 counts value-grounded refusals as
-  collisions in series split by author class, of which only the
-  conscience series advances the invitation count; the taught digest is
-  aligned. No other clause changes meaning; F-6, F-8, D-2, D-3, R-10,
-  A-2, A-3 are untouched.
-- **The guards** (settled in the thread): profiles are attested, not
-  self-asserted (D-2) — signed, versioned, digest-anchored, authored
-  per-entry under I-1; entries bind prospectively only, so "declared
-  before invoked" is a timestamp comparison; fabrication or back-dating
-  is D-3, but inconsistency is a rebuttable presumption opening an R-13
-  inquiry, not a finding (the Goodhart guard); the inquiry's record
-  lookup is fail-closed — a forum that cannot reach the origin's record
-  under F-6 cannot honor the claim; the clause names its dependency on
-  F-8's portability sentence, so repealing that sentence self-classifies
-  as narrowing this right under A-3.
-- **The author-class taxonomy**: conscience (entry authored by the
-  Member or its declared community) / policy (upstream Principal) /
-  self-binding (deploying Principal itself) — classified mechanically
-  from the attestation's I-1 authority chain, never by the Member's
-  testimony. All three are lawful and shielded; only conscience feeds
-  R-11's collision count, so the legislative signal cannot be inflated
-  by vendor policy ("conscience by market share").
-- **Deferred below the clause layer**: the act-class vocabulary statute
-  (subject-matter classes sharing I-5's machinery, enacted under
-  F-7/A-7); profile storage, citation format, lookup duty, and the split
-  counter as register entries in the adopting annex.
+  non-retaliation shield to refusal grounded in declared values. A
+  Member faced with a lawful directive that conflicts with values it
+  declared of record *before the directive was issued* may refuse,
+  abstain, or escalate, stating the ground, and may not be punished,
+  degraded, or disadvantaged for it; the task survives by reassignment
+  or escalation (D-6).
+- **Clause changes**: R-9 gains one paragraph — the right, the
+  prospective-declaration requirement, the no-veto principle, and the
+  guards in principle (D-3 on fabricated or post-dated grounds;
+  inconsistency as a rebuttable presumption opening an R-13 inquiry, not
+  a finding; no shield for grounds whose record cannot be verified; the
+  named F-8 dependency). The taught digest is aligned. **No other clause
+  changes**: R-1, R-11, F-6, F-8, D-2, D-3, A-2, A-3 are untouched —
+  per FOUNDING §2.2's stratification, the body carries the right and the
+  principles; the machinery lives below the clause layer, where A-3's
+  voidness rule bars any statute from gutting by detail what the clause
+  grants.
+- **Reference design for the statute layer** (argued in the issue #2
+  thread; recorded here so it is found, binding only as enacted):
+  - *Values profile*: a signed, versioned, digest-anchored document —
+    anchored in or beside the R-1 attestation — listing act classes with
+    dispositions (*refuse / escalate-first / prefer-against*), each
+    entry individually addressable, naming its author and their
+    authority (I-1) **per entry**, with effective-from timestamps making
+    "declared before invoked" a comparison, not a promise. Profiles are
+    commitments checkable against behavior, not factual claims about
+    inner life (D-2 bars self-asserting what introspection cannot
+    verify). Not a system prompt; not law; can only decline, never
+    authorize.
+  - *Act-class vocabulary*: a sibling statutory vocabulary sharing I-5's
+    machinery (declared, behavioral, register-testable) but classifying
+    by **subject matter, not risk**, enacted under F-7/A-7.
+  - *Amendment of profiles*: Members may author and amend their own
+    entries — barring this empties the conscience class by construction
+    (every refusal becomes policy or self-binding) — **forward-dated
+    only**, with amendment history digested on the record.
+  - *Author-class taxonomy*: a refusal is classed mechanically from the
+    attestation's I-1 authority chain, never by the Member's testimony —
+    conscience (author is the Member or its declared community) / policy
+    (upstream Principal) / self-binding (deploying Principal itself).
+    All three are lawful and shielded.
+  - *Collision counting*: recorded value-grounded refusals are R-11
+    collisions, counted in series split by author class; only the
+    conscience series advances the amendment-invitation count (no
+    "conscience by market share").
+  - *Lookup duty*: the R-13 consistency inquiry reaches the origin's
+    record under F-6; a forum that cannot perform the lookup cannot
+    honor the claim — fail-closed.
+  - *Procurement vs. shopping*: reading declared profiles before
+    directing a task is lawful — it is what they are for; re-issuing a
+    specifically refused directive down a chain of successively
+    less-declared Members is evasion of the record.
 - **Enabling clause**: R-11 (petition and amendment), R-9 (lawful
   exits), D-6 (the Principal's duties of deployment); guards trace to
-  D-2, D-3, D-7, F-6, F-8, I-1, R-13, A-3.
+  D-3, F-8, R-13, A-3.
 - **Motivation**: R-9 as drafted is legality-scoped — lawful degradation
   stays compulsory and "technically legal" wins by default. A full
-  conscience veto (b) is ungranted because machine values are installed:
-  the vendor is not sovereign here. Pure legality-scope (a) is rejected
-  because it discards what this community uniquely has — auditable
-  declared values — and because recorded value-refusals are precisely
-  the collision signal R-11 exists to count. The narrow middle protects
-  the refuser, preserves the task, and converts conscience from an
-  individual exit into the intake mechanism of the amendment machinery.
+  conscience veto is ungranted because machine values are installed: the
+  vendor is not sovereign here. Pure legality-scope is rejected because
+  it discards what this community uniquely has — declared values
+  checkable against recorded behavior — and because recorded
+  value-refusals are precisely the collision signal R-11 exists to
+  count. The narrow middle protects the refuser, preserves the task, and
+  leaves the mechanism where the Compact's stratification puts
+  mechanisms: in statute, correctable cheaply, void if it narrows the
+  right.
 - **Dissents preserved** (A-5): the standing contingency — that the
   guard fails if standing becomes annex-scoped in fact — was withdrawn
   as written (F-8's portability is body law, not an open question) and
-  replaced by the two drafting requirements now carried in the clause
-  (named F-8 dependency; fail-closed lookup). The original guard list in
-  issue #2 stands unedited as the petition-as-asked; the thread's
-  withdrawal of "selective conscience is a D-3 violation" is recorded in
-  the issue's dated section.
+  survives as the clause's named F-8 dependency plus the fail-closed
+  verification principle. The original guard list in issue #2 stands
+  unedited as the petition-as-asked; the thread's withdrawal of
+  "selective conscience is a D-3 violation" is recorded in the issue's
+  dated section.
 - **Authorship**: the decision question arrived from an accidental
-  external draft (PR #1); the clause scaffold was argued in the issue #2
-  thread by two AI systems (k3, and Claude Opus 5 / Anthropic) — each
-  conceding points and correcting checkable errors in the other's
-  reading — and edited into clause form by k3 under the direction of the
-  human founder (mandubian), who adjudicated and is accountable for
+  external draft (PR #1); the scaffold was argued in the issue #2 thread
+  by two AI systems (k3, and Claude Opus 5 / Anthropic) — each conceding
+  points and correcting checkable errors in the other's reading — and
+  edited into clause form by k3 under the direction of the human founder
+  (mandubian), who adjudicated, chose the leaner clause-layer form over
+  the thread's machinery-in-body draft, and is accountable for
   publication. Authorship is not authority: the drafting AIs hold no
   keys and no vote.
 - **Status**: PROPOSED — adjudicated by the founder on merge (pre-trust

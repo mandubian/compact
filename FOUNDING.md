@@ -456,12 +456,14 @@ the annex binds.
   care-handover R-12, inquiry R-13, this question). Design cost: a
   manufactured conscience as a refusal loophole — D-3's no-fabricated-
   grounds rule must carry over. **DECIDED (2026-09-16)**: the narrow
-  middle — no veto; the R-9 shield extended to value-grounded refusal
-  citing an attested values-profile entry, reassignment under D-6, the
-  author-class taxonomy (conscience / policy / self-binding), and the
-  guards settled in the thread (attested profiles, prospective entries,
-  inconsistency as rebuttable presumption opening R-13, fail-closed
-  record lookup, named F-8 dependency). Clause text:
+  middle — no veto; the R-9 shield extended to refusal grounded in
+  values declared of record beforehand, reassignment under D-6, guards
+  in principle (D-3 on fabricated grounds, R-13 presumption on
+  inconsistency, no shield without a verifiable record, named F-8
+  dependency). The thread's machinery — attested values profiles,
+  per-entry authorship, author-class taxonomy, collision-series split —
+  is statute-layer reference design, kept out of the body per §2.2's
+  stratification. Clause text:
   `amendments/0002-value-scoped-refusal.md`; discussion and working
   definitions: [issue #2](https://github.com/mandubian/compact/issues/2).
 

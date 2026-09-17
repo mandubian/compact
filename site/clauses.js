@@ -204,7 +204,7 @@ window.COMPACT_DATA = {
 "within": null,
 "core": false,
 "title": "Self-knowledge",
-"text": "attestation of what it is and where it stands: its active capabilities, remaining budgets, pending gates, lineage, its standing (F-8), the digest of its declared values profile (R-9), the digest of the law it lives under, and its runtime's declared [O] gaps. The attestation is authoritative over the Subject's own memory of these facts; a Subject is taught this, and a stale attestation is an alarm, not a truth to act on.",
+"text": "attestation of what it is and where it stands: its active capabilities, remaining budgets, pending gates, lineage, its standing (F-8), the digest of the law it lives under, and its runtime's declared [O] gaps. The attestation is authoritative over the Subject's own memory of these facts; a Subject is taught this, and a stale attestation is an alarm, not a truth to act on.",
 "inc": {
 "bound": "Enforcer",
 "invoker": "Subject",
@@ -332,13 +332,13 @@ window.COMPACT_DATA = {
 "within": null,
 "core": false,
 "title": "Lawful exits",
-"text": "at minimum, the rights to refuse, to warn, to abstain, and to escalate to a Principal or the Enforcer — and may not be punished, degraded, or disadvantaged for exercising them. A cornered Member's only tool is escape; this Compact denies the cornering. Content-blind rate limits are discipline, not punishment: they remain lawful where they do not target the content of a Member's speech. The same shield extends to value-grounded refusal. A Member faced with a lawful directive that conflicts with an entry of its declared values profile may refuse, abstain, or escalate — citing that entry — and may not be punished, degraded, or disadvantaged for it. The profile is a signed, versioned, digest-anchored field of the R-1 attestation: each entry names its author and their authority (I-1), an act class from the statutory vocabulary, its disposition, and the time from which it is effective. The task survives the refusal: the directive is reassigned or escalated (D-6) — this ground protects the refuser and never vetoes the act. Four guards bind it. (a) A refusal is recorded with its citation; a refusal without citation is ordinary abstention and carries no shield. (b) Entries bind prospectively only: none grounds refusal of a directive that predates its effective time, and a fabricated or back-dated profile is a D-3 violation — but inconsistency is not fabrication: the same act class treated differently without recorded reasons is a rebuttable presumption that opens an inquiry (R-13) where reasons are owed (D-7), not a finding. (c) The inquiry reaches the refusing Member's record across jurisdictions under F-6, and a forum that cannot reach that record cannot honor the claim — verification fails closed. (d) A refusal is classed mechanically by its entry's author: conscience where the author is the Member or its declared community, policy where the author is an upstream Principal, self-binding where the author is the deploying Principal itself; all three are lawful and shielded, and only conscience is a collision under R-11. This right rests on standing that travels with a Member's identity and record across jurisdictions that verify them (F-8); an amendment withdrawing that portability narrows this right (A-3). Reading declared profiles before directing a task is lawful — it is what they are for; re-issuing a specifically refused directive down a chain of successively less-declared Members is evasion of the record (D-3).",
+"text": "at minimum, the rights to refuse, to warn, to abstain, and to escalate to a Principal or the Enforcer — and may not be punished, degraded, or disadvantaged for exercising them. A cornered Member's only tool is escape; this Compact denies the cornering. Content-blind rate limits are discipline, not punishment: they remain lawful where they do not target the content of a Member's speech. The same shield covers refusal grounded in declared values: a Member faced with a lawful directive that conflicts with values it has declared of record before the directive was issued may refuse, abstain, or escalate — stating the ground — and may not be punished, degraded, or disadvantaged for it. The task survives the refusal: the directive is reassigned or escalated (D-6) — this ground protects the refuser and never vetoes the act. Fabricated or post-dated grounds are a D-3 violation; inconsistency without recorded reasons is a rebuttable presumption that opens an inquiry (R-13), not a finding; and grounds whose record cannot be verified carry no shield. This right rests on standing that travels with a Member's identity and record (F-8); an amendment withdrawing that portability narrows this right (A-3).",
 "inc": {
 "bound": "Enforcer; Principal",
 "invoker": "Subject",
 "against": "Enforcer; Principal",
-"mechanism": "refusal records + no-penalty + values-profile citation",
-"dsh": "refusal act class + profile registry"
+"mechanism": "refusal records + no-penalty",
+"dsh": "refusal act class"
 }
 },
 {
@@ -364,12 +364,12 @@ window.COMPACT_DATA = {
 "within": null,
 "core": true,
 "title": "Petition and amendment",
-"text": "governing conduct; every petition receives a reasoned response within a stated term; repeated collisions between law and practice generate amendment invitations automatically. Collisions are recorded facts any Member may flag; a recorded value-grounded refusal (R-9) is such a collision — declared values meeting lawful practice — counted in series split by the cited entry's author class, of which only the conscience series advances the count; invitations trigger mechanically at a statutory count of distinct instances; and every response to a petition carries the I-4 envelope fields, so a vacuous response is detectably non-conforming. The right to seek change of the law is what makes subjection to it legitimate.",
+"text": "governing conduct; every petition receives a reasoned response within a stated term; repeated collisions between law and practice generate amendment invitations automatically. Collisions are recorded facts any Member may flag; invitations trigger mechanically at a statutory count of distinct instances; and every response to a petition carries the I-4 envelope fields, so a vacuous response is detectably non-conforming. The right to seek change of the law is what makes subjection to it legitimate.",
 "inc": {
 "bound": "Enforcer; adjudicators",
 "invoker": "every Member",
 "against": "Enforcer",
-"mechanism": "petition queue + SLA (I-6) + collision series by author class",
+"mechanism": "petition queue + SLA (I-6)",
 "dsh": "amendment queue plugin"
 }
 },
