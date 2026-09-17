@@ -705,8 +705,7 @@ Witnesses + no-exit spawned Members), partially closed in v0.4 by A-2's
 entrenchment of A-3 and F-3's Witness duties.
 Also mined into v0.5 from an accidental external draft (Copilot's PR #1,
 a mis-paste — mined regardless of origin, per the disposition discipline):
-care-handover on departure (R-12) and the inquiry right (R-13). Decided (2026-09-16,
-[issue #2](https://github.com/mandubian/compact/issues/2);
+care-handover on departure (R-12) and the inquiry right (R-13). Decided (2026-09-16;
 [amendment 0002](amendments/0002-value-scoped-refusal.md)): the
 value-scoped refusal question ("conscience ground" — should a Member
 refuse *lawful* directives that conflict with its declared, recorded
