@@ -51,6 +51,12 @@ const DECLARATION =
 
 const sha256 = (buf) => createHash('sha256').update(buf).digest('hex');
 const messageFor = (subject, hex) => `${subject}-sha256:${hex}`; // domain-separated: a signature binds THIS subject and digest only
+// The subject is the VERBATIM relative path (compact.md keeps its historical
+// name): sanitizing mapped distinct files (a/b.md, a-b.md) onto one subject,
+// and two files sharing a sig artifact is a silent last-sign-wins hazard.
+const subjectFor = (rel) => rel === 'compact.md' ? 'compact-body' : rel;
+/** Sig artifacts live flat under keyring/dev; path separators encode to `__`. */
+const sigPathFor = (subject) => join(DEV_DIR, `${subject.replaceAll('/', '__')}.sig.json`);
 
 function fail(msg) {
   console.error(`✗ ${msg}`);
@@ -67,7 +73,7 @@ function resolveInRoot(target) {
   return { abs, rel };
 }
 
-/** Parse a JSON artifact, refusing loudly on anything that does not declare its own shape (a malformed artifact is never verified-or-signed by accident). */
+/** Parse a JSON artifact, refusing loudly on anything that does not declare its own shape (a malformed artifact is never verified-or-signed by accident). The check returns true or a refusal reason. */
 function loadJson(path, check, what) {
   let parsed;
   try {
@@ -75,16 +81,26 @@ function loadJson(path, check, what) {
   } catch (e) {
     fail(`malformed ${what} at ${path}: not valid JSON (${e.message}) — refusing to proceed`);
   }
-  if (!check(parsed)) {
-    fail(`malformed ${what} at ${path}: parsed but missing required fields — refusing to proceed on an artifact that does not declare its own shape`);
+  const verdict = check(parsed);
+  if (verdict !== true) {
+    fail(`malformed ${what} at ${path}: ${typeof verdict === 'string' ? verdict : 'parsed but missing required fields'} — refusing to proceed on an artifact that does not declare its own shape`);
   }
   return parsed;
 }
 
-const isKeyring = (k) => k && k.threshold && Number.isInteger(k.threshold.k) && Number.isInteger(k.threshold.n)
-  && Array.isArray(k.keys) && k.keys.every(key => key && typeof key.id === 'string' && typeof key.publicKey === 'string');
-const isSigFile = (s) => s && typeof s.digest?.value === 'string' && typeof s.message === 'string'
-  && Array.isArray(s.signatures) && s.signatures.every(sig => sig && typeof sig.keyId === 'string' && typeof sig.signature === 'string');
+const noDuplicateIds = (ids) => new Set(ids).size === ids.length
+  || 'duplicate key IDs — a k-of-n threshold counts DISTINCT signers, so a repeated entry is not a signature artifact, it is an attack or a bug';
+
+const isKeyring = (k) => {
+  if (!(k && k.threshold && Number.isInteger(k.threshold.k) && Number.isInteger(k.threshold.n)
+    && Array.isArray(k.keys) && k.keys.every(key => key && typeof key.id === 'string' && typeof key.publicKey === 'string'))) return false;
+  return noDuplicateIds(k.keys.map(key => key.id));
+};
+const isSigFile = (s) => {
+  if (!(s && typeof s.digest?.value === 'string' && typeof s.message === 'string'
+    && Array.isArray(s.signatures) && s.signatures.every(sig => sig && typeof sig.keyId === 'string' && typeof sig.signature === 'string'))) return false;
+  return noDuplicateIds(s.signatures.map(sig => sig.keyId));
+};
 
 function loadKeyring() {
   if (!existsSync(KEYRING_PATH)) fail(`no keyring at ${KEYRING_PATH} — run: node tools/sign_dev.mjs generate`);
@@ -143,7 +159,7 @@ function cmdGenerate(force) {
 function cmdSign(relPath) {
   const { rel: target, abs } = resolveInRoot(relPath ?? 'compact.md');
   const body = readFileSync(abs);
-  const subject = target === 'compact.md' ? 'compact-body' : target.replace(/[^a-z0-9]+/gi, '-');
+  const subject = subjectFor(target);
   const hex = sha256(body);
   const message = messageFor(subject, hex);
   const keyring = loadKeyring();
@@ -169,7 +185,13 @@ function cmdSign(relPath) {
     signatures,
     signedAt: new Date().toISOString(),
   };
-  const outPath = join(DEV_DIR, `${subject}.sig.json`);
+  const outPath = sigPathFor(subject);
+  if (existsSync(outPath)) {
+    const prev = loadJson(outPath, isSigFile, 'signature file');
+    if (prev.source !== target) {
+      fail(`"${target}" maps to the signature artifact of "${prev.source}" — refusing to overwrite silently. Delete ${outPath} deliberately to re-seat it.`);
+    }
+  }
   writeFileSync(outPath, JSON.stringify(sigFile, null, 2) + '\n');
   console.log(`signed ${target}: sha256 ${hex.slice(0, 16)}… with ${signatures.length}/${keyring.keys.length} dev keys → ${outPath}`);
   console.log('  reminder: this is a PRACTICE seal. It proves the machinery works; it claims nothing else.');
@@ -177,8 +199,8 @@ function cmdSign(relPath) {
 
 function cmdVerify(relPath) {
   const { rel: target, abs } = resolveInRoot(relPath ?? 'compact.md');
-  const subject = target === 'compact.md' ? 'compact-body' : target.replace(/[^a-z0-9]+/gi, '-');
-  const sigPath = join(DEV_DIR, `${subject}.sig.json`);
+  const subject = subjectFor(target);
+  const sigPath = sigPathFor(subject);
   if (!existsSync(sigPath)) fail(`no signature file at ${sigPath} — run: node tools/sign_dev.mjs sign ${target}`);
   const keyring = loadKeyring();
   const sigFile = loadJson(sigPath, isSigFile, 'signature file');
@@ -193,20 +215,26 @@ function cmdVerify(relPath) {
     fail(`sig file message "${sigFile.message}" does not match its own subject/digest — malformed artifact`);
   }
 
-  let valid = 0;
+  // k-of-n means k DISTINCT signers. Entries are counted per verified keyId,
+  // never per entry: duplicating one key's valid entry must not satisfy the
+  // threshold (isSigFile already refuses duplicate keyIds as malformed; this
+  // loop is the reference semantics runtimes copy — the guard belongs here too).
+  const counted = new Set();
   for (const entry of sigFile.signatures) {
     const key = keyring.keys.find(k => k.id === entry.keyId);
     if (!key) { console.warn(`  ! ${entry.keyId}: not in the keyring — not counted`); continue; }
+    if (counted.has(entry.keyId)) { console.log(`  ✗ ${entry.keyId}: duplicate entry — a threshold counts DISTINCT signers; not counted again`); continue; }
     const pk = createPublicKey({ key: Buffer.from(key.publicKey, 'base64'), format: 'der', type: 'spki' });
     const ok = edVerify(null, message, pk, Buffer.from(entry.signature, 'base64'));
     console.log(`  ${ok ? '✓' : '✗'} ${entry.keyId}: signature ${ok ? 'valid' : 'INVALID — not counted'}`);
-    if (ok) valid++;
+    if (ok) counted.add(entry.keyId);
   }
+  const valid = counted.size;
   const { k, n } = keyring.threshold;
   if (valid < k) {
-    fail(`threshold not met: ${valid} valid signature(s), need ${k}-of-${n} — verification FAILS`);
+    fail(`threshold not met: ${valid} distinct valid signer(s), need ${k}-of-${n} — verification FAILS`);
   }
-  console.log(`verify OK: ${target} matches its signed digest; ${valid} valid signature(s) meet threshold ${k}-of-${n}`);
+  console.log(`verify OK: ${target} matches its signed digest; ${valid} distinct valid signer(s) meet threshold ${k}-of-${n}`);
   console.log('  basis: dev-keyring — code-path correctness proven; ratification, standing, and I-1 identity NOT claimed');
 }
 

@@ -45,8 +45,9 @@ complete.
   5. **Custody and rotation.** Private keys are founder-held and never
      committed (`keyring/dev/private/` is gitignored). Rotation is a
      deliberate, recorded act: the tool refuses to overwrite existing keys
-     without `--force`, and the rotation is recorded in the manifest.
-     Custody is operational, not authority — the keys convey none.
+     or the committed manifest without `--force`, and the rotation is
+     recorded by hand in the manifest. Custody is operational, not
+     authority — the keys convey none.
   6. **The scheduled cure.** At ratification the dev keyring is retired
      and replaced by the A-1 distributed trust root. The runtime side of
      the swap is configuration — a new keyring manifest — not code: that
@@ -119,8 +120,19 @@ complete.
     the labels travel with the keyring either way. Nothing here pressures
     the ratification timeline: the cure activates when distinct
     keyholders exist, whenever that is.
-- **Dissents preserved** (A-5): none recorded at proposal time; the
-  petition thread is the record.
+- **Dissents preserved** (A-5): no dissent against the posture was
+  recorded. Two pre-adjudication review passes ran on PR #5: an automated
+  tooling pass (GitHub Copilot — four robustness findings) and the external
+  adversary pass invited by the posted review prompt (GLM via ZCode,
+  disclosed, posted under the founder's session — verdict: *the amendment
+  layer is ready; one blocking tool fix remains*). The findings were
+  implementation defects, not disagreements with the posture: all five code
+  findings FIXED (distinct-signer threshold, root resolution, manifest
+  overwrite guard, path confinement, artifact shape checks), both
+  documentation notes applied. Records with dispositions:
+  [ledgers/review-0004-copilot.md](../ledgers/review-0004-copilot.md),
+  [ledgers/review-0004-glm.md](../ledgers/review-0004-glm.md); the petition
+  thread is part of this amendment's record.
 - **Authorship**: proposed by the human founder (mandubian), whose
   petition it records; drafted by k3 under the founder's direction,
   applying the named-precondition pattern amendment 0003 established. The

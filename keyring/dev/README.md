@@ -40,7 +40,11 @@ practice seals**. They prove the machinery works. They claim nothing else.
 4. **Custody is operational, not authority.** Private keys are founder-held
    and never committed (`private/` is gitignored, mode 0600). Rotation is a
    deliberate, recorded act (`tools/sign_dev.mjs generate --force` refuses
-   silently overwriting; record the rotation in `keyring.json`).
+   silently overwriting keys or the manifest; record the rotation in
+   `keyring.json`).
+5. **The manifest is not self-certified.** Nothing signs `keyring.json` —
+   its authenticity is the repository's: git history plus founder custody.
+   Do not mistake the manifest for its own proof.
 5. **The scheduled cure.** At ratification this keyring is retired and
    replaced by the A-1 distributed trust root. Runtimes swap a keyring
    manifest, not code — that swap being configuration rather than code is
