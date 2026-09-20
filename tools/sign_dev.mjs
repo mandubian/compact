@@ -29,9 +29,12 @@
 // are founder-held. They are never committed. See keyring/dev/README.md.
 import { generateKeyPairSync, sign as edSign, verify as edVerify, createHash, createPrivateKey, createPublicKey } from 'node:crypto';
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, chmodSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, resolve, relative, isAbsolute } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const ROOT = new URL('..', import.meta.url).pathname;
+// fileURLToPath, not .pathname: URL-encoded or Windows file URLs would
+// resolve the repo root wrong, and every seal path derives from it.
+const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DEV_DIR = join(ROOT, 'keyring', 'dev');
 const PRIVATE_DIR = join(DEV_DIR, 'private');
 const KEYRING_PATH = join(DEV_DIR, 'keyring.json');
@@ -54,9 +57,38 @@ function fail(msg) {
   process.exit(1);
 }
 
+/** Confine every file this tool touches to the repository root — a `..` or absolute slip must never sign or verify bytes outside it. */
+function resolveInRoot(target) {
+  const abs = resolve(ROOT, target);
+  const rel = relative(ROOT, abs);
+  if (rel.startsWith('..') || isAbsolute(rel)) {
+    fail(`path "${target}" escapes the repository root — this tool signs and verifies only files inside it`);
+  }
+  return { abs, rel };
+}
+
+/** Parse a JSON artifact, refusing loudly on anything that does not declare its own shape (a malformed artifact is never verified-or-signed by accident). */
+function loadJson(path, check, what) {
+  let parsed;
+  try {
+    parsed = JSON.parse(readFileSync(path, 'utf8'));
+  } catch (e) {
+    fail(`malformed ${what} at ${path}: not valid JSON (${e.message}) — refusing to proceed`);
+  }
+  if (!check(parsed)) {
+    fail(`malformed ${what} at ${path}: parsed but missing required fields — refusing to proceed on an artifact that does not declare its own shape`);
+  }
+  return parsed;
+}
+
+const isKeyring = (k) => k && k.threshold && Number.isInteger(k.threshold.k) && Number.isInteger(k.threshold.n)
+  && Array.isArray(k.keys) && k.keys.every(key => key && typeof key.id === 'string' && typeof key.publicKey === 'string');
+const isSigFile = (s) => s && typeof s.digest?.value === 'string' && typeof s.message === 'string'
+  && Array.isArray(s.signatures) && s.signatures.every(sig => sig && typeof sig.keyId === 'string' && typeof sig.signature === 'string');
+
 function loadKeyring() {
   if (!existsSync(KEYRING_PATH)) fail(`no keyring at ${KEYRING_PATH} — run: node tools/sign_dev.mjs generate`);
-  return JSON.parse(readFileSync(KEYRING_PATH, 'utf8'));
+  return loadJson(KEYRING_PATH, isKeyring, 'keyring manifest');
 }
 
 function loadPrivateKeys() {
@@ -70,8 +102,12 @@ function loadPrivateKeys() {
 
 function cmdGenerate(force) {
   const existing = existsSync(PRIVATE_DIR) ? readdirSync(PRIVATE_DIR).filter(f => f.endsWith('.pem')) : [];
-  if (existing.length > 0 && !force) {
-    fail(`private keys already exist (${existing.length}) — refusing to overwrite. Rotation is a deliberate, recorded act: pass --force and update the keyring manifest's rotation note.`);
+  // Guard BOTH artifacts: the founder may move private/ off-machine (custody),
+  // and a bare `generate` must still never churn the tracked, committed
+  // manifest — overwriting either half of the keyring is a rotation, and
+  // rotation is a deliberate, recorded act.
+  if ((existing.length > 0 || existsSync(KEYRING_PATH)) && !force) {
+    fail(`a dev keyring already exists (${existing.length} private key(s), manifest ${existsSync(KEYRING_PATH) ? 'present' : 'absent'}) — refusing to overwrite. Rotation is a deliberate, recorded act: pass --force and record the rotation in the manifest's rotations list.`);
   }
   mkdirSync(PRIVATE_DIR, { recursive: true });
   const keys = [];
@@ -105,8 +141,8 @@ function cmdGenerate(force) {
 }
 
 function cmdSign(relPath) {
-  const target = relPath ?? 'compact.md';
-  const body = readFileSync(join(ROOT, target));
+  const { rel: target, abs } = resolveInRoot(relPath ?? 'compact.md');
+  const body = readFileSync(abs);
   const subject = target === 'compact.md' ? 'compact-body' : target.replace(/[^a-z0-9]+/gi, '-');
   const hex = sha256(body);
   const message = messageFor(subject, hex);
@@ -140,13 +176,13 @@ function cmdSign(relPath) {
 }
 
 function cmdVerify(relPath) {
-  const target = relPath ?? 'compact.md';
+  const { rel: target, abs } = resolveInRoot(relPath ?? 'compact.md');
   const subject = target === 'compact.md' ? 'compact-body' : target.replace(/[^a-z0-9]+/gi, '-');
   const sigPath = join(DEV_DIR, `${subject}.sig.json`);
   if (!existsSync(sigPath)) fail(`no signature file at ${sigPath} — run: node tools/sign_dev.mjs sign ${target}`);
   const keyring = loadKeyring();
-  const sigFile = JSON.parse(readFileSync(sigPath, 'utf8'));
-  const body = readFileSync(join(ROOT, target));
+  const sigFile = loadJson(sigPath, isSigFile, 'signature file');
+  const body = readFileSync(abs);
 
   const hex = sha256(body);
   if (hex !== sigFile.digest.value) {
