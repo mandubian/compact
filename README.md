@@ -66,7 +66,8 @@ into being: it is constructed.
 | `annexes/` | Registry of runtime annexes — the annexes themselves live in the runtime repos |
 | `ledgers/` | Generated/audited records: predecessor disposition, law table, red-team rounds |
 | `amendments/` | The amendment queue — `0001` is the founding petition (A-6) |
-| `tools/` | Draft lints; signing lands at ratification |
+| `keyring/` | The development keyring (amendment 0004) — practice seals for machinery testing, zero standing; the A-1 trust root lands at ratification |
+| `tools/` | Draft lints; the dev-keyring signing tool (amendment 0004); ratification signing lands at ratification |
 
 ## Principles, in one breath
 
